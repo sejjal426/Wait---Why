@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Technology | Curiosity Hub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            color: #17232d;
+
+            background:
+                radial-gradient(circle at 12% 18%, rgba(170, 235, 255, 0.6), transparent 30%),
+                radial-gradient(circle at 88% 78%, rgba(185, 255, 220, 0.45), transparent 30%),
+                linear-gradient(135deg, #f4fcff, #edfaff, #f3fff9);
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 7%;
+
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(255,255,255,0.9);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #087f8c;
+            text-decoration: none;
+        }
+
+        .home {
+            text-decoration: none;
+            color: #087f8c;
+            font-weight: bold;
+        }
+
+        .home:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+
+        .hero {
+            text-align: center;
+            padding: 75px 20px 55px;
+        }
+
+        .hero-icon {
+            font-size: 64px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-size: 54px;
+            margin-bottom: 18px;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 span {
+            color: #07848f;
+        }
+
+        .hero p {
+            max-width: 680px;
+            margin: auto;
+
+            font-size: 19px;
+            line-height: 1.7;
+
+            color: #5f6f78;
+        }
+
+        /* QUESTION GRID */
+
+        .questions {
+            max-width: 1100px;
+            margin: 0 auto;
+
+            padding: 20px 25px 70px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .question-card {
+            padding: 30px;
+
+            background: rgba(255, 255, 255, 0.78);
+            backdrop-filter: blur(12px);
+
+            border: 1px solid rgba(255,255,255,0.95);
+            border-radius: 22px;
+
+            box-shadow: 0 12px 35px rgba(30, 100, 110, 0.09);
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .question-card:hover {
+            transform: translateY(-7px);
+
+            box-shadow: 0 20px 45px rgba(30, 100, 110, 0.16);
+        }
+
+        .number {
+            display: inline-block;
+
+            font-size: 13px;
+            font-weight: bold;
+
+            padding: 6px 12px;
+            margin-bottom: 18px;
+
+            border-radius: 20px;
+
+            background: #e2f8fa;
+            color: #087f8c;
+        }
+
+        .question-card h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            line-height: 1.35;
+        }
+
+        .question-card p {
+            color: #64747c;
+            line-height: 1.65;
+            margin-bottom: 22px;
+        }
+
+        .read {
+            display: inline-block;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            color: #087f8c;
+
+            transition: 0.2s;
+        }
+
+        .read:hover {
+            letter-spacing: 0.3px;
+        }
+
+        /* COMING SOON */
+
+        .coming-soon {
+            max-width: 1100px;
+            margin: 0 auto 70px;
+            padding: 30px;
+
+            text-align: center;
+
+            border-radius: 20px;
+
+            background: rgba(255,255,255,0.6);
+            border: 1px dashed rgba(50,120,130,0.25);
+        }
+
+        .coming-soon h2 {
+            margin-bottom: 8px;
+        }
+
+        .coming-soon p {
+            color: #718087;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+
+            color: #7b888e;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            .hero {
+                padding: 55px 20px 40px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .questions {
+                grid-template-columns: 1fr;
+                padding: 15px 18px 50px;
+            }
+
+            .question-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <a href="index.html" class="logo">✨ Curiosity Hub</a>
+
+        <a href="index.html" class="home">← Home</a>
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-icon">💻</div>
+
+        <h1>Explore <span>Technology</span></h1>
+
+        <p>
+            Technology is all around us. From smartphones and the internet
+            to artificial intelligence and robots, discover the ideas and
+            inventions shaping our world.
+        </p>
+
+    </section>
+
+
+    <!-- QUESTIONS -->
+
+    <section class="questions">
+
+        <!-- QUESTION 1 -->
+
+        <div class="question-card">
+
+            <span class="number">TECHNOLOGY • 01</span>
+
+            <h2>📱 How Does Your Phone Know Where You Are?</h2>
+
+            <p>
+                Your phone can determine your location surprisingly accurately.
+                Discover how satellites, signals and sensors work together.
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 2 -->
+
+        <div class="question-card">
+
+            <span class="number">TECHNOLOGY • 02</span>
+
+            <h2>🌐 How Does the Internet Actually Work?</h2>
+
+            <p>
+                When you open a website, information travels across enormous
+                networks in just moments. But what happens behind the screen?
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 3 -->
+
+        <div class="question-card">
+
+            <span class="number">TECHNOLOGY • 03</span>
+
+            <h2>🤖 How Do Robots Know What to Do?</h2>
+
+            <p>
+                Robots can sense their surroundings, process information and
+                perform tasks. Learn how they turn instructions into actions.
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 4 -->
+
+        <div class="question-card">
+
+            <span class="number">TECHNOLOGY • 04</span>
+
+            <h2>🧠 How Does Artificial Intelligence Learn?</h2>
+
+            <p>
+                AI systems can recognize patterns and make predictions.
+                But how does a computer learn from examples?
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 5 -->
+
+        <div class="question-card">
+
+            <span class="number">TECHNOLOGY • 05</span>
+
+            <h2>🔐 How Does a Password Keep Information Safe?</h2>
+
+            <p>
+                A simple password can protect important information.
+                Explore the basic ideas behind digital security.
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 6 -->
+
+        <div class="question-card">
+
+            <span class="number">TECHNOLOGY • 06</span>
+
+            <h2>☁️ What Does "The Cloud" Really Mean?</h2>
+
+            <p>
+                Your photos and files can be stored somewhere you cannot see.
+                Find out what people really mean when they say "the cloud."
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- COMING SOON -->
+
+    <section class="coming-soon">
+
+        <h2>✨ Technology never stops evolving</h2>
+
+        <p>
+            More fascinating technology questions will be explored soon.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Curiosity Hub • Stay curious. Keep discovering.
+    </footer>
+
+</body>
+</html>
