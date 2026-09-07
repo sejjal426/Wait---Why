@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Psychology | Curiosity Hub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            color: #27233a;
+
+            background:
+                radial-gradient(circle at 10% 20%, rgba(220, 195, 255, 0.6), transparent 30%),
+                radial-gradient(circle at 90% 75%, rgba(190, 215, 255, 0.55), transparent 32%),
+                linear-gradient(135deg, #faf7ff, #f1edff, #eef5ff);
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 7%;
+
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(255,255,255,0.9);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #6546a8;
+            text-decoration: none;
+        }
+
+        .home {
+            text-decoration: none;
+            color: #7255b5;
+            font-weight: bold;
+        }
+
+        .home:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+
+        .hero {
+            text-align: center;
+            padding: 75px 20px 55px;
+        }
+
+        .hero-icon {
+            font-size: 64px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-size: 54px;
+            margin-bottom: 18px;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 span {
+            color: #7654b8;
+        }
+
+        .hero p {
+            max-width: 680px;
+            margin: auto;
+
+            font-size: 19px;
+            line-height: 1.7;
+            color: #69647b;
+        }
+
+        /* QUESTION GRID */
+
+        .questions {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px 25px 70px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .question-card {
+            padding: 30px;
+
+            background: rgba(255, 255, 255, 0.78);
+            backdrop-filter: blur(12px);
+
+            border: 1px solid rgba(255,255,255,0.95);
+            border-radius: 22px;
+
+            box-shadow: 0 12px 35px rgba(80, 60, 120, 0.1);
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .question-card:hover {
+            transform: translateY(-7px);
+
+            box-shadow: 0 20px 45px rgba(80, 60, 120, 0.16);
+        }
+
+        .number {
+            display: inline-block;
+
+            font-size: 13px;
+            font-weight: bold;
+
+            padding: 6px 12px;
+            margin-bottom: 18px;
+
+            border-radius: 20px;
+
+            background: #eee7ff;
+            color: #7251ad;
+        }
+
+        .question-card h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            line-height: 1.35;
+        }
+
+        .question-card p {
+            color: #6d687d;
+            line-height: 1.65;
+            margin-bottom: 22px;
+        }
+
+        .read {
+            display: inline-block;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            color: #7654b8;
+
+            transition: 0.2s;
+        }
+
+        .read:hover {
+            letter-spacing: 0.3px;
+        }
+
+        /* COMING SOON */
+
+        .coming-soon {
+            max-width: 1100px;
+            margin: 0 auto 70px;
+            padding: 30px;
+
+            text-align: center;
+
+            border-radius: 20px;
+
+            background: rgba(255,255,255,0.6);
+            border: 1px dashed rgba(110,90,150,0.25);
+        }
+
+        .coming-soon h2 {
+            margin-bottom: 8px;
+        }
+
+        .coming-soon p {
+            color: #777287;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+
+            color: #807b91;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            .hero {
+                padding: 55px 20px 40px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .questions {
+                grid-template-columns: 1fr;
+                padding: 15px 18px 50px;
+            }
+
+            .question-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <a href="index.html" class="logo">✨ Curiosity Hub</a>
+
+        <a href="index.html" class="home">← Home</a>
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-icon">🧠</div>
+
+        <h1>Explore <span>Psychology</span></h1>
+
+        <p>
+            Our minds are full of fascinating mysteries. Explore the science
+            behind our thoughts, memories, emotions, habits and behaviour.
+        </p>
+
+    </section>
+
+
+    <!-- QUESTIONS -->
+
+    <section class="questions">
+
+        <!-- QUESTION 1 -->
+
+        <div class="question-card">
+
+            <span class="number">PSYCHOLOGY • 01</span>
+
+            <h2>🎵 Why Do Songs Get Stuck in Our Head?</h2>
+
+            <p>
+                Ever had the same melody playing in your mind again and again?
+                Discover the fascinating science behind this common experience.
+            </p>
+
+            <a href="songs-stuck.html" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 2 -->
+
+        <div class="question-card">
+
+            <span class="number">PSYCHOLOGY • 02</span>
+
+            <h2>💭 Why Do We Dream?</h2>
+
+            <p>
+                Every night our brains can create strange, emotional and
+                sometimes completely confusing stories. But why?
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 3 -->
+
+        <div class="question-card">
+
+            <span class="number">PSYCHOLOGY • 03</span>
+
+            <h2>🧠 Why Do We Forget Things?</h2>
+
+            <p>
+                Sometimes we remember tiny details from years ago but forget
+                something we learned yesterday. What causes this?
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 4 -->
+
+        <div class="question-card">
+
+            <span class="number">PSYCHOLOGY • 04</span>
+
+            <h2>👀 Why Do We Get Déjà Vu?</h2>
+
+            <p>
+                That strange feeling that you've experienced a moment before
+                may have something to do with how your brain processes memory.
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 5 -->
+
+        <div class="question-card">
+
+            <span class="number">PSYCHOLOGY • 05</span>
+
+            <h2>😴 Why Do We Feel Sleepy?</h2>
+
+            <p>
+                Our bodies follow a natural daily rhythm that influences when
+                we feel awake and when we feel ready to sleep.
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 6 -->
+
+        <div class="question-card">
+
+            <span class="number">PSYCHOLOGY • 06</span>
+
+            <h2>❤️ Why Do We Get Nervous?</h2>
+
+            <p>
+                Butterflies in your stomach, a faster heartbeat and sweaty
+                palms can all appear when you're nervous. Why does this happen?
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- COMING SOON -->
+
+    <section class="coming-soon">
+
+        <h2>✨ Your mind has more mysteries</h2>
+
+        <p>
+            More fascinating psychology questions will be explored soon.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Curiosity Hub • Stay curious. Understand yourself.
+    </footer>
+
+</body>
+</html>
