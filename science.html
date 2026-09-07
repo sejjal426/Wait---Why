@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Science | Curiosity Hub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            color: #172033;
+
+            background:
+                radial-gradient(circle at 10% 20%, rgba(180, 220, 255, 0.55), transparent 30%),
+                radial-gradient(circle at 90% 80%, rgba(210, 190, 255, 0.5), transparent 30%),
+                linear-gradient(135deg, #f7fbff, #eef4ff, #f8f4ff);
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 7%;
+
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #283593;
+            text-decoration: none;
+        }
+
+        .home {
+            text-decoration: none;
+            color: #3949ab;
+            font-weight: bold;
+        }
+
+        .home:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+
+        .hero {
+            text-align: center;
+            padding: 75px 20px 55px;
+        }
+
+        .hero-icon {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 18px;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 span {
+            color: #3949ab;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+
+            font-size: 19px;
+            line-height: 1.7;
+            color: #596579;
+        }
+
+        /* QUESTION GRID */
+
+        .questions {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px 25px 70px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .question-card {
+            position: relative;
+
+            padding: 30px;
+
+            background: rgba(255, 255, 255, 0.78);
+            backdrop-filter: blur(10px);
+
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            border-radius: 22px;
+
+            box-shadow: 0 12px 35px rgba(50, 70, 120, 0.09);
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .question-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 18px 40px rgba(50, 70, 120, 0.15);
+        }
+
+        .number {
+            display: inline-block;
+
+            font-size: 13px;
+            font-weight: bold;
+
+            padding: 6px 12px;
+            margin-bottom: 18px;
+
+            border-radius: 20px;
+
+            background: #e8eaff;
+            color: #3949ab;
+        }
+
+        .question-card h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            line-height: 1.35;
+        }
+
+        .question-card p {
+            color: #667085;
+            line-height: 1.6;
+            margin-bottom: 22px;
+        }
+
+        .read {
+            display: inline-block;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            color: #3949ab;
+
+            transition: 0.2s;
+        }
+
+        .read:hover {
+            letter-spacing: 0.3px;
+        }
+
+        /* COMING SOON */
+
+        .coming-soon {
+            max-width: 1100px;
+            margin: 0 auto 70px;
+            padding: 30px;
+
+            text-align: center;
+
+            border-radius: 20px;
+
+            background: rgba(255, 255, 255, 0.55);
+            border: 1px dashed rgba(80, 90, 150, 0.25);
+        }
+
+        .coming-soon h2 {
+            margin-bottom: 8px;
+        }
+
+        .coming-soon p {
+            color: #687386;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+
+            color: #697386;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            .hero {
+                padding: 55px 20px 40px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .questions {
+                grid-template-columns: 1fr;
+                padding: 15px 18px 50px;
+            }
+
+            .question-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <a href="index.html" class="logo">✨ Curiosity Hub</a>
+
+        <a href="index.html" class="home">← Home</a>
+    </nav>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-icon">🔬</div>
+
+        <h1>Explore <span>Science</span></h1>
+
+        <p>
+            From the tiniest particles to the biggest mysteries of nature,
+            science helps us understand the world around us.
+            Here are some questions worth being curious about.
+        </p>
+
+    </section>
+
+
+    <!-- QUESTIONS -->
+
+    <section class="questions">
+
+        <!-- QUESTION 1 -->
+
+        <div class="question-card">
+
+            <span class="number">SCIENCE • 01</span>
+
+            <h2>☁️ Why Is the Sky Blue?</h2>
+
+            <p>
+                Sunlight may look white, but Earth's atmosphere transforms
+                the way we see it. Discover why the sky appears blue.
+            </p>
+
+            <a href="blue-sky.html" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 2 -->
+
+        <div class="question-card">
+
+            <span class="number">SCIENCE • 02</span>
+
+            <h2>🧊 Why Does Ice Float on Water?</h2>
+
+            <p>
+                Most substances become denser when they become solid.
+                Water behaves differently. Find out why.
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 3 -->
+
+        <div class="question-card">
+
+            <span class="number">SCIENCE • 03</span>
+
+            <h2>🌈 How Does a Rainbow Form?</h2>
+
+            <p>
+                Rainbows look magical, but their colours come from some
+                fascinating properties of light and water.
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 4 -->
+
+        <div class="question-card">
+
+            <span class="number">SCIENCE • 04</span>
+
+            <h2>⚡ Why Do We Get Static Shocks?</h2>
+
+            <p>
+                That tiny shock you sometimes feel after touching an object
+                is caused by an interesting movement of electric charge.
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 5 -->
+
+        <div class="question-card">
+
+            <span class="number">SCIENCE • 05</span>
+
+            <h2>🌱 How Do Plants Know Which Way Is Up?</h2>
+
+            <p>
+                Plants cannot walk or move like animals, yet their roots
+                grow downward and their shoots grow upward. How?
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 6 -->
+
+        <div class="question-card">
+
+            <span class="number">SCIENCE • 06</span>
+
+            <h2>🔥 Why Does Fire Need Oxygen?</h2>
+
+            <p>
+                Fire needs certain conditions to keep burning. Explore the
+                science behind combustion and flames.
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- COMING SOON -->
+
+    <section class="coming-soon">
+
+        <h2>✨ More questions are coming</h2>
+
+        <p>
+            Curiosity never runs out. New science mysteries will be added soon.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Curiosity Hub • Stay curious. Keep asking why.
+    </footer>
+
+</body>
+</html>
