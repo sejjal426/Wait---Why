@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Space | Curiosity Hub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            color: #f4f4ff;
+
+            background:
+                radial-gradient(circle at 15% 20%, rgba(94, 70, 180, 0.35), transparent 30%),
+                radial-gradient(circle at 85% 75%, rgba(45, 90, 180, 0.3), transparent 30%),
+                radial-gradient(circle at 50% 50%, rgba(120, 80, 180, 0.12), transparent 40%),
+                linear-gradient(135deg, #080b24, #11163d, #080b20);
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 7%;
+
+            background: rgba(8, 11, 36, 0.65);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .home {
+            text-decoration: none;
+            color: #c9c8ff;
+            font-weight: bold;
+        }
+
+        .home:hover {
+            color: #ffffff;
+        }
+
+        /* HERO */
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px 55px;
+        }
+
+        .hero-icon {
+            font-size: 64px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-size: 54px;
+            margin-bottom: 18px;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 span {
+            color: #b9b5ff;
+        }
+
+        .hero p {
+            max-width: 680px;
+            margin: auto;
+
+            font-size: 19px;
+            line-height: 1.7;
+
+            color: #b9bddb;
+        }
+
+        /* QUESTION GRID */
+
+        .questions {
+            max-width: 1100px;
+            margin: 0 auto;
+
+            padding: 20px 25px 70px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .question-card {
+            padding: 30px;
+
+            background: rgba(255, 255, 255, 0.075);
+            backdrop-filter: blur(12px);
+
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 22px;
+
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+
+            transition: transform 0.3s ease,
+                        background 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .question-card:hover {
+            transform: translateY(-7px);
+
+            background: rgba(255,255,255,0.11);
+
+            box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+        }
+
+        .number {
+            display: inline-block;
+
+            font-size: 13px;
+            font-weight: bold;
+
+            padding: 6px 12px;
+            margin-bottom: 18px;
+
+            border-radius: 20px;
+
+            background: rgba(185,181,255,0.15);
+            color: #c9c6ff;
+        }
+
+        .question-card h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            line-height: 1.35;
+        }
+
+        .question-card p {
+            color: #b6bad5;
+            line-height: 1.65;
+            margin-bottom: 22px;
+        }
+
+        .read {
+            display: inline-block;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            color: #c8c5ff;
+
+            transition: 0.2s;
+        }
+
+        .read:hover {
+            color: #ffffff;
+            letter-spacing: 0.3px;
+        }
+
+        /* COMING SOON */
+
+        .coming-soon {
+            max-width: 1100px;
+            margin: 0 auto 70px;
+            padding: 30px;
+
+            text-align: center;
+
+            border-radius: 20px;
+
+            background: rgba(255,255,255,0.05);
+            border: 1px dashed rgba(255,255,255,0.15);
+        }
+
+        .coming-soon h2 {
+            margin-bottom: 8px;
+        }
+
+        .coming-soon p {
+            color: #aeb2ce;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+
+            color: #858ba9;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            .hero {
+                padding: 55px 20px 40px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .questions {
+                grid-template-columns: 1fr;
+                padding: 15px 18px 50px;
+            }
+
+            .question-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <a href="index.html" class="logo">✨ Curiosity Hub</a>
+
+        <a href="index.html" class="home">← Home</a>
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-icon">🌌</div>
+
+        <h1>Explore <span>Space</span></h1>
+
+        <p>
+            From mysterious black holes to distant galaxies, space is filled
+            with questions that challenge our understanding of the universe.
+            Let's explore some of them.
+        </p>
+
+    </section>
+
+
+    <!-- QUESTIONS -->
+
+    <section class="questions">
+
+        <!-- QUESTION 1 -->
+
+        <div class="question-card">
+
+            <span class="number">SPACE • 01</span>
+
+            <h2>🌙 Why Doesn't the Moon Fall?</h2>
+
+            <p>
+                Earth's gravity is constantly pulling the Moon toward it.
+                So why doesn't the Moon crash into Earth?
+            </p>
+
+            <a href="moon-fall.html" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 2 -->
+
+        <div class="question-card">
+
+            <span class="number">SPACE • 02</span>
+
+            <h2>⭐ Why Do Stars Twinkle?</h2>
+
+            <p>
+                Stars seem to sparkle and change brightness in the night sky.
+                Discover what Earth's atmosphere has to do with it.
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 3 -->
+
+        <div class="question-card">
+
+            <span class="number">SPACE • 03</span>
+
+            <h2>🕳️ What Happens Inside a Black Hole?</h2>
+
+            <p>
+                Black holes are some of the most mysterious objects in the
+                universe. But what actually happens near one?
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 4 -->
+
+        <div class="question-card">
+
+            <span class="number">SPACE • 04</span>
+
+            <h2>☀️ Why Is the Sun So Hot?</h2>
+
+            <p>
+                The Sun has been shining for billions of years. Where does
+                all that enormous energy come from?
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 5 -->
+
+        <div class="question-card">
+
+            <span class="number">SPACE • 05</span>
+
+            <h2>🚀 Why Don't We Feel Earth Moving?</h2>
+
+            <p>
+                Earth rotates and travels around the Sun at incredible speeds.
+                So why does everything around us seem completely still?
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 6 -->
+
+        <div class="question-card">
+
+            <span class="number">SPACE • 06</span>
+
+            <h2>🌍 What Would Happen Without the Moon?</h2>
+
+            <p>
+                The Moon does more than brighten the night sky. Explore how
+                it affects Earth and our oceans.
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- COMING SOON -->
+
+    <section class="coming-soon">
+
+        <h2>✨ The universe has more mysteries</h2>
+
+        <p>
+            More fascinating space questions will be explored soon.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Curiosity Hub • Stay curious. Keep looking up.
+    </footer>
+
+</body>
+</html>
