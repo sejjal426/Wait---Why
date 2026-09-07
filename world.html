@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>World | Curiosity Hub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            color: #26352d;
+
+            background:
+                radial-gradient(circle at 12% 18%, rgba(190, 235, 205, 0.6), transparent 30%),
+                radial-gradient(circle at 88% 78%, rgba(245, 220, 170, 0.5), transparent 30%),
+                linear-gradient(135deg, #f5fbf5, #eef8f1, #fff9ed);
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 7%;
+
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(255,255,255,0.9);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #39734b;
+            text-decoration: none;
+        }
+
+        .home {
+            text-decoration: none;
+            color: #39734b;
+            font-weight: bold;
+        }
+
+        .home:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+
+        .hero {
+            text-align: center;
+            padding: 75px 20px 55px;
+        }
+
+        .hero-icon {
+            font-size: 64px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-size: 54px;
+            margin-bottom: 18px;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 span {
+            color: #39734b;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+
+            font-size: 19px;
+            line-height: 1.7;
+
+            color: #66756b;
+        }
+
+        /* QUESTION GRID */
+
+        .questions {
+            max-width: 1100px;
+            margin: 0 auto;
+
+            padding: 20px 25px 70px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .question-card {
+            padding: 30px;
+
+            background: rgba(255, 255, 255, 0.78);
+            backdrop-filter: blur(12px);
+
+            border: 1px solid rgba(255,255,255,0.95);
+            border-radius: 22px;
+
+            box-shadow: 0 12px 35px rgba(60, 100, 70, 0.09);
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .question-card:hover {
+            transform: translateY(-7px);
+
+            box-shadow: 0 20px 45px rgba(60, 100, 70, 0.16);
+        }
+
+        .number {
+            display: inline-block;
+
+            font-size: 13px;
+            font-weight: bold;
+
+            padding: 6px 12px;
+            margin-bottom: 18px;
+
+            border-radius: 20px;
+
+            background: #e5f4e8;
+            color: #39734b;
+        }
+
+        .question-card h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            line-height: 1.35;
+        }
+
+        .question-card p {
+            color: #68776d;
+            line-height: 1.65;
+            margin-bottom: 22px;
+        }
+
+        .read {
+            display: inline-block;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            color: #39734b;
+
+            transition: 0.2s;
+        }
+
+        .read:hover {
+            letter-spacing: 0.3px;
+        }
+
+        /* COMING SOON */
+
+        .coming-soon {
+            max-width: 1100px;
+            margin: 0 auto 70px;
+            padding: 30px;
+
+            text-align: center;
+
+            border-radius: 20px;
+
+            background: rgba(255,255,255,0.6);
+            border: 1px dashed rgba(70,120,80,0.25);
+        }
+
+        .coming-soon h2 {
+            margin-bottom: 8px;
+        }
+
+        .coming-soon p {
+            color: #738077;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+
+            color: #7c887f;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            .hero {
+                padding: 55px 20px 40px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .questions {
+                grid-template-columns: 1fr;
+                padding: 15px 18px 50px;
+            }
+
+            .question-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <a href="index.html" class="logo">✨ Curiosity Hub</a>
+
+        <a href="index.html" class="home">← Home</a>
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-icon">🌍</div>
+
+        <h1>Explore the <span>World</span></h1>
+
+        <p>
+            Our planet is full of fascinating places, cultures, traditions
+            and mysteries. Explore questions that help us understand the
+            incredible world we live in.
+        </p>
+
+    </section>
+
+
+    <!-- QUESTIONS -->
+
+    <section class="questions">
+
+        <!-- QUESTION 1 -->
+
+        <div class="question-card">
+
+            <span class="number">WORLD • 01</span>
+
+            <h2>🌍 Why Are There Different Time Zones?</h2>
+
+            <p>
+                When it is morning in one part of Earth, another part may
+                already be enjoying the night. Discover why.
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 2 -->
+
+        <div class="question-card">
+
+            <span class="number">WORLD • 02</span>
+
+            <h2>🗺️ Why Are Countries Different Shapes?</h2>
+
+            <p>
+                Borders on a map can look completely random. Learn how
+                geography, history and politics shaped them.
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 3 -->
+
+        <div class="question-card">
+
+            <span class="number">🌊 Why Don't Oceans Mix Completely?</span>
+
+            <p>
+                Different bodies of seawater can have different temperatures,
+                salinities and densities. Explore what happens where they meet.
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 4 -->
+
+        <div class="question-card">
+
+            <span class="number">WORLD • 04</span>
+
+            <h2>🏔️ Why Are Some Places So Cold?</h2>
+
+            <p>
+                Latitude, altitude, winds and geography can all affect
+                temperatures. Why are some regions much colder than others?
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 5 -->
+
+        <div class="question-card">
+
+            <span class="number">WORLD • 05</span>
+
+            <h2>🏜️ How Do Deserts Form?</h2>
+
+            <p>
+                Deserts aren't simply places with lots of sand. Discover the
+                different processes that can create extremely dry environments.
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION 6 -->
+
+        <div class="question-card">
+
+            <span class="number">🌋 WORLD • 06</span>
+
+            <h2>🌋 Why Are Volcanoes Found in Certain Places?</h2>
+
+            <p>
+                Volcanoes are not distributed randomly across Earth. Their
+                locations are closely connected to the movement of tectonic
+                plates.
+            </p>
+
+            <a href="#" class="read">
+                Read article →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- COMING SOON -->
+
+    <section class="coming-soon">
+
+        <h2>✨ There's always more to discover</h2>
+
+        <p>
+            More fascinating questions about our world will be explored soon.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Curiosity Hub • Stay curious. Explore the world.
+    </footer>
+
+</body>
+</html>
