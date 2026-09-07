@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History | Curiosity Hub</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            color: #3d2b1f;
+            background:
+                radial-gradient(circle at 15% 20%, rgba(255,255,255,0.7), transparent 25%),
+                radial-gradient(circle at 85% 80%, rgba(181,137,76,0.18), transparent 30%),
+                linear-gradient(135deg, #f8edcf, #ead5a8, #f5e5bf);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: rgba(255, 248, 228, 0.72);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(110, 75, 35, 0.15);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #5a3b22;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #5a3b22;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(122, 82, 39, 0.12);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px 45px;
+        }
+
+        .hero-icon {
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 12px;
+            color: #56371f;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.7;
+            color: #6b4c32;
+        }
+
+        .timeline {
+            text-align: center;
+            margin: 5px auto 35px;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            color: #8b6337;
+            font-weight: bold;
+        }
+
+        .questions {
+            width: 88%;
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            padding-bottom: 60px;
+        }
+
+        .card {
+            position: relative;
+            padding: 30px;
+            border-radius: 22px;
+            background: rgba(255, 250, 235, 0.72);
+            border: 1px solid rgba(110, 75, 35, 0.18);
+            box-shadow: 0 10px 30px rgba(92, 61, 29, 0.12);
+            backdrop-filter: blur(10px);
+            transition: 0.3s ease;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: "✦";
+            position: absolute;
+            right: 20px;
+            top: 12px;
+            font-size: 1.3rem;
+            color: rgba(139, 99, 55, 0.35);
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 16px 35px rgba(92, 61, 29, 0.18);
+        }
+
+        .number {
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            color: #9a7040;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .card h2 {
+            font-size: 1.35rem;
+            margin-bottom: 12px;
+            color: #55361f;
+        }
+
+        .card p {
+            color: #705238;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .read {
+            display: inline-block;
+            text-decoration: none;
+            color: #76502c;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .read:hover {
+            text-decoration: underline;
+        }
+
+        .bottom {
+            text-align: center;
+            width: 88%;
+            max-width: 900px;
+            margin: 0 auto 60px;
+            padding: 35px;
+            border-radius: 25px;
+            background: rgba(255, 249, 229, 0.65);
+            border: 1px solid rgba(110, 75, 35, 0.15);
+        }
+
+        .bottom h2 {
+            color: #56371f;
+            margin-bottom: 10px;
+        }
+
+        .bottom p {
+            color: #705238;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: rgba(76, 50, 29, 0.08);
+            color: #765638;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 700px) {
+            .questions {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+
+            nav {
+                padding: 18px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">✨ Curiosity Hub</div>
+        <a href="index.html">← Home</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-icon">🏛️</div>
+
+        <h1>Explore History</h1>
+
+        <p>
+            Travel through time and discover the fascinating stories,
+            inventions, civilizations and mysteries that shaped our world.
+        </p>
+    </section>
+
+    <div class="timeline">
+        PAST • PRESENT • DISCOVERY
+    </div>
+
+    <section class="questions">
+
+        <div class="card">
+            <span class="number">HISTORY • 01</span>
+            <h2>🏛️ Why Did Ancient Civilizations Build Pyramids?</h2>
+            <p>
+                Discover why massive pyramids were built and what they tell us
+                about the people who created them.
+            </p>
+            <a href="#" class="read">Read article →</a>
+        </div>
+
+        <div class="card">
+            <span class="number">HISTORY • 02</span>
+            <h2>📜 How Did People Communicate Before Phones?</h2>
+            <p>
+                From messengers and letters to signals and ancient writing,
+                discover how humans shared information across distances.
+            </p>
+            <a href="#" class="read">Read article →</a>
+        </div>
+
+        <div class="card">
+            <span class="number">HISTORY • 03</span>
+            <h2>🌊 Why Did Ancient Cities Grow Near Rivers?</h2>
+            <p>
+                Learn how rivers provided water, food, transportation and
+                fertile land for some of the world's earliest civilizations.
+            </p>
+            <a href="#" class="read">Read article →</a>
+        </div>
+
+        <div class="card">
+            <span class="number">HISTORY • 04</span>
+            <h2>🖨️ How Did the Printing Press Change the World?</h2>
+            <p>
+                Explore how an invention transformed the spread of books,
+                knowledge and ideas.
+            </p>
+            <a href="#" class="read">Read article →</a>
+        </div>
+
+        <div class="card">
+            <span class="number">HISTORY • 05</span>
+            <h2>🏰 Why Did Castles Have Moats?</h2>
+            <p>
+                Find out how moats helped protect castles and why they became
+                an important part of medieval fortifications.
+            </p>
+            <a href="#" class="read">Read article →</a>
+        </div>
+
+        <div class="card">
+            <span class="number">HISTORY • 06</span>
+            <h2>🔎 How Do Historians Know What Happened in the Past?</h2>
+            <p>
+                Discover how historians use objects, documents, buildings,
+                inscriptions and other evidence to reconstruct history.
+            </p>
+            <a href="#" class="read">Read article →</a>
+        </div>
+
+    </section>
+
+    <section class="bottom">
+        <h2>🕰️ The Past Still Has Questions</h2>
+        <p>
+            Every ancient object, forgotten city and old document can tell us
+            something about the people who came before us.
+        </p>
+    </section>
+
+    <footer>
+        © 2026 Curiosity Hub • Stay Curious ✨
+    </footer>
+
+</body>
+</html>
