@@ -7,7 +7,8 @@
 
     <title>Wait, Why? | Curious Questions, Simple Answers</title>
 
-<meta name="description" content="Wait, Why? answers fascinating questions about science, space, psychology, technology, history and the world in simple, interesting ways.">
+    <meta name="description"
+        content="Wait, Why? answers fascinating questions about science, space, psychology, technology, history and the world in simple, interesting ways.">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -24,13 +25,14 @@
         <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#explore">Explore</a>
+            <a href="#featured">Questions</a>
             <a href="#about">About</a>
         </div>
 
     </nav>
 
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero" id="home">
 
         <p class="small-heading">WELCOME TO WAIT, WHY?</p>
@@ -41,11 +43,13 @@
         </h1>
 
         <p class="hero-text">
-            Discover the science, history, technology and mysteries
-            behind the world around us — explained simply.
+            Ever wondered why the sky is blue, why the Moon doesn't fall,
+            or why a song gets stuck in your head?
+            You're in the right place.
         </p>
 
         <div class="search-box">
+
             <input
                 type="text"
                 id="searchInput"
@@ -55,67 +59,121 @@
             <button onclick="searchArticles()">
                 Search
             </button>
+
         </div>
+
+        <a href="#explore" class="hero-button">
+            Start exploring ↓
+        </a>
 
     </section>
 
 
-    <!-- Categories -->
+    <!-- Explore -->
     <section class="section" id="explore">
 
-        <h2>Explore Knowledge</h2>
+        <p class="section-label">EXPLORE</p>
+
+        <h2>Where does your curiosity lead?</h2>
 
         <p class="section-intro">
-            Choose a topic and start exploring.
+            Pick a topic. Ask a question. Discover something you didn't know.
         </p>
 
         <div class="categories">
 
             <a href="science.html" class="category-card">
-    <span>🔬</span>
-    <h3>Science</h3>
-    <p>Discover the science behind everyday things.</p>
-</a>
+                <span>🔬</span>
+                <h3>Science</h3>
+                <p>Discover the science behind everyday things.</p>
+            </a>
 
             <a href="space.html" class="category-card">
-    <span>🌌</span>
-    <h3>Space</h3>
-    <p>Explore the mysteries of the universe.</p>
-</a>
+                <span>🌌</span>
+                <h3>Space</h3>
+                <p>Explore the mysteries of the universe.</p>
+            </a>
 
             <a href="psychology.html" class="category-card">
-    <span>🧠</span>
-    <h3>Psychology</h3>
-    <p>Understand the fascinating world of the human mind.</p>
-</a>
+                <span>🧠</span>
+                <h3>Psychology</h3>
+                <p>Understand the fascinating world of the human mind.</p>
+            </a>
 
             <a href="technology.html" class="category-card">
-    <span>💻</span>
-    <h3>Technology</h3>
-    <p>Discover the technology shaping our world.</p>
-</a>
+                <span>💻</span>
+                <h3>Technology</h3>
+                <p>Discover the technology shaping our world.</p>
+            </a>
 
             <a href="world.html" class="category-card">
-    <span>🌍</span>
-    <h3>World</h3>
-    <p>Explore the fascinating world around us.</p>
-</a>
+                <span>🌍</span>
+                <h3>World</h3>
+                <p>Explore fascinating places, people and ideas.</p>
+            </a>
 
             <a href="history.html" class="category-card">
-    <span>🏛️</span>
-    <h3>History</h3>
-    <p>Travel through the fascinating stories of the past.</p>
-</a>
+                <span>🏛️</span>
+                <h3>History</h3>
+                <p>Travel through the fascinating stories of the past.</p>
+            </a>
 
         </div>
 
     </section>
 
 
-    <!-- Featured Articles -->
-    <section class="section">
+    <!-- How it works -->
+    <section class="how-section">
 
-        <h2>🔥 Featured Questions</h2>
+        <p class="section-label">THE IDEA</p>
+
+        <h2>It starts with "Wait... why?"</h2>
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="step-number">01</div>
+                <h3>Wonder</h3>
+                <p>
+                    Something catches your attention and you start asking
+                    questions.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">02</div>
+                <h3>Question</h3>
+                <p>
+                    Instead of simply accepting it, you stop and ask:
+                    "Wait, why?"
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">03</div>
+                <h3>Discover</h3>
+                <p>
+                    Explore the explanation and leave with something new
+                    to think about.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Featured Questions -->
+    <section class="section" id="featured">
+
+        <p class="section-label">FEATURED</p>
+
+        <h2>Questions worth asking</h2>
+
+        <p class="section-intro">
+            A few questions to get your curiosity started.
+        </p>
 
         <div class="articles">
 
@@ -135,7 +193,9 @@
                         makes the sky appear blue.
                     </p>
 
-                    <a href="article-sky-blue.html">Read article →</a>
+                    <a href="article-sky-blue.html">
+                        Read article →
+                    </a>
 
                 </div>
 
@@ -157,7 +217,9 @@
                         so why doesn't it crash into us?
                     </p>
 
-                    <a href="moon-fall.html">Read article →</a>
+                    <a href="moon-fall.html">
+                        Read article →
+                    </a>
 
                 </div>
 
@@ -180,7 +242,9 @@
                         is happening.
                     </p>
 
-                    <a href="songs.html">Read article →</a>
+                    <a href="songs.html">
+                        Read article →
+                    </a>
 
                 </div>
 
@@ -194,21 +258,22 @@
     <!-- About -->
     <section class="about" id="about">
 
-        <h2>Why does WAIT, WHY? exist?</h2>
+        <p class="section-label light-label">ABOUT WAIT, WHY?</p>
+
+        <h2>Because questions make learning interesting.</h2>
 
         <p>
-            The world is full of fascinating questions.
-            WAIT, WHY? is a place where curiosity meets knowledge.
-            We take interesting questions and explain the answers
-            in a simple and enjoyable way.
+            The world is full of things we see, hear and experience every
+            day without really knowing why they happen.
         </p>
 
         <p>
-            Because learning doesn't always have to start with
-            "What is it?" Sometimes it starts with:
+            Wait, Why? turns those little moments of curiosity into
+            simple explanations about science, space, psychology,
+            technology, history and the world around us.
         </p>
 
-        <h3>Wait... why?</h3>
+        <h3>So... what are you wondering about?</h3>
 
     </section>
 
@@ -228,5 +293,23 @@
     <script src="script.js"></script>
 
 </body>
-<!-- Wait, Why? website -->
+
 </html>
+     
+
+    
+
+
+   
+   
+
+          
+
+
+
+
+
+
+                 
+
+      
