@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sejjal426.github.io/Wait---Why/sitemap.xml
