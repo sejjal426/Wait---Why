@@ -317,3 +317,124 @@ footer p {
     }
 
 }
+/* Homepage improvements */
+
+.section-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 24px;
+    border-radius: 30px;
+    background: #171927;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    transform: translateY(-3px);
+}
+
+.category-card {
+    text-decoration: none;
+    color: #171927;
+}
+
+.category-card:hover {
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.article-card {
+    transition: 0.3s;
+}
+
+.article-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+}
+
+.article-content a:hover {
+    text-decoration: underline;
+}
+
+
+/* How it works */
+
+.how-section {
+    padding: 90px 25px;
+    background: white;
+    text-align: center;
+}
+
+.how-section h2 {
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+.steps {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.step {
+    padding: 30px;
+    border: 1px solid #eee;
+    border-radius: 18px;
+    background: #f7f8fc;
+}
+
+.step-number {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #666;
+}
+
+
+/* Light label inside dark section */
+
+.light-label {
+    color: #aaa;
+}
+
+
+/* Better mobile layout */
+
+@media (max-width: 700px) {
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .how-section h2 {
+        font-size: 30px;
+    }
+
+}
