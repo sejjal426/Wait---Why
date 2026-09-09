@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Why Do We Get Static Shocks? | Wait, Why?</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            color: #172033;
+
+            background:
+                radial-gradient(circle at 10% 20%, rgba(180, 220, 255, 0.55), transparent 30%),
+                radial-gradient(circle at 90% 80%, rgba(210, 190, 255, 0.5), transparent 30%),
+                linear-gradient(135deg, #f7fbff, #eef4ff, #f8f4ff);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 7%;
+
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #283593;
+            text-decoration: none;
+        }
+
+        .home {
+            text-decoration: none;
+            color: #3949ab;
+            font-weight: bold;
+        }
+
+        .home:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px 45px;
+        }
+
+        .hero-icon {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 18px;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 span {
+            color: #3949ab;
+        }
+
+        .hero p {
+            max-width: 680px;
+            margin: auto;
+            font-size: 19px;
+            line-height: 1.7;
+            color: #596579;
+        }
+
+        .article {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px 25px 70px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.82);
+            backdrop-filter: blur(10px);
+
+            padding: 30px;
+            margin-bottom: 25px;
+
+            border-radius: 22px;
+            border: 1px solid rgba(255, 255, 255, 0.9);
+
+            box-shadow: 0 12px 35px rgba(50, 70, 120, 0.09);
+        }
+
+        .section h2 {
+            font-size: 28px;
+            color: #283593;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            color: #596579;
+            line-height: 1.75;
+            margin-bottom: 15px;
+            font-size: 17px;
+        }
+
+        .highlight {
+            background: #e8eaff;
+            border-left: 5px solid #3949ab;
+
+            padding: 20px;
+            margin: 20px 0;
+
+            border-radius: 10px;
+            color: #303f9f;
+        }
+
+        .steps {
+            display: grid;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .step {
+            background: #f5f6ff;
+            padding: 20px;
+            border-radius: 14px;
+        }
+
+        .step h3 {
+            color: #3949ab;
+            margin-bottom: 8px;
+        }
+
+        .facts {
+            background: #fff8e1;
+            border-left: 5px solid #ffb300;
+
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .facts p {
+            color: #5d5360;
+            margin-bottom: 10px;
+        }
+
+        .final-box {
+            text-align: center;
+
+            background: linear-gradient(135deg, #e3f2fd, #ede7f6);
+
+            padding: 35px;
+            border-radius: 22px;
+
+            box-shadow: 0 12px 35px rgba(50, 70, 120, 0.08);
+        }
+
+        .final-box h2 {
+            color: #283593;
+            margin-bottom: 15px;
+        }
+
+        .final-box p {
+            color: #596579;
+            line-height: 1.7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #697386;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            .hero {
+                padding: 50px 20px 35px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .article {
+                padding: 15px 18px 50px;
+            }
+
+            .section {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="index.html" class="logo">
+            ✨ Curiosity Hub
+        </a>
+
+        <a href="science.html" class="home">
+            ← Science
+        </a>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-icon">⚡</div>
+
+        <h1>Why Do We Get <span>Static Shocks?</span></h1>
+
+        <p>
+            That tiny zap you sometimes feel when touching a doorknob
+            isn't random. It is electricity making a very quick journey.
+        </p>
+
+    </section>
+
+
+    <!-- ARTICLE -->
+
+    <main class="article">
+
+
+        <!-- INTRODUCTION -->
+
+        <section class="section">
+
+            <h2>⚡ The Big Question</h2>
+
+            <p>
+                Have you ever walked across a carpet, touched a metal object,
+                and suddenly felt a tiny shock?
+            </p>
+
+            <p>
+                You might even hear a small crack or see a tiny spark.
+                But where did that electricity come from?
+            </p>
+
+            <div class="highlight">
+
+                <strong>Wait, Why?</strong><br>
+
+                Because your body can build up an excess of electric charge.
+                When you touch a suitable object, that charge can suddenly
+                move from your body, creating a small static shock.
+
+            </div>
+
+        </section>
+
+
+        <!-- WHAT IS STATIC ELECTRICITY -->
+
+        <section class="section">
+
+            <h2>🔋 What Is Static Electricity?</h2>
+
+            <p>
+                Everything around us is made of atoms. Atoms contain
+                positively charged protons and negatively charged electrons.
+            </p>
+
+            <p>
+                Normally, an object has roughly balanced positive and negative
+                charges. But sometimes electrons move from one material to
+                another.
+            </p>
+
+            <p>
+                When extra electric charge builds up on an object, we call
+                it <strong>static electricity</strong>.
+            </p>
+
+        </section>
+
+
+        <!-- HOW IT HAPPENS -->
+
+        <section class="section">
+
+            <h2>👟 How Does a Static Charge Build Up?</h2>
+
+            <p>
+                One common way is through friction. When two different
+                materials rub against each other, some electrons can move
+                from one material to the other.
+            </p>
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <h3>1️⃣ Friction</h3>
+
+                    <p>
+                        You walk across a carpet or rub certain materials
+                        together.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <h3>2️⃣ Electrons Move</h3>
+
+                    <p>
+                        Some electrons transfer from one material to another.
+                        This leaves one object more negatively charged and
+                        the other relatively more positively charged.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <h3>3️⃣ Charge Builds Up</h3>
+
+                    <p>
+                        If the charge does not have an easy path to escape,
+                        it can remain on your body for a while.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <h3>4️⃣ The Shock!</h3>
+
+                    <p>
+                        When you touch a conducting object, the accumulated
+                        charge can move very quickly. That sudden movement
+                        produces the little shock you feel.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WHY METAL -->
+
+        <section class="section">
+
+            <h2>🚪 Why Do We Often Get Shocked by Metal?</h2>
+
+            <p>
+                Metals are good conductors of electricity. Their electrons
+                can move relatively easily through the material.
+            </p>
+
+            <p>
+                So when your body has built up static charge and you touch
+                a metal object, the charge can move quickly.
+            </p>
+
+            <p>
+                That rapid movement of charge is what produces the familiar
+                tiny static shock.
+            </p>
+
+        </section>
+
+
+        <!-- WHY MORE COMMON IN WINTER -->
+
+        <section class="section">
+
+            <h2>❄️ Why Are Static Shocks More Common in Dry Weather?</h2>
+
+            <p>
+                Static shocks are often more noticeable when the air is dry.
+            </p>
+
+            <p>
+                Moist air provides more opportunities for electric charges
+                to gradually escape from surfaces.
+            </p>
+
+            <p>
+                In dry conditions, charge can remain on surfaces and on your
+                body more easily, allowing a larger charge to build up before
+                it suddenly discharges.
+            </p>
+
+        </section>
+
+
+        <!-- SPARK -->
+
+        <section class="section">
+
+            <h2>✨ Where Does the Tiny Spark Come From?</h2>
+
+            <p>
+                Sometimes the voltage difference becomes large enough for
+                the charge to move through the air.
+            </p>
+
+            <p>
+                This can produce a tiny electrical discharge that may appear
+                as a small spark and can sometimes make a snapping sound.
+            </p>
+
+            <div class="highlight">
+
+                The spark is not a new source of electricity.
+                It is simply the stored electric charge discharging rapidly.
+
+            </div>
+
+        </section>
+
+
+        <!-- QUICK FACTS -->
+
+        <section class="section">
+
+            <h2>🧠 Quick “Wait, Why?” Facts</h2>
+
+            <div class="facts">
+
+                <p>⚡ Static electricity involves an imbalance of electric charge.</p>
+
+                <p>👟 Friction can cause electrons to transfer between materials.</p>
+
+                <p>🚪 Metals are good conductors, so charge can move through them easily.</p>
+
+                <p>❄️ Dry air can make static charge easier to build up.</p>
+
+                <p>✨ A tiny spark can occur when charge moves through the air.</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONCLUSION -->
+
+        <section class="final-box">
+
+            <h2>🤔 So... Wait, Why?</h2>
+
+            <p>
+                A static shock happens when electric charge builds up and
+                then suddenly moves to another object.
+            </p>
+
+            <p style="margin-top:15px;">
+                So that little zap isn't magic —
+                <strong>it's electricity finding a path to move!</strong> ⚡
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 Curiosity Hub • Stay curious. Keep asking why.
+
+    </footer>
+
+
+</body>
+</html>
