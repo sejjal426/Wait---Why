@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Why Does Fire Need Oxygen? | Wait, Why?</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            color: #172033;
+
+            background:
+                radial-gradient(circle at 10% 20%, rgba(255, 210, 170, 0.55), transparent 30%),
+                radial-gradient(circle at 90% 80%, rgba(255, 190, 150, 0.45), transparent 30%),
+                linear-gradient(135deg, #fffaf5, #fff3ea, #f8f4ff);
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 7%;
+
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #d84315;
+            text-decoration: none;
+        }
+
+        .home {
+            text-decoration: none;
+            color: #e64a19;
+            font-weight: bold;
+        }
+
+        .home:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px 45px;
+        }
+
+        .hero-icon {
+            font-size: 65px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 18px;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 span {
+            color: #e64a19;
+        }
+
+        .hero p {
+            max-width: 680px;
+            margin: auto;
+
+            font-size: 19px;
+            line-height: 1.7;
+            color: #596579;
+        }
+
+        /* ARTICLE */
+
+        .article {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px 25px 70px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.82);
+            backdrop-filter: blur(10px);
+
+            padding: 30px;
+            margin-bottom: 25px;
+
+            border-radius: 22px;
+
+            border: 1px solid rgba(255, 255, 255, 0.9);
+
+            box-shadow: 0 12px 35px rgba(120, 70, 40, 0.09);
+        }
+
+        .section h2 {
+            font-size: 28px;
+            color: #d84315;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            color: #596579;
+            line-height: 1.75;
+            margin-bottom: 15px;
+            font-size: 17px;
+        }
+
+        /* HIGHLIGHT */
+
+        .highlight {
+            background: #fff3e0;
+
+            border-left: 5px solid #f4511e;
+
+            padding: 20px;
+            margin: 20px 0;
+
+            border-radius: 10px;
+
+            color: #7b3f00;
+        }
+
+        /* FIRE TRIANGLE */
+
+        .triangle-box {
+            background: #fff8f2;
+
+            padding: 25px;
+
+            border-radius: 15px;
+
+            margin-top: 20px;
+
+            text-align: center;
+        }
+
+        .triangle-item {
+            display: inline-block;
+
+            margin: 10px;
+            padding: 15px 20px;
+
+            background: #fff;
+
+            border-radius: 12px;
+
+            box-shadow: 0 5px 15px rgba(100, 60, 40, 0.08);
+
+            font-weight: bold;
+        }
+
+        /* STEPS */
+
+        .steps {
+            display: grid;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .step {
+            background: #fff7f0;
+
+            padding: 20px;
+
+            border-radius: 14px;
+        }
+
+        .step h3 {
+            color: #e64a19;
+            margin-bottom: 8px;
+        }
+
+        /* FACTS */
+
+        .facts {
+            background: #fff8e1;
+
+            border-left: 5px solid #ffb300;
+
+            padding: 20px;
+
+            border-radius: 10px;
+        }
+
+        .facts p {
+            color: #5d5360;
+            margin-bottom: 10px;
+        }
+
+        /* CONCLUSION */
+
+        .final-box {
+            text-align: center;
+
+            background: linear-gradient(135deg, #fff3e0, #fbe9e7);
+
+            padding: 35px;
+
+            border-radius: 22px;
+
+            box-shadow: 0 12px 35px rgba(120, 70, 40, 0.08);
+        }
+
+        .final-box h2 {
+            color: #d84315;
+            margin-bottom: 15px;
+        }
+
+        .final-box p {
+            color: #596579;
+            line-height: 1.7;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+
+            padding: 30px 20px;
+
+            color: #697386;
+
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            .hero {
+                padding: 50px 20px 35px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .article {
+                padding: 15px 18px 50px;
+            }
+
+            .section {
+                padding: 24px;
+            }
+
+            .triangle-item {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="index.html" class="logo">
+            ✨ Curiosity Hub
+        </a>
+
+        <a href="science.html" class="home">
+            ← Science
+        </a>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-icon">🔥</div>
+
+        <h1>Why Does Fire Need <span>Oxygen?</span></h1>
+
+        <p>
+            Fire seems simple, but it depends on a fascinating chemical
+            reaction between fuel and oxygen.
+        </p>
+
+    </section>
+
+
+    <!-- ARTICLE -->
+
+    <main class="article">
+
+
+        <!-- BIG QUESTION -->
+
+        <section class="section">
+
+            <h2>🔥 The Big Question</h2>
+
+            <p>
+                Have you ever wondered why a flame goes out when you cover it?
+            </p>
+
+            <p>
+                The answer has to do with one of the most important parts
+                of combustion: oxygen.
+            </p>
+
+            <div class="highlight">
+
+                <strong>Wait, Why?</strong><br>
+
+                Fire needs oxygen because combustion is a chemical reaction
+                in which a fuel reacts with an oxidising substance, usually
+                oxygen in the air, releasing energy as heat and often light.
+
+            </div>
+
+        </section>
+
+
+        <!-- WHAT IS FIRE -->
+
+        <section class="section">
+
+            <h2>🔥 Is Fire Actually a Thing?</h2>
+
+            <p>
+                Fire is not a solid, liquid, or gas like the materials
+                around us. It is the visible result of a rapid chemical
+                reaction called <strong>combustion</strong>.
+            </p>
+
+            <p>
+                During combustion, a fuel reacts with oxygen and releases
+                energy. Some of that energy appears as heat and light.
+            </p>
+
+            <p>
+                The glowing gases and tiny hot particles produced during
+                some fires are responsible for much of what we see as a
+                flame.
+            </p>
+
+        </section>
+
+
+        <!-- FIRE TRIANGLE -->
+
+        <section class="section">
+
+            <h2>🔺 The Fire Triangle</h2>
+
+            <p>
+                A fire generally needs three important things to keep
+                burning. These are often represented by the
+                <strong>fire triangle</strong>.
+            </p>
+
+            <div class="triangle-box">
+
+                <div class="triangle-item">
+                    🔥 Heat
+                </div>
+
+                <div class="triangle-item">
+                    🪵 Fuel
+                </div>
+
+                <div class="triangle-item">
+                    💨 Oxygen
+                </div>
+
+            </div>
+
+            <p style="margin-top:20px;">
+                Remove one of these essential conditions and the combustion
+                process can stop.
+            </p>
+
+        </section>
+
+
+        <!-- ROLE OF OXYGEN -->
+
+        <section class="section">
+
+            <h2>💨 What Does Oxygen Actually Do?</h2>
+
+            <p>
+                Oxygen supports many combustion reactions. When a fuel
+                reacts with oxygen, chemical bonds are rearranged and
+                energy is released.
+            </p>
+
+            <p>
+                The oxygen itself is not the fuel. Instead, it participates
+                in the reaction that allows the fuel to burn.
+            </p>
+
+            <div class="highlight">
+
+                Think of oxygen as an essential partner in many
+                combustion reactions — without it, ordinary flames
+                cannot keep burning.
+
+            </div>
+
+        </section>
+
+
+        <!-- COVERING FLAME -->
+
+        <section class="section">
+
+            <h2>🥛 Why Does Covering a Flame Put It Out?</h2>
+
+            <p>
+                When you cover a small flame, you restrict the supply of
+                fresh air reaching it.
+            </p>
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <h3>1️⃣ A flame is burning</h3>
+
+                    <p>
+                        Fuel is reacting with oxygen and releasing energy.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <h3>2️⃣ The flame is covered</h3>
+
+                    <p>
+                        The supply of fresh air is restricted.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <h3>3️⃣ Available oxygen decreases</h3>
+
+                    <p>
+                        The combustion reaction becomes harder to sustain.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <h3>4️⃣ The flame goes out</h3>
+
+                    <p>
+                        When the conditions needed for continued combustion
+                        are no longer maintained, the flame stops burning.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- IS OXYGEN THE ONLY GAS -->
+
+        <section class="section">
+
+            <h2>🌬️ Is Oxygen the Only Gas Involved?</h2>
+
+            <p>
+                No. Air contains several gases, with nitrogen making up
+                most of it and oxygen making up about one-fifth.
+            </p>
+
+            <p>
+                Oxygen is especially important for ordinary combustion,
+                while most of the nitrogen in air does not directly support
+                the burning process.
+            </p>
+
+            <p>
+                This is why reducing the amount of oxygen available can
+                make combustion difficult to sustain.
+            </p>
+
+        </section>
+
+
+        <!-- HEAT -->
+
+        <section class="section">
+
+            <h2>🌡️ Why Does Fire Produce Heat?</h2>
+
+            <p>
+                Combustion changes the chemical arrangement of atoms in
+                the fuel and oxygen. The products formed are at a lower
+                chemical energy level than the starting materials in many
+                common combustion reactions.
+            </p>
+
+            <p>
+                The difference in energy is released, mainly as heat and
+                sometimes as visible light.
+            </p>
+
+        </section>
+
+
+        <!-- QUICK FACTS -->
+
+        <section class="section">
+
+            <h2>🧠 Quick “Wait, Why?” Facts</h2>
+
+            <div class="facts">
+
+                <p>
+                    🔥 Fire is the visible result of a rapid chemical
+                    reaction called combustion.
+                </p>
+
+                <p>
+                    💨 Oxygen supports ordinary combustion reactions.
+                </p>
+
+                <p>
+                    🪵 Fuel provides the material that reacts during burning.
+                </p>
+
+                <p>
+                    🌡️ Heat helps start and maintain combustion.
+                </p>
+
+                <p>
+                    🥛 Restricting the supply of oxygen can cause a flame
+                    to go out.
+                </p>
+
+                <p>
+                    🌬️ Oxygen makes up about 21% of Earth's atmosphere.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONCLUSION -->
+
+        <section class="final-box">
+
+            <h2>🤔 So... Wait, Why?</h2>
+
+            <p>
+                Fire needs oxygen because oxygen participates in the
+                combustion reaction that allows many fuels to release
+                energy as heat and light.
+            </p>
+
+            <p style="margin-top:15px;">
+
+                <strong>
+                    Take away an essential part of the fire triangle,
+                    and the flame can no longer keep burning. 🔥
+                </strong>
+
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 Curiosity Hub • Stay curious. Keep asking why.
+
+    </footer>
+
+
+</body>
+</html>
