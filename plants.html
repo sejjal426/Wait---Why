@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>How Do Plants Know Which Way Is Up? | Wait, Why?</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            color: #172033;
+
+            background:
+                radial-gradient(circle at 10% 20%, rgba(180, 230, 190, 0.55), transparent 30%),
+                radial-gradient(circle at 90% 80%, rgba(210, 190, 255, 0.5), transparent 30%),
+                linear-gradient(135deg, #f7fff8, #eef8f0, #f8f4ff);
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 7%;
+
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #28733b;
+            text-decoration: none;
+        }
+
+        .home {
+            text-decoration: none;
+            color: #347d43;
+            font-weight: bold;
+        }
+
+        .home:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px 45px;
+        }
+
+        .hero-icon {
+            font-size: 65px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 18px;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 span {
+            color: #28733b;
+        }
+
+        .hero p {
+            max-width: 680px;
+            margin: auto;
+
+            font-size: 19px;
+            line-height: 1.7;
+            color: #596579;
+        }
+
+        /* ARTICLE */
+
+        .article {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px 25px 70px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.82);
+            backdrop-filter: blur(10px);
+
+            padding: 30px;
+            margin-bottom: 25px;
+
+            border-radius: 22px;
+
+            border: 1px solid rgba(255, 255, 255, 0.9);
+
+            box-shadow: 0 12px 35px rgba(50, 90, 60, 0.09);
+        }
+
+        .section h2 {
+            font-size: 28px;
+            color: #28733b;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            color: #596579;
+            line-height: 1.75;
+            margin-bottom: 15px;
+            font-size: 17px;
+        }
+
+        /* HIGHLIGHT */
+
+        .highlight {
+            background: #e8f5e9;
+
+            border-left: 5px solid #43a047;
+
+            padding: 20px;
+            margin: 20px 0;
+
+            border-radius: 10px;
+
+            color: #285c34;
+        }
+
+        /* STEPS */
+
+        .steps {
+            display: grid;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .step {
+            background: #f3faf4;
+
+            padding: 20px;
+
+            border-radius: 14px;
+        }
+
+        .step h3 {
+            color: #347d43;
+            margin-bottom: 8px;
+        }
+
+        /* GRAVITY BOX */
+
+        .gravity-box {
+            text-align: center;
+
+            background: linear-gradient(135deg, #e8f5e9, #f3e5f5);
+
+            padding: 28px;
+
+            border-radius: 15px;
+
+            margin-top: 20px;
+        }
+
+        .gravity-box .arrow {
+            font-size: 45px;
+            margin: 10px;
+        }
+
+        .gravity-box p {
+            margin-bottom: 0;
+        }
+
+        /* FACTS */
+
+        .facts {
+            background: #fff8e1;
+
+            border-left: 5px solid #ffb300;
+
+            padding: 20px;
+
+            border-radius: 10px;
+        }
+
+        .facts p {
+            color: #5d5360;
+            margin-bottom: 10px;
+        }
+
+        /* CONCLUSION */
+
+        .final-box {
+            text-align: center;
+
+            background: linear-gradient(135deg, #e8f5e9, #e3f2fd);
+
+            padding: 35px;
+
+            border-radius: 22px;
+
+            box-shadow: 0 12px 35px rgba(50, 90, 70, 0.08);
+        }
+
+        .final-box h2 {
+            color: #28733b;
+            margin-bottom: 15px;
+        }
+
+        .final-box p {
+            color: #596579;
+            line-height: 1.7;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+
+            padding: 30px 20px;
+
+            color: #697386;
+
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            .hero {
+                padding: 50px 20px 35px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .article {
+                padding: 15px 18px 50px;
+            }
+
+            .section {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="index.html" class="logo">
+            ✨ Curiosity Hub
+        </a>
+
+        <a href="science.html" class="home">
+            ← Science
+        </a>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-icon">🌱</div>
+
+        <h1>How Do Plants Know <span>Which Way Is Up?</span></h1>
+
+        <p>
+            Plants cannot walk, turn around, or look at a compass.
+            So how do their roots know to grow down while their shoots
+            grow up?
+        </p>
+
+    </section>
+
+
+    <!-- ARTICLE -->
+
+    <main class="article">
+
+
+        <!-- BIG QUESTION -->
+
+        <section class="section">
+
+            <h2>🌱 The Big Question</h2>
+
+            <p>
+                Imagine placing a small plant on its side.
+                After some time, you may notice something surprising:
+                its roots begin growing downward and its shoot starts
+                bending upward.
+            </p>
+
+            <p>
+                But plants don't have eyes, brains, or nervous systems.
+                So how can they tell which direction is up?
+            </p>
+
+            <div class="highlight">
+
+                <strong>Wait, Why?</strong><br>
+
+                Plants can sense the direction of gravity and respond
+                by changing the direction in which different parts of
+                the plant grow.
+
+            </div>
+
+        </section>
+
+
+        <!-- GRAVITY -->
+
+        <section class="section">
+
+            <h2>🌍 Plants Can Sense Gravity</h2>
+
+            <p>
+                The ability of plants to respond to gravity is called
+                <strong>gravitropism</strong>, also known as geotropism.
+            </p>
+
+            <p>
+                Special cells in plants contain tiny structures that
+                help the plant sense the direction of gravity.
+            </p>
+
+            <p>
+                The plant then changes its growth pattern depending on
+                the direction of gravity.
+            </p>
+
+            <div class="gravity-box">
+
+                <div class="arrow">🌿 ↑</div>
+
+                <p>
+                    Shoots generally grow against the pull of gravity.
+                </p>
+
+                <div class="arrow">🌱 ↓</div>
+
+                <p>
+                    Roots generally grow in the direction of gravity.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ROOTS -->
+
+        <section class="section">
+
+            <h2>🌱 Why Do Roots Grow Downward?</h2>
+
+            <p>
+                Roots show a type of growth response called
+                <strong>positive gravitropism</strong>.
+            </p>
+
+            <p>
+                This means roots generally grow in the direction of
+                gravity.
+            </p>
+
+            <p>
+                Growing downward helps roots explore the soil, where
+                they can anchor the plant and obtain water and mineral
+                nutrients.
+            </p>
+
+        </section>
+
+
+        <!-- SHOOTS -->
+
+        <section class="section">
+
+            <h2>🌿 Why Do Shoots Grow Upward?</h2>
+
+            <p>
+                Shoots generally show <strong>negative gravitropism</strong>.
+                They grow away from the direction of gravity.
+            </p>
+
+            <p>
+                This helps stems and leaves move upward, where they can
+                reach light for photosynthesis.
+            </p>
+
+            <div class="highlight">
+
+                Roots generally grow <strong>towards gravity</strong>,
+                while shoots generally grow <strong>away from gravity</strong>.
+
+            </div>
+
+        </section>
+
+
+        <!-- AUXIN -->
+
+        <section class="section">
+
+            <h2>🧪 What Does Auxin Have to Do With It?</h2>
+
+            <p>
+                One important plant hormone involved in directional growth
+                is called <strong>auxin</strong>.
+            </p>
+
+            <p>
+                Auxin helps control how quickly plant cells grow.
+                When a plant is positioned sideways, auxin becomes
+                distributed unevenly.
+            </p>
+
+            <p>
+                This difference in growth can cause the root or shoot to
+                bend until it reaches a more typical direction of growth.
+            </p>
+
+        </section>
+
+
+        <!-- SIDEWAYS EXPERIMENT -->
+
+        <section class="section">
+
+            <h2>🔄 What If We Turn a Plant Sideways?</h2>
+
+            <p>
+                Here's the fascinating part: if a young plant is placed
+                horizontally, it doesn't simply stay that way.
+            </p>
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <h3>1️⃣ The plant senses a change</h3>
+
+                    <p>
+                        Gravity is now acting in a different direction
+                        relative to the plant.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <h3>2️⃣ Growth patterns change</h3>
+
+                    <p>
+                        The distribution of plant hormones changes,
+                        affecting how cells grow.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <h3>3️⃣ The plant bends</h3>
+
+                    <p>
+                        Different parts grow at different rates, causing
+                        the stem and roots to curve.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <h3>4️⃣ Growth direction is restored</h3>
+
+                    <p>
+                        Eventually, the roots and shoot move toward their
+                        typical directions relative to gravity.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LIGHT -->
+
+        <section class="section">
+
+            <h2>☀️ Is Gravity the Only Guide?</h2>
+
+            <p>
+                No! Plants also respond to light.
+            </p>
+
+            <p>
+                The growth of a plant toward a light source is called
+                <strong>phototropism</strong>.
+            </p>
+
+            <p>
+                So when a plant bends toward a window, light is helping
+                guide its growth. When roots grow downward, gravity is
+                an important signal.
+            </p>
+
+        </section>
+
+
+        <!-- QUICK FACTS -->
+
+        <section class="section">
+
+            <h2>🧠 Quick “Wait, Why?” Facts</h2>
+
+            <div class="facts">
+
+                <p>
+                    🌍 Plants can sense the direction of gravity.
+                </p>
+
+                <p>
+                    🌱 Roots generally show positive gravitropism.
+                </p>
+
+                <p>
+                    🌿 Shoots generally show negative gravitropism.
+                </p>
+
+                <p>
+                    🧪 Auxin is an important hormone involved in plant growth.
+                </p>
+
+                <p>
+                    ☀️ Plants can also respond to the direction of light.
+                </p>
+
+                <p>
+                    🔄 A sideways plant can change its growth direction
+                    in response to gravity.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONCLUSION -->
+
+        <section class="final-box">
+
+            <h2>🤔 So... Wait, Why?</h2>
+
+            <p>
+                Plants don't need eyes or a brain to know which way is up.
+                They use specialised cells, gravity sensing, hormones,
+                and growth responses to find the right direction.
+            </p>
+
+            <p style="margin-top:15px;">
+
+                <strong>
+                    Roots follow gravity, shoots grow away from it,
+                    and plants quietly adjust their growth all the time! 🌱
+                </strong>
+
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 Curiosity Hub • Stay curious. Keep asking why.
+
+    </footer>
+
+
+</body>
+</html>
