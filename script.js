@@ -70,7 +70,23 @@ function searchArticles() {
             }
         }
     }
+function askChatbot() {
 
+    const input = document.getElementById("chatInput");
+    const question = input.value.trim();
+
+    if (question === "") {
+        alert("Ask me something you're curious about!");
+        return;
+    }
+
+    alert(
+        "Great question! 🤔\n\n" +
+        "The AI brain for Wait, Why? is coming next!"
+    );
+
+    input.value = "";
+}
 
     alert(
         "We haven't explored that question yet! Try another question or explore one of our categories."
