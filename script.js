@@ -70,6 +70,14 @@ function searchArticles() {
             }
         }
     }
+    alert(
+        "We haven't explored that question yet! Try another question or explore one of our categories."
+    );
+}
+
+
+// ASK WAIT, WHY?
+
 function askChatbot() {
 
     const input = document.getElementById("chatInput");
