@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How Does Your Phone Know Where You Are? | Curiosity Hub</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    color: #f4f1ff;
+
+    background:
+        radial-gradient(circle at 15% 20%, rgba(0, 210, 255, 0.30), transparent 32%),
+        radial-gradient(circle at 85% 75%, rgba(120, 70, 255, 0.30), transparent 32%),
+        linear-gradient(135deg, #07111f, #10172d, #090d1c);
+}
+
+/* NAVIGATION */
+
+nav {
+    width: 100%;
+    padding: 18px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.home {
+    text-decoration: none;
+    color: #dff8ff;
+    font-size: 0.95rem;
+}
+
+/* ARTICLE */
+
+.article {
+    max-width: 850px;
+    margin: 70px auto;
+    padding: 0 25px;
+}
+
+.category {
+    display: inline-block;
+
+    padding: 8px 15px;
+    border-radius: 20px;
+
+    background: rgba(0, 210, 255, 0.12);
+    border: 1px solid rgba(0, 210, 255, 0.25);
+
+    color: #79eaff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-size: clamp(2.4rem, 6vw, 4.2rem);
+    line-height: 1.05;
+    margin-bottom: 25px;
+
+    background: linear-gradient(90deg, #ffffff, #75eaff, #9b7cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro {
+    font-size: 1.15rem;
+    line-height: 1.8;
+
+    color: #d4d8e8;
+
+    margin-bottom: 40px;
+}
+
+/* SECTIONS */
+
+.section {
+    margin: 25px 0;
+    padding: 30px;
+
+    border-radius: 22px;
+
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(14px);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+
+    color: #82eaff;
+}
+
+.section p {
+    color: #d7dbea;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.highlight {
+    margin-top: 20px;
+    padding: 18px;
+
+    border-left: 4px solid #73e7ff;
+
+    background: rgba(0,210,255,0.08);
+
+    border-radius: 10px;
+
+    color: #e8faff;
+    line-height: 1.7;
+}
+
+/* FACTS */
+
+.facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.fact {
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+
+    text-align: center;
+}
+
+.fact strong {
+    display: block;
+    font-size: 1.5rem;
+    color: #78e9ff;
+    margin-bottom: 8px;
+}
+
+.fact span {
+    color: #cfd4e5;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* BACK BUTTON */
+
+.back {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    text-decoration: none;
+    color: #82eaff;
+
+    padding: 12px 18px;
+
+    border: 1px solid rgba(130,234,255,0.25);
+    border-radius: 12px;
+
+    background: rgba(130,234,255,0.07);
+
+    transition: 0.3s;
+}
+
+.back:hover {
+    background: rgba(130,234,255,0.15);
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 30px 20px;
+
+    color: #8e96ae;
+    font-size: 0.85rem;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .article {
+        margin: 45px auto;
+    }
+
+    .section {
+        padding: 22px;
+    }
+
+    .facts {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        ✨ Curiosity Hub
+    </div>
+
+    <a href="index.html" class="home">
+        ← Home
+    </a>
+
+</nav>
+
+
+<main class="article">
+
+    <span class="category">
+        💻 TECHNOLOGY • 01
+    </span>
+
+
+    <h1>
+        📍 How Does Your Phone Know Where You Are?
+    </h1>
+
+
+    <p class="intro">
+        Your phone can tell you where you are, find the nearest restaurant,
+        guide you through unfamiliar streets, and even show you where you
+        parked. But how does a tiny device in your pocket know your location?
+    </p>
+
+
+    <section class="section">
+
+        <h2>🛰️ Your Phone Uses More Than GPS</h2>
+
+        <p>
+            Most people think their phone finds their location using GPS alone.
+            GPS is extremely important, but your phone can actually combine
+            information from several different systems.
+        </p>
+
+        <p>
+            It can use signals from satellites, nearby mobile towers,
+            Wi-Fi networks, and sometimes other sensors inside the phone.
+        </p>
+
+        <div class="highlight">
+            💡 Think of it like solving a puzzle. Your phone collects several
+            clues and combines them to make a very good estimate of where you are.
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🛰️ How Does GPS Find You?</h2>
+
+        <p>
+            GPS stands for <strong>Global Positioning System</strong>.
+            Satellites orbiting Earth continuously send signals toward the
+            ground.
+        </p>
+
+        <p>
+            Your phone receives signals from several satellites and measures
+            how long those signals took to arrive.
+        </p>
+
+        <p>
+            Because the signals travel at a known speed, the phone can
+            calculate how far away each satellite is.
+        </p>
+
+        <p>
+            By comparing these distances, the phone can work out its position
+            on Earth.
+        </p>
+
+        <div class="highlight">
+            📡 Your phone does not need to send a signal to the GPS satellites
+            to determine its position. It mainly listens to the signals they
+            broadcast.
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>📐 How Can A Few Satellites Pinpoint One Spot?</h2>
+
+        <p>
+            Imagine that someone tells you they are exactly 10 kilometres
+            away from you. You could be anywhere on a huge circle around them.
+        </p>
+
+        <p>
+            Now imagine a second person gives you another distance.
+            The possible locations become much smaller.
+        </p>
+
+        <p>
+            Add another measurement and the possibilities shrink even more.
+        </p>
+
+        <p>
+            GPS works using a similar idea called <strong>trilateration</strong>.
+            Your phone uses distance measurements from multiple satellites
+            to determine where those distances intersect.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>📶 What If GPS Is Weak?</h2>
+
+        <p>
+            GPS signals can become less reliable inside buildings, underground,
+            or in places surrounded by tall structures.
+        </p>
+
+        <p>
+            That is where other clues become useful.
+        </p>
+
+        <p>
+            Your phone can estimate your location using nearby mobile towers.
+            Since the phone knows which towers it can communicate with,
+            it can make an approximate location estimate.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>📡 What Does Wi-Fi Have To Do With It?</h2>
+
+        <p>
+            Your phone can also use nearby Wi-Fi networks as location clues.
+        </p>
+
+        <p>
+            If your phone detects Wi-Fi networks whose locations are already
+            known, it can use those networks to help estimate where you are.
+        </p>
+
+        <p>
+            This can be especially useful in cities and indoors, where satellite
+            signals may not work as well.
+        </p>
+
+        <div class="highlight">
+            🔍 GPS might tell your phone "somewhere around here,"
+            while Wi-Fi and mobile networks can provide additional clues
+            that improve the estimate.
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🧭 What About Your Phone's Sensors?</h2>
+
+        <p>
+            Your phone also contains tiny sensors such as an accelerometer,
+            gyroscope and compass.
+        </p>
+
+        <p>
+            These sensors can help the phone understand movement, direction
+            and changes in position.
+        </p>
+
+        <p>
+            For example, your phone can detect that you have started walking
+            or turning even when its satellite signal temporarily becomes
+            weaker.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🗺️ Why Does Your Location Sometimes Jump Around?</h2>
+
+        <p>
+            Your location is an estimate, not a magical dot that knows your
+            exact position every second.
+        </p>
+
+        <p>
+            Buildings, trees, weather conditions, interference and the quality
+            of available signals can affect the accuracy.
+        </p>
+
+        <p>
+            That is why the blue location dot on a map may sometimes move
+            slightly or show a circle around your estimated position.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🔐 Does Your Phone Always Know Where You Are?</h2>
+
+        <p>
+            Not necessarily. Your phone may have location information available,
+            but apps generally need permission to access location services.
+        </p>
+
+        <p>
+            Modern phones also provide settings that let you control which apps
+            can use your location and when they can use it.
+        </p>
+
+        <div class="highlight">
+            🔒 Location technology and location privacy are two different things.
+            Knowing how location works also means understanding which apps you
+            allow to use that information.
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>✨ Quick Facts</h2>
+
+        <div class="facts">
+
+            <div class="fact">
+                <strong>🛰️</strong>
+                <span>
+                    GPS uses signals from satellites orbiting Earth.
+                </span>
+            </div>
+
+            <div class="fact">
+                <strong>📶</strong>
+                <span>
+                    Wi-Fi and mobile networks can help estimate location.
+                </span>
+            </div>
+
+            <div class="fact">
+                <strong>🧭</strong>
+                <span>
+                    Phone sensors can help track movement and direction.
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🌌 The Big Idea</h2>
+
+        <p>
+            Your phone does not have a tiny map inside it that simply knows
+            where you are.
+        </p>
+
+        <p>
+            Instead, it gathers clues from satellites, networks and sensors
+            and combines them using mathematics and software.
+        </p>
+
+        <p>
+            So the next time your phone shows your exact location on a map,
+            remember: it is solving a surprisingly complicated puzzle in just
+            a few seconds.
+        </p>
+
+    </section>
+
+
+    <a href="technology.html" class="back">
+        ← Back to Technology
+    </a>
+
+</main>
+
+
+<footer>
+    © 2026 Curiosity Hub • Stay curious. Keep asking why.
+</footer>
+
+
+</body>
+</html>
