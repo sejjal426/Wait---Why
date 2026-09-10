@@ -1,0 +1,468 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Why Are Volcanoes Found in Certain Places? | Curiosity Hub</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+
+            background:
+                radial-gradient(circle at 15% 20%, rgba(0, 210, 255, 0.30), transparent 32%),
+                radial-gradient(circle at 85% 75%, rgba(120, 70, 255, 0.30), transparent 32%),
+                linear-gradient(135deg, #07111f, #10172d, #090d1c);
+
+            background-attachment: fixed;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 18px 8%;
+
+            background: rgba(10, 18, 35, 0.72);
+            backdrop-filter: blur(15px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #bdefff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .article {
+            max-width: 850px;
+            margin: 70px auto;
+            padding: 0 25px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 15px;
+            margin-bottom: 20px;
+
+            border-radius: 30px;
+
+            background: rgba(0, 210, 255, 0.12);
+            border: 1px solid rgba(0, 210, 255, 0.30);
+
+            color: #75e8ff;
+            font-size: 13px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 70px);
+            line-height: 1.05;
+            margin-bottom: 25px;
+
+            background: linear-gradient(90deg, #ffffff, #71e5ff, #a98cff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .intro {
+            font-size: 20px;
+            line-height: 1.7;
+            color: #c9d7e8;
+            margin-bottom: 45px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            padding: 30px;
+
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.10);
+
+            border-radius: 22px;
+            backdrop-filter: blur(14px);
+
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.20);
+        }
+
+        .section h2 {
+            color: #70e6ff;
+            margin-bottom: 15px;
+            font-size: 25px;
+        }
+
+        .section p {
+            color: #d5deeb;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .highlight {
+            margin: 25px 0;
+            padding: 22px;
+
+            border-left: 4px solid #70e6ff;
+
+            background: rgba(0, 210, 255, 0.08);
+            border-radius: 12px;
+
+            color: #e7faff;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .fact {
+            padding: 22px;
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+
+            border-radius: 18px;
+        }
+
+        .fact strong {
+            display: block;
+            color: #75e8ff;
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        .fact span {
+            color: #c9d7e8;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 20px;
+
+            color: #75e8ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back:hover {
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #8291a8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 16px 5%;
+            }
+
+            .article {
+                margin: 45px auto;
+                padding: 0 18px;
+            }
+
+            .section {
+                padding: 22px;
+            }
+
+            .section p {
+                font-size: 16px;
+            }
+
+            .facts {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">✨ Curiosity Hub</div>
+        <a href="index.html">← Home</a>
+    </nav>
+
+    <main class="article">
+
+        <div class="badge">🌍 WORLD • 05</div>
+
+        <h1>Why Are Volcanoes Found in Certain Places?</h1>
+
+        <p class="intro">
+            Volcanoes aren't scattered randomly across Earth. If you look
+            at a map of active volcanoes, you'll notice that many of them
+            form long chains or clusters. So why does Earth's interior
+            choose these particular places to break through?
+        </p>
+
+        <section class="section">
+
+            <h2>🌎 Earth's Crust Is Not One Solid Piece</h2>
+
+            <p>
+                Earth's outer rocky layer is divided into enormous pieces
+                called tectonic plates.
+            </p>
+
+            <p>
+                These plates slowly move over the hotter, softer material
+                beneath them. Although their movement is extremely slow,
+                it can have huge effects over millions of years.
+            </p>
+
+            <div class="highlight">
+                Many volcanoes are connected to the movement and interaction
+                of Earth's tectonic plates.
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>↔️ When Plates Move Apart</h2>
+
+            <p>
+                Some volcanoes form where two tectonic plates move away
+                from each other.
+            </p>
+
+            <p>
+                As the plates separate, hot material from deeper inside
+                Earth can rise toward the surface. As it cools, it can
+                form new crust.
+            </p>
+
+            <p>
+                This process occurs especially along underwater mountain
+                chains called mid-ocean ridges.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>💥 When One Plate Goes Beneath Another</h2>
+
+            <p>
+                Another major volcanic setting occurs where two plates
+                move toward each other and one plate is pushed beneath
+                the other.
+            </p>
+
+            <p>
+                This process is called subduction. The descending plate
+                can contribute to conditions that help generate magma,
+                which may eventually rise toward the surface.
+            </p>
+
+            <div class="highlight">
+                Subduction zones are responsible for many of the world's
+                volcanoes.
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🔥 What Is Magma?</h2>
+
+            <p>
+                Deep inside Earth, temperatures are high enough for some
+                rocks to melt or partially melt, producing magma.
+            </p>
+
+            <p>
+                When magma reaches Earth's surface, it is called lava.
+                Gases dissolved in magma can also expand as pressure
+                decreases, contributing to volcanic eruptions.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🌋 Not All Volcanoes Are at Plate Boundaries</h2>
+
+            <p>
+                Plate boundaries explain many volcanoes, but not all of
+                them.
+            </p>
+
+            <p>
+                Some volcanoes form above areas called hotspots. A hotspot
+                is a region where unusually hot material from deep within
+                Earth can rise toward the surface.
+            </p>
+
+            <p>
+                Hotspots can produce volcanoes even when they are located
+                away from a plate boundary.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🏝️ How Can Volcanoes Form Islands?</h2>
+
+            <p>
+                Underwater volcanic activity can gradually build layers
+                of lava on the ocean floor.
+            </p>
+
+            <p>
+                If enough material accumulates, a volcano can eventually
+                rise above sea level and form a volcanic island.
+            </p>
+
+            <p>
+                Some island chains are linked to volcanic activity over
+                hotspots as tectonic plates slowly move across them.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🌏 The Ring of Fire</h2>
+
+            <p>
+                One of the most famous volcanic regions is the
+                Pacific Ring of Fire.
+            </p>
+
+            <p>
+                It is a broad zone around much of the Pacific Ocean where
+                many tectonic plate boundaries occur. It contains numerous
+                volcanoes and areas of frequent earthquakes.
+            </p>
+
+            <div class="highlight">
+                The Ring of Fire is not a single volcano or a perfect
+                circle. It is a large region shaped by plate tectonics.
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🧩 Why Aren't There Volcanoes Everywhere?</h2>
+
+            <p>
+                For a volcano to form, the right geological conditions
+                need to exist. Most of Earth's surface does not have the
+                same conditions for magma to reach the surface.
+            </p>
+
+            <p>
+                This is why volcanoes tend to cluster around particular
+                plate boundaries and hotspots rather than appearing
+                randomly across continents.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>✨ Quick Facts</h2>
+
+            <div class="facts">
+
+                <div class="fact">
+                    <strong>🌎</strong>
+                    <span>
+                        Earth's outer rocky layer is divided into
+                        moving tectonic plates.
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <strong>🌋</strong>
+                    <span>
+                        Many volcanoes occur near tectonic plate
+                        boundaries.
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <strong>🔥</strong>
+                    <span>
+                        Some volcanoes form above hotspots away from
+                        plate boundaries.
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>💡 The Big Idea</h2>
+
+            <p>
+                Volcanoes are not randomly placed around Earth. Their
+                locations are strongly connected to the movement of
+                tectonic plates and, in some cases, deep hotspots.
+            </p>
+
+            <p>
+                So when you see a chain of volcanoes on a map, you're
+                really looking at evidence of the enormous geological
+                forces constantly reshaping our planet.
+            </p>
+
+        </section>
+
+        <a class="back" href="world.html">
+            ← Back to World
+        </a>
+
+    </main>
+
+    <footer>
+        © 2026 Curiosity Hub • Stay curious. Keep asking why.
+    </footer>
+
+</body>
+</html>
+```
