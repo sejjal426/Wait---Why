@@ -1,0 +1,575 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>What Does the "Cloud" Really Mean? | Curiosity Hub</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    color: #f4f1ff;
+
+    background:
+        radial-gradient(circle at 15% 20%, rgba(0, 210, 255, 0.30), transparent 32%),
+        radial-gradient(circle at 85% 75%, rgba(120, 70, 255, 0.30), transparent 32%),
+        linear-gradient(135deg, #07111f, #10172d, #090d1c);
+}
+
+/* NAVIGATION */
+
+nav {
+    width: 100%;
+    padding: 18px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255,255,255,0.07);
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.home {
+    text-decoration: none;
+    color: #dff8ff;
+    font-size: 0.95rem;
+}
+
+/* ARTICLE */
+
+.article {
+    max-width: 850px;
+    margin: 70px auto;
+    padding: 0 25px;
+}
+
+.category {
+    display: inline-block;
+
+    padding: 8px 15px;
+    border-radius: 20px;
+
+    background: rgba(0,210,255,0.12);
+    border: 1px solid rgba(0,210,255,0.25);
+
+    color: #79eaff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-size: clamp(2.4rem, 6vw, 4.2rem);
+    line-height: 1.05;
+    margin-bottom: 25px;
+
+    background: linear-gradient(90deg, #ffffff, #75eaff, #9b7cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #d4d8e8;
+    margin-bottom: 40px;
+}
+
+/* SECTIONS */
+
+.section {
+    margin: 25px 0;
+    padding: 30px;
+
+    border-radius: 22px;
+
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(14px);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #82eaff;
+}
+
+.section p {
+    color: #d7dbea;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.highlight {
+    margin-top: 20px;
+    padding: 18px;
+
+    border-left: 4px solid #73e7ff;
+
+    background: rgba(0,210,255,0.08);
+
+    border-radius: 10px;
+
+    color: #e8faff;
+    line-height: 1.7;
+}
+
+/* FACTS */
+
+.facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.fact {
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+
+    text-align: center;
+}
+
+.fact strong {
+    display: block;
+    font-size: 1.5rem;
+    color: #78e9ff;
+    margin-bottom: 8px;
+}
+
+.fact span {
+    color: #cfd4e5;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* BACK BUTTON */
+
+.back {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    text-decoration: none;
+    color: #82eaff;
+
+    padding: 12px 18px;
+
+    border: 1px solid rgba(130,234,255,0.25);
+    border-radius: 12px;
+
+    background: rgba(130,234,255,0.07);
+
+    transition: 0.3s;
+}
+
+.back:hover {
+    background: rgba(130,234,255,0.15);
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 30px 20px;
+
+    color: #8e96ae;
+    font-size: 0.85rem;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .article {
+        margin: 45px auto;
+    }
+
+    .section {
+        padding: 22px;
+    }
+
+    .facts {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        ✨ Curiosity Hub
+    </div>
+
+    <a href="index.html" class="home">
+        ← Home
+    </a>
+
+</nav>
+
+
+<main class="article">
+
+    <span class="category">
+        ☁️ TECHNOLOGY • 06
+    </span>
+
+
+    <h1>
+        ☁️ What Does the "Cloud" Really Mean?
+    </h1>
+
+
+    <p class="intro">
+        You've probably heard phrases like "save it to the cloud,"
+        "cloud storage," or "cloud computing." But where exactly is
+        this mysterious cloud? Is your data floating somewhere above
+        the Earth? Not quite. Let's find out what the cloud really is.
+    </p>
+
+
+    <section class="section">
+
+        <h2>☁️ There Isn't a Real Cloud</h2>
+
+        <p>
+            The "cloud" is not a fluffy object in the sky and your
+            files are not floating through the atmosphere.
+        </p>
+
+        <p>
+            In technology, the cloud is a simple way of describing
+            computers, storage systems and other resources that you
+            access through a network, usually the internet.
+        </p>
+
+        <div class="highlight">
+            💡 The cloud is basically someone else's computers and
+            infrastructure being accessed over a network.
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🏢 So Where Is My Data?</h2>
+
+        <p>
+            When you upload a photo, document or other file to a cloud
+            service, it is stored on physical computers in data centres.
+        </p>
+
+        <p>
+            Data centres are buildings filled with servers, networking
+            equipment, storage systems, cooling systems and power
+            infrastructure.
+        </p>
+
+        <p>
+            These facilities can be located in different parts of the
+            world.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>📱 What Happens When You Save a Photo to the Cloud?</h2>
+
+        <p>
+            Imagine taking a photo and backing it up to a cloud service.
+        </p>
+
+        <p>
+            Your phone sends the data through your internet connection
+            to the service's servers.
+        </p>
+
+        <p>
+            The service stores the photo on its storage systems so that
+            you can access it later from an authorized device.
+        </p>
+
+        <div class="highlight">
+            📸 Phone → Internet → Data centre → Storage
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🌍 Why Can I Access My Files From Anywhere?</h2>
+
+        <p>
+            Cloud services are connected to the internet, so you can
+            access your stored information from different devices when
+            you have the necessary connection and permission.
+        </p>
+
+        <p>
+            For example, you might upload a document from your laptop
+            and later open it from your phone.
+        </p>
+
+        <p>
+            Your phone doesn't need to physically contain the original
+            copy. It can request the information from the cloud service.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>💾 Is Cloud Storage Just One Hard Drive?</h2>
+
+        <p>
+            Usually, no.
+        </p>
+
+        <p>
+            Large cloud services generally use many storage devices
+            and servers rather than relying on one single computer.
+        </p>
+
+        <p>
+            Information may also be copied or distributed across
+            multiple systems to improve reliability and availability.
+        </p>
+
+        <div class="highlight">
+            🧩 That's why "the cloud" is better imagined as a huge
+            network of computing and storage infrastructure rather
+            than one giant computer.
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>⚡ What Is Cloud Computing?</h2>
+
+        <p>
+            The cloud isn't only about storing files.
+        </p>
+
+        <p>
+            <strong>Cloud computing</strong> means using computing
+            resources over a network instead of relying entirely on
+            the device in front of you.
+        </p>
+
+        <p>
+            Companies can rent computing power, storage, databases,
+            networking and other services from cloud providers.
+        </p>
+
+        <p>
+            This means a company doesn't necessarily have to build
+            and maintain all of its own computing infrastructure.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🎮 Why Do Apps and Games Use the Cloud?</h2>
+
+        <p>
+            Some applications use cloud servers to perform tasks that
+            would otherwise require more computing power on your own
+            device.
+        </p>
+
+        <p>
+            Cloud systems can also store account information, synchronize
+            data between devices and support online services used by
+            millions of people.
+        </p>
+
+        <p>
+            The exact role of the cloud depends on how the particular
+            app or service is designed.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🔐 Is the Cloud Safe?</h2>
+
+        <p>
+            Cloud services use security technologies such as
+            authentication, access controls and encryption to protect
+            information.
+        </p>
+
+        <p>
+            However, "stored in the cloud" does not automatically mean
+            "completely safe."
+        </p>
+
+        <p>
+            Security depends on both the service provider and how users
+            protect their accounts and devices.
+        </p>
+
+        <div class="highlight">
+            🔒 Cloud security is a shared responsibility: providers
+            protect their infrastructure, while users also need to
+            protect their accounts and access.
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🌧️ Why Do We Call It "The Cloud"?</h2>
+
+        <p>
+            In diagrams showing computer networks, the internet was
+            often represented using a cloud-shaped symbol.
+        </p>
+
+        <p>
+            The symbol was useful because it represented a large,
+            complicated network without showing every individual
+            computer and connection.
+        </p>
+
+        <p>
+            Over time, the word "cloud" became a common name for
+            internet-based computing and storage services.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>✨ Quick Facts</h2>
+
+        <div class="facts">
+
+            <div class="fact">
+                <strong>☁️</strong>
+                <span>
+                    The cloud refers to computing resources accessed
+                    over a network.
+                </span>
+            </div>
+
+            <div class="fact">
+                <strong>🏢</strong>
+                <span>
+                    Cloud services run on physical servers and storage
+                    systems in data centres.
+                </span>
+            </div>
+
+            <div class="fact">
+                <strong>🌍</strong>
+                <span>
+                    Cloud services can let you access information from
+                    multiple authorized devices.
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🌌 The Big Idea</h2>
+
+        <p>
+            The cloud sounds mysterious because we cannot see the
+            computers doing the work.
+        </p>
+
+        <p>
+            But behind every "cloud" service is real hardware:
+            servers, storage devices, networking equipment, power
+            systems and data centres.
+        </p>
+
+        <p>
+            When you save a photo to the cloud or use a cloud-based
+            application, you are really using computing resources
+            somewhere else through a network.
+        </p>
+
+        <p>
+            So the cloud isn't above you. ☁️
+            It's much closer to the ground than you might think. 💻
+        </p>
+
+    </section>
+
+
+    <a href="technology.html" class="back">
+        ← Back to Technology
+    </a>
+
+</main>
+
+
+<footer>
+    © 2026 Curiosity Hub • Stay curious. Keep asking why.
+</footer>
+
+
+</body>
+</html>
+```
