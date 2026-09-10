@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Why Do We Get Déjà Vu? | Curiosity Hub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            color: #f4f1ff;
+
+            background:
+                radial-gradient(circle at 15% 20%, rgba(130, 90, 220, 0.35), transparent 32%),
+                radial-gradient(circle at 85% 75%, rgba(70, 120, 220, 0.30), transparent 32%),
+                linear-gradient(135deg, #0d0b1f, #17112d, #0b1228);
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 7%;
+
+            background: rgba(20, 17, 45, 0.65);
+            backdrop-filter: blur(14px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #d7c7ff;
+            text-decoration: none;
+        }
+
+        .home {
+            text-decoration: none;
+            color: #c9b7ff;
+            font-weight: bold;
+        }
+
+        .home:hover {
+            text-decoration: underline;
+        }
+
+        /* ARTICLE */
+
+        .article {
+            max-width: 850px;
+            margin: 70px auto;
+            padding: 0 25px;
+        }
+
+        .category {
+            display: inline-block;
+
+            padding: 7px 14px;
+            margin-bottom: 20px;
+
+            border-radius: 20px;
+
+            background: rgba(170, 130, 255, 0.15);
+            border: 1px solid rgba(190, 160, 255, 0.25);
+
+            color: #cdbaff;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 52px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+
+            background: linear-gradient(90deg, #ffffff, #cdbaff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .intro {
+            font-size: 20px;
+            line-height: 1.7;
+            color: #c7c2d8;
+            margin-bottom: 45px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(12px);
+
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 22px;
+
+            padding: 30px;
+            margin-bottom: 25px;
+
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+            color: #e0d5ff;
+        }
+
+        .section p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #c8c4d5;
+        }
+
+        /* HIGHLIGHT */
+
+        .highlight {
+            padding: 25px;
+            margin: 30px 0;
+
+            border-left: 4px solid #a98cff;
+
+            background: rgba(150, 110, 255, 0.1);
+            border-radius: 12px;
+        }
+
+        .highlight p {
+            color: #ddd5f2;
+            line-height: 1.7;
+        }
+
+        /* FACTS */
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .fact {
+            padding: 20px;
+
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .fact strong {
+            display: block;
+            font-size: 22px;
+            color: #d5c4ff;
+            margin-bottom: 8px;
+        }
+
+        .fact span {
+            font-size: 14px;
+            color: #aaa5ba;
+        }
+
+        /* BACK BUTTON */
+
+        .back {
+            display: inline-block;
+
+            margin-top: 20px;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            color: #cbb8ff;
+
+            transition: 0.2s;
+        }
+
+        .back:hover {
+            transform: translateX(-4px);
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+
+            color: #8f899f;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            .article {
+                margin: 50px auto;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .intro {
+                font-size: 17px;
+            }
+
+            .section {
+                padding: 25px;
+            }
+
+            .facts {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="index.html" class="logo">
+            ✨ Curiosity Hub
+        </a>
+
+        <a href="index.html" class="home">
+            ← Home
+        </a>
+
+    </nav>
+
+
+    <!-- ARTICLE -->
+
+    <main class="article">
+
+        <span class="category">
+            🧠 PSYCHOLOGY • 04
+        </span>
+
+        <h1>
+            🔮 Why Do We Get Déjà Vu?
+        </h1>
+
+        <p class="intro">
+            Have you ever walked into a place, heard someone say something,
+            or experienced a moment and suddenly thought,
+            “Wait... I've experienced this before?”
+            That strange feeling is called <strong>déjà vu</strong>.
+        </p>
+
+
+        <!-- SECTION 1 -->
+
+        <section class="section">
+
+            <h2>👀 What Is Déjà Vu?</h2>
+
+            <p>
+                Déjà vu is a French phrase that means
+                <strong>“already seen.”</strong>
+                It describes the strange feeling that a current situation
+                has happened before, even though you know that it probably
+                has not.
+            </p>
+
+            <p style="margin-top: 15px;">
+                The feeling usually lasts only a few seconds, but it can
+                feel surprisingly real and convincing.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 2 -->
+
+        <section class="section">
+
+            <h2>🧠 Is the Brain Making a Mistake?</h2>
+
+            <p>
+                One leading explanation is that déjà vu may happen when
+                the brain's systems for recognising familiarity and
+                remembering an actual event do not work perfectly together
+                for a brief moment.
+            </p>
+
+            <div class="highlight">
+
+                <p>
+                    <strong>In simple words:</strong>
+                    your brain may create a strong feeling of familiarity
+                    without finding a real memory that explains it.
+                </p>
+
+            </div>
+
+            <p>
+                This can create the strange experience of feeling as if
+                you have already lived through the exact same moment.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 3 -->
+
+        <section class="section">
+
+            <h2>🔍 Could Something Look Familiar?</h2>
+
+            <p>
+                Another possibility is that a new situation contains
+                elements that resemble something from the past.
+            </p>
+
+            <p style="margin-top: 15px;">
+                Perhaps the arrangement of a room, the lighting, the sounds,
+                or the way people are standing reminds your brain of an
+                older experience.
+            </p>
+
+            <p style="margin-top: 15px;">
+                You might not consciously remember the earlier experience,
+                but your brain may still recognise similarities.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 4 -->
+
+        <section class="section">
+
+            <h2>⚡ Why Does It Feel So Real?</h2>
+
+            <p>
+                Familiarity is a powerful feeling. When the brain detects
+                something that seems familiar, it can create a strong sense
+                that we have encountered it before.
+            </p>
+
+            <p style="margin-top: 15px;">
+                But feeling familiar and actually remembering an event are
+                not exactly the same thing.
+            </p>
+
+            <div class="highlight">
+
+                <p>
+                    <strong>That's the mystery of déjà vu:</strong>
+                    you can feel certain that something is familiar while
+                    being unable to identify when or where it happened.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 5 -->
+
+        <section class="section">
+
+            <h2>🧩 Is Déjà Vu a Real Memory?</h2>
+
+            <p>
+                Usually, there is no evidence that the event actually
+                happened exactly as you experience it during déjà vu.
+            </p>
+
+            <p style="margin-top: 15px;">
+                Déjà vu is better understood as a feeling of familiarity
+                rather than proof that you have experienced the same moment
+                before.
+            </p>
+
+            <p style="margin-top: 15px;">
+                Our memories are not perfect recordings of the past.
+                They are reconstructed by the brain, which makes the
+                relationship between familiarity and memory surprisingly
+                complicated.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 6 -->
+
+        <section class="section">
+
+            <h2>🔬 What Does Science Still Not Know?</h2>
+
+            <p>
+                Scientists have several theories about déjà vu, but there
+                is still no single explanation that answers every question.
+            </p>
+
+            <p style="margin-top: 15px;">
+                Researchers continue to study memory, recognition and brain
+                activity to understand exactly why this unusual sensation
+                occurs.
+            </p>
+
+            <div class="highlight">
+
+                <p>
+                    <strong>Déjà vu is a reminder that the human brain is
+                    incredibly complex.</strong>
+                    Even something that lasts only a few seconds can reveal
+                    how complicated memory and recognition really are.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUICK FACTS -->
+
+        <section class="section">
+
+            <h2>✨ Quick Facts</h2>
+
+            <div class="facts">
+
+                <div class="fact">
+
+                    <strong>Déjà vu</strong>
+
+                    <span>
+                        French for “already seen.”
+                    </span>
+
+                </div>
+
+
+                <div class="fact">
+
+                    <strong>Brief</strong>
+
+                    <span>
+                        The feeling usually lasts only a short time.
+                    </span>
+
+                </div>
+
+
+                <div class="fact">
+
+                    <strong>Mystery</strong>
+
+                    <span>
+                        Scientists are still investigating exactly why it happens.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL THOUGHT -->
+
+        <section class="section">
+
+            <h2>🌌 The Big Idea</h2>
+
+            <p>
+                Déjà vu shows just how fascinating human memory really is.
+                The brain can create a powerful feeling of familiarity even
+                when we cannot identify an actual memory behind it.
+            </p>
+
+            <div class="highlight">
+
+                <p>
+                    <strong>So the next time you think,
+                    “I've definitely been here before...”</strong>
+                    your brain might simply be giving you a fascinating
+                    glimpse into how memory and recognition work.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- BACK TO PSYCHOLOGY -->
+
+        <a href="psychology.html" class="back">
+            ← Back to Psychology
+        </a>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Curiosity Hub • Stay curious. Keep asking why.
+    </footer>
+
+</body>
+</html>
