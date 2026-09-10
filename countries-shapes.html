@@ -1,0 +1,470 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Why Are Countries Different Shapes? | Curiosity Hub</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+
+            background:
+                radial-gradient(circle at 15% 20%, rgba(0, 210, 255, 0.30), transparent 32%),
+                radial-gradient(circle at 85% 75%, rgba(120, 70, 255, 0.30), transparent 32%),
+                linear-gradient(135deg, #07111f, #10172d, #090d1c);
+
+            background-attachment: fixed;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 18px 8%;
+
+            background: rgba(10, 18, 35, 0.72);
+            backdrop-filter: blur(15px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #bdefff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .article {
+            max-width: 850px;
+            margin: 70px auto;
+            padding: 0 25px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 15px;
+            margin-bottom: 20px;
+
+            border-radius: 30px;
+
+            background: rgba(0, 210, 255, 0.12);
+            border: 1px solid rgba(0, 210, 255, 0.30);
+
+            color: #75e8ff;
+            font-size: 13px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 70px);
+            line-height: 1.05;
+            margin-bottom: 25px;
+
+            background: linear-gradient(90deg, #ffffff, #71e5ff, #a98cff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .intro {
+            font-size: 20px;
+            line-height: 1.7;
+            color: #c9d7e8;
+            margin-bottom: 45px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            padding: 30px;
+
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.10);
+
+            border-radius: 22px;
+            backdrop-filter: blur(14px);
+
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.20);
+        }
+
+        .section h2 {
+            color: #70e6ff;
+            margin-bottom: 15px;
+            font-size: 25px;
+        }
+
+        .section p {
+            color: #d5deeb;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .highlight {
+            margin: 25px 0;
+            padding: 22px;
+
+            border-left: 4px solid #70e6ff;
+
+            background: rgba(0, 210, 255, 0.08);
+            border-radius: 12px;
+
+            color: #e7faff;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .fact {
+            padding: 22px;
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+
+            border-radius: 18px;
+        }
+
+        .fact strong {
+            display: block;
+            color: #75e8ff;
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        .fact span {
+            color: #c9d7e8;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 20px;
+
+            color: #75e8ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back:hover {
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #8291a8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 16px 5%;
+            }
+
+            .article {
+                margin: 45px auto;
+                padding: 0 18px;
+            }
+
+            .section {
+                padding: 22px;
+            }
+
+            .section p {
+                font-size: 16px;
+            }
+
+            .facts {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">✨ Curiosity Hub</div>
+        <a href="index.html">← Home</a>
+    </nav>
+
+    <main class="article">
+
+        <div class="badge">🌍 WORLD • 02</div>
+
+        <h1>Why Are Countries Different Shapes?</h1>
+
+        <p class="intro">
+            Look at a world map and you will notice something strange:
+            some countries are almost rectangular, some stretch across
+            huge distances, and others look like thin strips or scattered
+            islands. But who decided where these shapes came from?
+        </p>
+
+        <section class="section">
+
+            <h2>🗺️ Countries Were Not Drawn From Scratch</h2>
+
+            <p>
+                The borders of modern countries are the result of thousands
+                of years of human history. Kingdoms, empires, migrations,
+                wars, agreements and political changes all helped shape
+                today's map.
+            </p>
+
+            <p>
+                In other words, countries do not have different shapes
+                because someone simply designed them to look different.
+                Their shapes are largely the result of history.
+            </p>
+
+            <div class="highlight">
+                A country's shape is basically a visible record of
+                geography + history + human decisions.
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🏔️ Nature Can Create Borders</h2>
+
+            <p>
+                Some borders follow natural features such as mountains,
+                rivers, lakes and coastlines.
+            </p>
+
+            <p>
+                These features can make useful boundaries because they
+                are easier to recognize and, in some cases, harder to
+                cross.
+            </p>
+
+            <p>
+                For example, a mountain range may separate two regions,
+                while a river can become a convenient boundary between
+                neighbouring territories.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>⚔️ Wars Changed Maps</h2>
+
+            <p>
+                Throughout history, countries and kingdoms have fought
+                over land and resources. When conflicts ended, territories
+                sometimes changed hands.
+            </p>
+
+            <p>
+                A border that looks completely ordinary on a modern map
+                may actually be the result of decisions made after a
+                conflict hundreds of years ago.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🤝 Treaties Can Draw Invisible Lines</h2>
+
+            <p>
+                Countries can also change their borders through agreements
+                and treaties.
+            </p>
+
+            <p>
+                Leaders may negotiate where one territory ends and another
+                begins. Sometimes these boundaries follow natural features,
+                while other times they are based on surveyed or
+                agreed-upon lines.
+            </p>
+
+            <div class="highlight">
+                A border does not always need a physical wall or fence.
+                On a map, an invisible agreed boundary can separate two
+                countries.
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>📏 Why Are Some Borders Surprisingly Straight?</h2>
+
+            <p>
+                Not every border follows a mountain or river. Some borders
+                are remarkably straight because they were established
+                using lines of latitude, longitude or surveying decisions.
+            </p>
+
+            <p>
+                This is especially noticeable in parts of Africa and
+                North America, where some borders appear almost perfectly
+                straight on a map.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🌊 Geography Matters Too</h2>
+
+            <p>
+                A country's physical geography also influences its shape.
+                Coastlines, islands, deserts, mountains and rivers can all
+                affect how territory is organized.
+            </p>
+
+            <p>
+                This is why island countries can have very different
+                shapes from countries located entirely on a large
+                continental landmass.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🧩 Why Do Some Countries Have Strange Shapes?</h2>
+
+            <p>
+                Some countries look unusual because their territories
+                were formed from many different historical pieces.
+            </p>
+
+            <p>
+                A country may also contain separated regions, long
+                narrow sections, or territories surrounded by another
+                country.
+            </p>
+
+            <p>
+                These unusual shapes often make much more sense once
+                you learn the history behind them.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🌍 Borders Can Change</h2>
+
+            <p>
+                The map of the world is not permanently fixed. Countries
+                can change their borders through peaceful agreements,
+                political changes or other historical events.
+            </p>
+
+            <p>
+                However, modern international borders are generally
+                governed by international law and agreements between
+                countries.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>✨ Quick Facts</h2>
+
+            <div class="facts">
+
+                <div class="fact">
+                    <strong>🏔️</strong>
+                    <span>
+                        Mountains, rivers and coastlines can become
+                        natural borders.
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <strong>📜</strong>
+                    <span>
+                        Treaties and political agreements can establish
+                        international boundaries.
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <strong>🕰️</strong>
+                    <span>
+                        Many modern borders have roots in events from
+                        centuries ago.
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>💡 The Big Idea</h2>
+
+            <p>
+                Countries have different shapes because Earth's geography
+                and human history have interacted for thousands of years.
+            </p>
+
+            <p>
+                Mountains and rivers may guide borders, but wars, treaties,
+                political decisions and historical events have also played
+                huge roles.
+            </p>
+
+            <p>
+                So the next time you look at a world map, remember:
+                <strong>every strange-looking border has a story behind it.</strong>
+            </p>
+
+        </section>
+
+        <a class="back" href="world.html">
+            ← Back to World
+        </a>
+
+    </main>
+
+    <footer>
+        © 2026 Curiosity Hub • Stay curious. Keep asking why.
+    </footer>
+
+</body>
+</html>
+```
