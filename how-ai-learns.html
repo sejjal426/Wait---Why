@@ -1,0 +1,600 @@
+```html id="h8x2pk"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How Does Artificial Intelligence Learn? | Curiosity Hub</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    color: #f4f1ff;
+
+    background:
+        radial-gradient(circle at 15% 20%, rgba(0, 210, 255, 0.30), transparent 32%),
+        radial-gradient(circle at 85% 75%, rgba(120, 70, 255, 0.30), transparent 32%),
+        linear-gradient(135deg, #07111f, #10172d, #090d1c);
+}
+
+/* NAVIGATION */
+
+nav {
+    width: 100%;
+    padding: 18px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255,255,255,0.07);
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.home {
+    text-decoration: none;
+    color: #dff8ff;
+    font-size: 0.95rem;
+}
+
+/* ARTICLE */
+
+.article {
+    max-width: 850px;
+    margin: 70px auto;
+    padding: 0 25px;
+}
+
+.category {
+    display: inline-block;
+
+    padding: 8px 15px;
+    border-radius: 20px;
+
+    background: rgba(0,210,255,0.12);
+    border: 1px solid rgba(0,210,255,0.25);
+
+    color: #79eaff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-size: clamp(2.4rem, 6vw, 4.2rem);
+    line-height: 1.05;
+    margin-bottom: 25px;
+
+    background: linear-gradient(90deg, #ffffff, #75eaff, #9b7cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #d4d8e8;
+    margin-bottom: 40px;
+}
+
+/* SECTIONS */
+
+.section {
+    margin: 25px 0;
+    padding: 30px;
+
+    border-radius: 22px;
+
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(14px);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #82eaff;
+}
+
+.section p {
+    color: #d7dbea;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.highlight {
+    margin-top: 20px;
+    padding: 18px;
+
+    border-left: 4px solid #73e7ff;
+
+    background: rgba(0,210,255,0.08);
+
+    border-radius: 10px;
+
+    color: #e8faff;
+    line-height: 1.7;
+}
+
+/* FACTS */
+
+.facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.fact {
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+
+    text-align: center;
+}
+
+.fact strong {
+    display: block;
+    font-size: 1.5rem;
+    color: #78e9ff;
+    margin-bottom: 8px;
+}
+
+.fact span {
+    color: #cfd4e5;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* BACK BUTTON */
+
+.back {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    text-decoration: none;
+    color: #82eaff;
+
+    padding: 12px 18px;
+
+    border: 1px solid rgba(130,234,255,0.25);
+    border-radius: 12px;
+
+    background: rgba(130,234,255,0.07);
+
+    transition: 0.3s;
+}
+
+.back:hover {
+    background: rgba(130,234,255,0.15);
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 30px 20px;
+
+    color: #8e96ae;
+    font-size: 0.85rem;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .article {
+        margin: 45px auto;
+    }
+
+    .section {
+        padding: 22px;
+    }
+
+    .facts {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        ✨ Curiosity Hub
+    </div>
+
+    <a href="index.html" class="home">
+        ← Home
+    </a>
+
+</nav>
+
+
+<main class="article">
+
+    <span class="category">
+        🤖 TECHNOLOGY • 04
+    </span>
+
+
+    <h1>
+        🧠 How Does Artificial Intelligence Learn?
+    </h1>
+
+
+    <p class="intro">
+        AI can recognize faces, understand language, recommend videos,
+        identify objects and answer questions. But nobody sits beside an
+        AI and teaches it every possible answer. So how does a machine
+        actually learn?
+    </p>
+
+
+    <section class="section">
+
+        <h2>🧩 AI Doesn't Learn Exactly Like Humans</h2>
+
+        <p>
+            When we say that an AI "learns", we don't mean that it thinks
+            and experiences the world exactly like a human does.
+        </p>
+
+        <p>
+            In many AI systems, learning means finding patterns in large
+            amounts of data and adjusting the system so that it becomes
+            better at a particular task.
+        </p>
+
+        <div class="highlight">
+            💡 A simple way to think about machine learning is:
+            <strong>Data → Patterns → Predictions → Improvement.</strong>
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>📚 Step 1: Give the AI Data</h2>
+
+        <p>
+            Machine-learning systems need data to learn patterns.
+        </p>
+
+        <p>
+            Depending on the task, the data might include images, text,
+            sounds, numbers, videos or other forms of information.
+        </p>
+
+        <p>
+            For example, if a system is being trained to recognize cats,
+            it can be shown many examples of images containing cats and
+            images that do not contain cats.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🔍 Step 2: The AI Looks for Patterns</h2>
+
+        <p>
+            The system processes the training data and searches for
+            patterns that help it perform the task.
+        </p>
+
+        <p>
+            In an image-recognition system, it might learn that certain
+            combinations of shapes, textures and visual features are
+            associated with particular objects.
+        </p>
+
+        <p>
+            The important part is that the system is not simply memorizing
+            one perfect example. It is adjusting itself to recognize useful
+            patterns across many examples.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>❌ Step 3: The AI Makes Mistakes</h2>
+
+        <p>
+            At the beginning of training, an AI system can make many
+            incorrect predictions.
+        </p>
+
+        <p>
+            It might look at an image and guess the wrong object, or
+            predict the wrong answer from a piece of information.
+        </p>
+
+        <p>
+            The training process measures how far the prediction was
+            from the desired result.
+        </p>
+
+        <div class="highlight">
+            🔄 Prediction → Compare with the target → Measure the error
+            → Adjust the model → Try again.
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>⚙️ How Does It Improve?</h2>
+
+        <p>
+            Machine-learning models contain adjustable values called
+            <strong>parameters</strong>.
+        </p>
+
+        <p>
+            During training, algorithms adjust these parameters so that
+            the model's predictions become more accurate on its training
+            task.
+        </p>
+
+        <p>
+            This process can be repeated many times using large amounts
+            of data.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🧠 What Is a Neural Network?</h2>
+
+        <p>
+            One important type of machine-learning model is a
+            <strong>neural network</strong>.
+        </p>
+
+        <p>
+            Neural networks contain layers of connected mathematical
+            operations that transform information as it passes through
+            the network.
+        </p>
+
+        <p>
+            During training, the model changes its parameters so that
+            its output becomes better at the task it is being trained
+            for.
+        </p>
+
+        <div class="highlight">
+            🤖 Despite the name, an artificial neural network is not a
+            tiny artificial brain. It is a mathematical model inspired
+            loosely by some ideas from biological neural systems.
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>💬 How Does an AI Learn Language?</h2>
+
+        <p>
+            Language models are trained using very large collections of
+            text and other information, depending on the system.
+        </p>
+
+        <p>
+            During training, the model learns statistical patterns in
+            language, such as which words and pieces of text tend to
+            appear together in particular contexts.
+        </p>
+
+        <p>
+            This allows a language model to generate text that fits the
+            patterns it has learned.
+        </p>
+
+        <div class="highlight">
+            💬 It isn't simply storing a giant list of answers.
+            The model learns patterns that allow it to generate new
+            responses from what it has learned.
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🧪 Does AI Learn From Every Conversation?</h2>
+
+        <p>
+            Not automatically. Whether an AI system learns from a
+            particular interaction depends on how that system is designed
+            and what data policies apply to it.
+        </p>
+
+        <p>
+            Using an AI system and training a new version of that system
+            are different processes.
+        </p>
+
+        <p>
+            A conversation can produce an answer without permanently
+            changing the underlying model.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🎯 What Happens After Training?</h2>
+
+        <p>
+            Once training is complete, a model can be used to make
+            predictions or generate outputs on new information.
+        </p>
+
+        <p>
+            This stage is often called <strong>inference</strong>.
+        </p>
+
+        <p>
+            For example, a trained image model can receive a new image
+            and predict what it thinks is present in that image.
+        </p>
+
+        <p>
+            A trained language model can receive a prompt and generate
+            a response based on patterns represented in its parameters.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>⚠️ Can AI Learn the Wrong Things?</h2>
+
+        <p>
+            Yes. The quality and variety of training data matter a lot.
+        </p>
+
+        <p>
+            If the data contains errors, missing information or unwanted
+            biases, a model can learn patterns that cause problems in
+            its outputs.
+        </p>
+
+        <p>
+            That is why developing useful AI involves much more than
+            simply collecting a huge amount of data.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>✨ Quick Facts</h2>
+
+        <div class="facts">
+
+            <div class="fact">
+                <strong>📚</strong>
+                <span>
+                    Machine learning uses data to discover useful patterns.
+                </span>
+            </div>
+
+            <div class="fact">
+                <strong>🔄</strong>
+                <span>
+                    Training involves repeatedly adjusting a model based
+                    on its performance.
+                </span>
+            </div>
+
+            <div class="fact">
+                <strong>🤖</strong>
+                <span>
+                    A trained model can use what it learned to make
+                    predictions on new inputs.
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🌌 The Big Idea</h2>
+
+        <p>
+            AI doesn't learn by sitting down with a textbook and
+            understanding it the way a student does.
+        </p>
+
+        <p>
+            In machine learning, computers process data, find patterns,
+            make predictions and adjust their internal parameters during
+            training.
+        </p>
+
+        <p>
+            After enough training, the model can use those learned
+            patterns to handle new information.
+        </p>
+
+        <p>
+            So behind an AI that seems incredibly smart is something
+            surprisingly mathematical: huge amounts of data, powerful
+            computers, algorithms and millions or billions of tiny
+            adjustments working together. 🧠⚡
+        </p>
+
+    </section>
+
+
+    <a href="technology.html" class="back">
+        ← Back to Technology
+    </a>
+
+</main>
+
+
+<footer>
+    © 2026 Curiosity Hub • Stay curious. Keep asking why.
+</footer>
+
+
+</body>
+</html>
+```
