@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Why Do We Get Nervous? | Curiosity Hub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            color: #f4f1ff;
+
+            background:
+                radial-gradient(circle at 15% 20%, rgba(130, 90, 220, 0.35), transparent 32%),
+                radial-gradient(circle at 85% 75%, rgba(70, 120, 220, 0.30), transparent 32%),
+                linear-gradient(135deg, #0d0b1f, #17112d, #0b1228);
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 7%;
+
+            background: rgba(20, 17, 45, 0.65);
+            backdrop-filter: blur(14px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #d7c7ff;
+            text-decoration: none;
+        }
+
+        .home {
+            text-decoration: none;
+            color: #c9b7ff;
+            font-weight: bold;
+        }
+
+        .home:hover {
+            text-decoration: underline;
+        }
+
+        /* ARTICLE */
+
+        .article {
+            max-width: 850px;
+            margin: 70px auto;
+            padding: 0 25px;
+        }
+
+        .category {
+            display: inline-block;
+
+            padding: 7px 14px;
+            margin-bottom: 20px;
+
+            border-radius: 20px;
+
+            background: rgba(170, 130, 255, 0.15);
+            border: 1px solid rgba(190, 160, 255, 0.25);
+
+            color: #cdbaff;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 52px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+
+            background: linear-gradient(90deg, #ffffff, #cdbaff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .intro {
+            font-size: 20px;
+            line-height: 1.7;
+            color: #c7c2d8;
+            margin-bottom: 45px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(12px);
+
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 22px;
+
+            padding: 30px;
+            margin-bottom: 25px;
+
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+            color: #e0d5ff;
+        }
+
+        .section p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #c8c4d5;
+        }
+
+        /* HIGHLIGHT */
+
+        .highlight {
+            padding: 25px;
+            margin: 30px 0;
+
+            border-left: 4px solid #a98cff;
+
+            background: rgba(150, 110, 255, 0.1);
+            border-radius: 12px;
+        }
+
+        .highlight p {
+            color: #ddd5f2;
+            line-height: 1.7;
+        }
+
+        /* FACTS */
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .fact {
+            padding: 20px;
+
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .fact strong {
+            display: block;
+            font-size: 22px;
+            color: #d5c4ff;
+            margin-bottom: 8px;
+        }
+
+        .fact span {
+            font-size: 14px;
+            color: #aaa5ba;
+        }
+
+        /* BACK BUTTON */
+
+        .back {
+            display: inline-block;
+
+            margin-top: 20px;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            color: #cbb8ff;
+
+            transition: 0.2s;
+        }
+
+        .back:hover {
+            transform: translateX(-4px);
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+
+            color: #8f899f;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            .article {
+                margin: 50px auto;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .intro {
+                font-size: 17px;
+            }
+
+            .section {
+                padding: 25px;
+            }
+
+            .facts {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="index.html" class="logo">
+            ✨ Curiosity Hub
+        </a>
+
+        <a href="index.html" class="home">
+            ← Home
+        </a>
+
+    </nav>
+
+
+    <!-- ARTICLE -->
+
+    <main class="article">
+
+        <span class="category">
+            🧠 PSYCHOLOGY • 06
+        </span>
+
+        <h1>
+            ⚡ Why Do We Get Nervous?
+        </h1>
+
+        <p class="intro">
+            Your heart starts beating faster. Your palms feel sweaty.
+            Your stomach feels strange and suddenly your mind seems to
+            forget everything you knew. Why does this happen when we are
+            nervous?
+        </p>
+
+
+        <!-- SECTION 1 -->
+
+        <section class="section">
+
+            <h2>🧠 What Is Nervousness?</h2>
+
+            <p>
+                Nervousness is a natural response that can happen when we
+                face something uncertain, challenging or important to us.
+                It is closely connected to the body's stress response.
+            </p>
+
+            <p style="margin-top: 15px;">
+                Giving a presentation, taking an exam, meeting new people
+                or performing in front of others can all make someone feel
+                nervous.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 2 -->
+
+        <section class="section">
+
+            <h2>🚨 The Brain Detects a Challenge</h2>
+
+            <p>
+                When your brain thinks that something important or
+                potentially threatening is happening, it can activate a
+                response that prepares your body to react quickly.
+            </p>
+
+            <div class="highlight">
+
+                <p>
+                    <strong>Your brain is basically saying:</strong>
+                    “Pay attention. Something important is happening.”
+                </p>
+
+            </div>
+
+            <p>
+                This response can happen even when there is no physical
+                danger. Your brain can react to social situations,
+                competition and uncertainty too.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 3 -->
+
+        <section class="section">
+
+            <h2>❤️ Why Does Our Heart Beat Faster?</h2>
+
+            <p>
+                When the body's stress response is activated, hormones such
+                as <strong>adrenaline</strong> help prepare the body for
+                action.
+            </p>
+
+            <p style="margin-top: 15px;">
+                Heart rate can increase so that blood can be delivered
+                efficiently to parts of the body that may need it.
+            </p>
+
+            <p style="margin-top: 15px;">
+                That is why you may suddenly notice your heartbeat before
+                an important event.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 4 -->
+
+        <section class="section">
+
+            <h2>💧 Why Do Our Hands Get Sweaty?</h2>
+
+            <p>
+                Sweating is another part of the body's response to
+                activation. Your body has sweat glands that help regulate
+                temperature, and emotional situations can also trigger
+                sweating.
+            </p>
+
+            <div class="highlight">
+
+                <p>
+                    <strong>So sweaty palms aren't random.</strong>
+                    They are one of the physical signs that your nervous
+                    system has become more active.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 5 -->
+
+        <section class="section">
+
+            <h2>🦋 What About “Butterflies” in the Stomach?</h2>
+
+            <p>
+                Nervousness can affect the digestive system too. When the
+                body is preparing to respond to a challenge, digestion may
+                temporarily become less of a priority.
+            </p>
+
+            <p style="margin-top: 15px;">
+                Changes in digestive activity can create the strange
+                fluttering or “butterflies” feeling many people experience
+                before an important event.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 6 -->
+
+        <section class="section">
+
+            <h2>🧠 Why Do We Sometimes Forget What We Know?</h2>
+
+            <p>
+                Nervousness can affect attention and working memory. When
+                you are highly focused on what might happen next, part of
+                your attention can be occupied by the situation itself.
+            </p>
+
+            <p style="margin-top: 15px;">
+                This can make it temporarily harder to retrieve information
+                or think as clearly as you normally would.
+            </p>
+
+            <div class="highlight">
+
+                <p>
+                    <strong>That's why you might know an answer perfectly
+                    well at home but struggle to remember it when you're
+                    under pressure.</strong>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 7 -->
+
+        <section class="section">
+
+            <h2>🎯 Can Nervousness Ever Be Helpful?</h2>
+
+            <p>
+                Yes. A certain amount of nervousness can increase alertness
+                and help you pay attention to something important.
+            </p>
+
+            <p style="margin-top: 15px;">
+                The goal is not necessarily to eliminate every nervous
+                feeling. Instead, understanding that these physical
+                reactions are normal can make them easier to handle.
+            </p>
+
+        </section>
+
+
+        <!-- QUICK FACTS -->
+
+        <section class="section">
+
+            <h2>✨ Quick Facts</h2>
+
+            <div class="facts">
+
+                <div class="fact">
+
+                    <strong>Adrenaline</strong>
+
+                    <span>
+                        Helps prepare the body for action.
+                    </span>
+
+                </div>
+
+
+                <div class="fact">
+
+                    <strong>Heart Rate</strong>
+
+                    <span>
+                        Nervousness can make your heartbeat faster.
+                    </span>
+
+                </div>
+
+
+                <div class="fact">
+
+                    <strong>Brain</strong>
+
+                    <span>
+                        Nervousness can affect attention and working memory.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL THOUGHT -->
+
+        <section class="section">
+
+            <h2>🌌 The Big Idea</h2>
+
+            <p>
+                Nervousness is a natural body-and-brain response to
+                situations that feel important, uncertain or challenging.
+                Your faster heartbeat, sweaty palms and butterflies are
+                all connected to the body's preparation for action.
+            </p>
+
+            <div class="highlight">
+
+                <p>
+                    <strong>So the next time you feel nervous, remember:</strong>
+                    your body isn't necessarily working against you.
+                    It may simply be preparing you to face something that
+                    matters.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- BACK TO PSYCHOLOGY -->
+
+        <a href="psychology.html" class="back">
+            ← Back to Psychology
+        </a>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Curiosity Hub • Stay curious. Keep asking why.
+    </footer>
+
+</body>
+</html>
