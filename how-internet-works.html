@@ -1,0 +1,608 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How Does the Internet Actually Work? | Curiosity Hub</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    color: #f4f1ff;
+
+    background:
+        radial-gradient(circle at 15% 20%, rgba(0, 210, 255, 0.30), transparent 32%),
+        radial-gradient(circle at 85% 75%, rgba(120, 70, 255, 0.30), transparent 32%),
+        linear-gradient(135deg, #07111f, #10172d, #090d1c);
+}
+
+/* NAVIGATION */
+
+nav {
+    width: 100%;
+    padding: 18px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255,255,255,0.07);
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.home {
+    text-decoration: none;
+    color: #dff8ff;
+    font-size: 0.95rem;
+}
+
+/* ARTICLE */
+
+.article {
+    max-width: 850px;
+    margin: 70px auto;
+    padding: 0 25px;
+}
+
+.category {
+    display: inline-block;
+
+    padding: 8px 15px;
+    border-radius: 20px;
+
+    background: rgba(0,210,255,0.12);
+    border: 1px solid rgba(0,210,255,0.25);
+
+    color: #79eaff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-size: clamp(2.4rem, 6vw, 4.2rem);
+    line-height: 1.05;
+    margin-bottom: 25px;
+
+    background: linear-gradient(90deg, #ffffff, #75eaff, #9b7cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #d4d8e8;
+    margin-bottom: 40px;
+}
+
+/* SECTIONS */
+
+.section {
+    margin: 25px 0;
+    padding: 30px;
+
+    border-radius: 22px;
+
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(14px);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #82eaff;
+}
+
+.section p {
+    color: #d7dbea;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.highlight {
+    margin-top: 20px;
+    padding: 18px;
+
+    border-left: 4px solid #73e7ff;
+
+    background: rgba(0,210,255,0.08);
+
+    border-radius: 10px;
+
+    color: #e8faff;
+    line-height: 1.7;
+}
+
+/* FACTS */
+
+.facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.fact {
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+
+    text-align: center;
+}
+
+.fact strong {
+    display: block;
+    font-size: 1.5rem;
+    color: #78e9ff;
+    margin-bottom: 8px;
+}
+
+.fact span {
+    color: #cfd4e5;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* BACK BUTTON */
+
+.back {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    text-decoration: none;
+    color: #82eaff;
+
+    padding: 12px 18px;
+
+    border: 1px solid rgba(130,234,255,0.25);
+    border-radius: 12px;
+
+    background: rgba(130,234,255,0.07);
+
+    transition: 0.3s;
+}
+
+.back:hover {
+    background: rgba(130,234,255,0.15);
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 30px 20px;
+
+    color: #8e96ae;
+    font-size: 0.85rem;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .article {
+        margin: 45px auto;
+    }
+
+    .section {
+        padding: 22px;
+    }
+
+    .facts {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        ✨ Curiosity Hub
+    </div>
+
+    <a href="index.html" class="home">
+        ← Home
+    </a>
+
+</nav>
+
+
+<main class="article">
+
+    <span class="category">
+        💻 TECHNOLOGY • 02
+    </span>
+
+
+    <h1>
+        🌐 How Does the Internet Actually Work?
+    </h1>
+
+
+    <p class="intro">
+        You type a website name, press Enter, and suddenly a page appears
+        on your screen. But where did that information come from? How did
+        it travel to your phone or laptop? Let's follow the journey of
+        something you use every single day: the internet.
+    </p>
+
+
+    <section class="section">
+
+        <h2>🌍 First, What Exactly Is the Internet?</h2>
+
+        <p>
+            The internet is not one giant computer sitting somewhere.
+            It is a huge network of computers and devices connected
+            to each other.
+        </p>
+
+        <p>
+            These devices can communicate and exchange information using
+            agreed-upon rules called <strong>protocols</strong>.
+        </p>
+
+        <p>
+            Your phone, your Wi-Fi router, data centres, undersea cables
+            and millions of other devices can all become parts of this
+            enormous network.
+        </p>
+
+        <div class="highlight">
+            💡 In simple words: the internet is a network of networks.
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>📱 What Happens When You Open a Website?</h2>
+
+        <p>
+            Imagine you type a website address into your browser.
+            Your browser needs to find the computer that stores that
+            website.
+        </p>
+
+        <p>
+            But computers communicate using numerical addresses called
+            <strong>IP addresses</strong>.
+        </p>
+
+        <p>
+            So your browser needs a way to translate the website name
+            into the correct IP address.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>📖 What Is DNS?</h2>
+
+        <p>
+            This is where <strong>DNS</strong>, or the Domain Name System,
+            comes in.
+        </p>
+
+        <p>
+            Think of DNS as the internet's contact list.
+        </p>
+
+        <p>
+            Instead of remembering a complicated IP address for every
+            website, you can type a simple name such as a website's
+            domain name.
+        </p>
+
+        <p>
+            DNS helps your device discover which IP address belongs
+            to that domain.
+        </p>
+
+        <div class="highlight">
+            🔎 Domain name → DNS → IP address → the right server
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>📦 Your Data Gets Broken Into Packets</h2>
+
+        <p>
+            Once your device knows where to send the request, the
+            information doesn't necessarily travel as one giant piece.
+        </p>
+
+        <p>
+            Data is divided into smaller pieces called
+            <strong>packets</strong>.
+        </p>
+
+        <p>
+            Each packet contains information that helps networks
+            deliver it to the correct destination.
+        </p>
+
+        <p>
+            Breaking data into packets makes communication across
+            large networks much more practical and efficient.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🚦 How Do Packets Know Where to Go?</h2>
+
+        <p>
+            Packets travel through networks using devices called
+            <strong>routers</strong>.
+        </p>
+
+        <p>
+            A router examines information in the packet and helps
+            decide where it should go next.
+        </p>
+
+        <p>
+            Your data might travel through several routers before
+            reaching the server that hosts the website.
+        </p>
+
+        <div class="highlight">
+            🛣️ Think of routers as traffic directors for digital information.
+            They help packets find a path through the network.
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🌊 Does Internet Data Really Travel Through Cables?</h2>
+
+        <p>
+            Yes! A surprising amount of internet traffic travels
+            through physical infrastructure.
+        </p>
+
+        <p>
+            Fibre-optic cables carry huge amounts of information
+            using pulses of light.
+        </p>
+
+        <p>
+            There are also enormous cables running across the floors
+            of oceans, connecting different parts of the world.
+        </p>
+
+        <p>
+            Wireless connections such as Wi-Fi are important too,
+            but Wi-Fi is only one part of the much larger system.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🏢 Where Is the Website Stored?</h2>
+
+        <p>
+            Websites are stored on computers called
+            <strong>servers</strong>.
+        </p>
+
+        <p>
+            Servers are specially designed to store information and
+            respond to requests from other computers.
+        </p>
+
+        <p>
+            Large websites may use many servers in different locations
+            around the world.
+        </p>
+
+        <p>
+            When your browser requests a webpage, a server sends the
+            required information back to your device.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>⚡ How Does the Page Appear So Quickly?</h2>
+
+        <p>
+            After the server receives your request, it sends data back
+            through the network.
+        </p>
+
+        <p>
+            Your browser receives that information and uses it to build
+            the webpage you see.
+        </p>
+
+        <p>
+            Modern networks can move enormous amounts of data very
+            quickly, which is why this whole process can happen in
+            fractions of a second.
+        </p>
+
+        <div class="highlight">
+            ⚡ What feels like "instant" to us is actually a rapid
+            chain of requests, calculations, routing and data transfer.
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🔐 What Keeps Internet Communication Secure?</h2>
+
+        <p>
+            Some websites use <strong>HTTPS</strong> to protect information
+            travelling between your browser and the website.
+        </p>
+
+        <p>
+            Encryption can turn readable information into a form that
+            is much harder for unauthorized people to understand while
+            it is being transmitted.
+        </p>
+
+        <p>
+            This is especially important when websites handle sensitive
+            information.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🧩 So What Is the Internet Made Of?</h2>
+
+        <p>
+            The internet is a combination of many technologies working
+            together.
+        </p>
+
+        <p>
+            Devices, routers, servers, fibre-optic cables, wireless
+            networks, satellites, data centres and communication
+            protocols all play different roles.
+        </p>
+
+        <p>
+            No single part of the internet makes everything happen.
+            The magic comes from all these pieces working together.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>✨ Quick Facts</h2>
+
+        <div class="facts">
+
+            <div class="fact">
+                <strong>🌐</strong>
+                <span>
+                    The internet is a network of connected networks.
+                </span>
+            </div>
+
+            <div class="fact">
+                <strong>📦</strong>
+                <span>
+                    Data is commonly divided into small packets.
+                </span>
+            </div>
+
+            <div class="fact">
+                <strong>💡</strong>
+                <span>
+                    Fibre-optic cables can carry data using pulses of light.
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🌌 The Big Idea</h2>
+
+        <p>
+            The internet may feel invisible, but it is actually powered
+            by a huge amount of physical technology.
+        </p>
+
+        <p>
+            When you open a website, your device finds its destination,
+            requests information, sends and receives packets through
+            networks, and finally uses that information to display
+            the webpage.
+        </p>
+
+        <p>
+            So the next time a website loads in a second, remember:
+            your request may have just completed a tiny digital journey
+            across a network spanning the planet. 🌍
+        </p>
+
+    </section>
+
+
+    <a href="technology.html" class="back">
+        ← Back to Technology
+    </a>
+
+</main>
+
+
+<footer>
+    © 2026 Curiosity Hub • Stay curious. Keep asking why.
+</footer>
+
+
+</body>
+</html>
+```
