@@ -1,0 +1,407 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Why Do Stars Twinkle? | Curiosity Hub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            color: #eef2ff;
+
+            background:
+                radial-gradient(circle at 15% 20%, rgba(91, 72, 180, 0.35), transparent 28%),
+                radial-gradient(circle at 85% 75%, rgba(45, 100, 190, 0.3), transparent 30%),
+                linear-gradient(135deg, #080b1f, #111638, #090d25);
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 7%;
+
+            background: rgba(10, 15, 45, 0.72);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .home {
+            text-decoration: none;
+            color: #b9c6ff;
+            font-weight: bold;
+        }
+
+        .home:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+
+        .hero {
+            text-align: center;
+            padding: 75px 20px 45px;
+        }
+
+        .hero-icon {
+            font-size: 65px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            max-width: 850px;
+            margin: auto;
+
+            font-size: 52px;
+            line-height: 1.15;
+
+            letter-spacing: -1px;
+        }
+
+        .hero h1 span {
+            color: #aebcff;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 20px auto 0;
+
+            font-size: 18px;
+            line-height: 1.7;
+
+            color: #b8bfd8;
+        }
+
+        /* ARTICLE */
+
+        .article {
+            max-width: 850px;
+            margin: 20px auto 70px;
+            padding: 45px;
+
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(14px);
+
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+        }
+
+        .article h2 {
+            font-size: 30px;
+            margin: 35px 0 15px;
+
+            color: #d7ddff;
+        }
+
+        .article h2:first-child {
+            margin-top: 0;
+        }
+
+        .article p {
+            font-size: 17px;
+            line-height: 1.85;
+            color: #c5cbe0;
+            margin-bottom: 18px;
+        }
+
+        .highlight {
+            margin: 30px 0;
+            padding: 25px;
+
+            border-left: 4px solid #9daeff;
+            border-radius: 12px;
+
+            background: rgba(120, 130, 220, 0.12);
+        }
+
+        .highlight p {
+            margin: 0;
+            color: #e2e6ff;
+        }
+
+        /* FACTS */
+
+        .facts {
+            margin-top: 35px;
+            padding: 25px;
+
+            border-radius: 18px;
+
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .facts h2 {
+            margin-top: 0;
+        }
+
+        .facts ul {
+            padding-left: 22px;
+            color: #c5cbe0;
+            line-height: 1.9;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+
+            color: #8f97b5;
+            font-size: 14px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 35px;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            color: #b9c6ff;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            .hero {
+                padding: 55px 20px 35px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .article {
+                margin: 15px 18px 50px;
+                padding: 28px 22px;
+            }
+
+            .article h2 {
+                font-size: 25px;
+            }
+
+            .article p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="index.html" class="logo">
+            ✨ Curiosity Hub
+        </a>
+
+        <a href="index.html" class="home">
+            ← Home
+        </a>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-icon">⭐</div>
+
+        <h1>
+            Why Do <span>Stars Twinkle?</span>
+        </h1>
+
+        <p>
+            Stars seem to sparkle and change brightness in the night sky.
+            But are the stars actually changing?
+        </p>
+
+    </section>
+
+
+    <!-- ARTICLE -->
+
+    <article class="article">
+
+        <h2>✨ The stars aren't really blinking</h2>
+
+        <p>
+            When you look at a star from Earth, it can appear to
+            brighten, dim, or even slightly change colour.
+            This effect is called <strong>twinkling</strong>.
+        </p>
+
+        <p>
+            But here's the surprising part:
+            the star itself usually isn't changing its brightness.
+            The twinkling happens because the star's light has to
+            travel through Earth's atmosphere before reaching our eyes.
+        </p>
+
+
+        <h2>🌍 What happens in Earth's atmosphere?</h2>
+
+        <p>
+            Earth's atmosphere is not completely uniform.
+            It contains layers of air with different temperatures
+            and densities.
+        </p>
+
+        <p>
+            As starlight travels through these moving layers of air,
+            the light is repeatedly bent in slightly different directions.
+            This bending of light is called <strong>refraction</strong>.
+        </p>
+
+        <div class="highlight">
+
+            <p>
+                💡 Think of starlight like a tiny beam travelling through
+                an invisible, constantly moving maze of air.
+                Its path keeps shifting slightly as it passes through
+                the atmosphere.
+            </p>
+
+        </div>
+
+
+        <h2>👀 Why does this make a star look like it's sparkling?</h2>
+
+        <p>
+            A star is extremely far away from Earth, so it appears to us
+            as a tiny point of light.
+        </p>
+
+        <p>
+            When the atmosphere bends that tiny beam of light,
+            the amount of light reaching our eyes can change from moment
+            to moment.
+        </p>
+
+        <p>
+            Our eyes therefore see the star as if it is rapidly
+            becoming brighter and dimmer.
+            That is the twinkling effect.
+        </p>
+
+
+        <h2>🪐 Why don't planets twinkle as much?</h2>
+
+        <p>
+            This is one of the coolest parts!
+        </p>
+
+        <p>
+            Planets are much closer to Earth than most stars.
+            Through a telescope or even with the naked eye,
+            a planet appears as a tiny disk rather than a single
+            point of light.
+        </p>
+
+        <p>
+            Light from different parts of that disk is affected by
+            different parts of the atmosphere. These changes tend to
+            balance one another out, so planets usually appear much
+            steadier than stars.
+        </p>
+
+
+        <h2>🌌 What about stars seen from space?</h2>
+
+        <p>
+            Astronauts looking at stars from space do not see the same
+            atmospheric twinkling that we see from Earth's surface.
+        </p>
+
+        <p>
+            That's because the light does not have to pass through
+            Earth's atmosphere before reaching their eyes.
+        </p>
+
+
+        <div class="facts">
+
+            <h2>🔭 Quick Facts</h2>
+
+            <ul>
+                <li>Twinkling is caused mainly by Earth's atmosphere.</li>
+                <li>The scientific term for this effect is atmospheric scintillation.</li>
+                <li>Stars appear to twinkle more when they are low near the horizon.</li>
+                <li>Planets usually appear steadier because they are closer and look like tiny disks.</li>
+                <li>Stars themselves are not normally switching their brightness on and off.</li>
+            </ul>
+
+        </div>
+
+
+        <h2>🌟 So, why do stars twinkle?</h2>
+
+        <p>
+            Stars twinkle because their light travels through Earth's
+            constantly moving atmosphere. Different layers of air bend
+            the light in changing directions, making the star appear to
+            rapidly change in brightness.
+        </p>
+
+        <p>
+            So the next time you look at a sparkling night sky,
+            remember: the stars aren't really blinking at you.
+            It's Earth's atmosphere creating the illusion. ✨
+        </p>
+
+
+        <a href="space.html" class="back">
+            ← Back to Space
+        </a>
+
+    </article>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Curiosity Hub • Stay curious. Keep asking why.
+    </footer>
+
+</body>
+</html>
+```
