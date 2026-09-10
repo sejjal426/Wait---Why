@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Why Do We Forget Things? | Curiosity Hub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            color: #f4f1ff;
+
+            background:
+                radial-gradient(circle at 15% 20%, rgba(130, 90, 220, 0.35), transparent 32%),
+                radial-gradient(circle at 85% 75%, rgba(70, 120, 220, 0.30), transparent 32%),
+                linear-gradient(135deg, #0d0b1f, #17112d, #0b1228);
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 7%;
+
+            background: rgba(20, 17, 45, 0.65);
+            backdrop-filter: blur(14px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #d7c7ff;
+            text-decoration: none;
+        }
+
+        .home {
+            text-decoration: none;
+            color: #c9b7ff;
+            font-weight: bold;
+        }
+
+        .home:hover {
+            text-decoration: underline;
+        }
+
+        /* ARTICLE */
+
+        .article {
+            max-width: 850px;
+            margin: 70px auto;
+            padding: 0 25px;
+        }
+
+        .category {
+            display: inline-block;
+
+            padding: 7px 14px;
+            margin-bottom: 20px;
+
+            border-radius: 20px;
+
+            background: rgba(170, 130, 255, 0.15);
+            border: 1px solid rgba(190, 160, 255, 0.25);
+
+            color: #cdbaff;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 52px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+
+            background: linear-gradient(90deg, #ffffff, #cdbaff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .intro {
+            font-size: 20px;
+            line-height: 1.7;
+            color: #c7c2d8;
+            margin-bottom: 45px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(12px);
+
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 22px;
+
+            padding: 30px;
+            margin-bottom: 25px;
+
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+            color: #e0d5ff;
+        }
+
+        .section p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #c8c4d5;
+        }
+
+        /* HIGHLIGHT */
+
+        .highlight {
+            padding: 25px;
+            margin: 30px 0;
+
+            border-left: 4px solid #a98cff;
+
+            background: rgba(150, 110, 255, 0.1);
+            border-radius: 12px;
+        }
+
+        .highlight p {
+            color: #ddd5f2;
+            line-height: 1.7;
+        }
+
+        /* FACTS */
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .fact {
+            padding: 20px;
+
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .fact strong {
+            display: block;
+            font-size: 22px;
+            color: #d5c4ff;
+            margin-bottom: 8px;
+        }
+
+        .fact span {
+            font-size: 14px;
+            color: #aaa5ba;
+        }
+
+        /* BACK BUTTON */
+
+        .back {
+            display: inline-block;
+
+            margin-top: 20px;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            color: #cbb8ff;
+
+            transition: 0.2s;
+        }
+
+        .back:hover {
+            transform: translateX(-4px);
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+
+            color: #8f899f;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            .article {
+                margin: 50px auto;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .intro {
+                font-size: 17px;
+            }
+
+            .section {
+                padding: 25px;
+            }
+
+            .facts {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <a href="index.html" class="logo">✨ Curiosity Hub</a>
+
+        <a href="index.html" class="home">← Home</a>
+    </nav>
+
+
+    <!-- ARTICLE -->
+
+    <main class="article">
+
+        <span class="category">🧠 PSYCHOLOGY • 02</span>
+
+        <h1>🧩 Why Do We Forget Things?</h1>
+
+        <p class="intro">
+            You walk into a room and suddenly forget why you went there.
+            You study something carefully and then can't remember it during
+            a test. Why does our brain forget information that seemed
+            important just moments ago?
+        </p>
+
+
+        <!-- SECTION 1 -->
+
+        <section class="section">
+
+            <h2>🧠 Forgetting is actually normal</h2>
+
+            <p>
+                Human memory is not like a computer that stores every piece
+                of information perfectly. Our brains constantly decide what
+                information is useful and what information can fade away.
+            </p>
+
+            <p style="margin-top: 15px;">
+                Forgetting can actually be helpful because remembering
+                absolutely everything would make it harder to focus on the
+                information that matters most.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 2 -->
+
+        <section class="section">
+
+            <h2>📚 The information may never have been stored properly</h2>
+
+            <p>
+                Sometimes we think we have forgotten something, but the
+                information was never stored strongly in the first place.
+                This can happen when we are distracted or not paying enough
+                attention.
+            </p>
+
+            <div class="highlight">
+
+                <p>
+                    <strong>Think of it like this:</strong>
+                    if you never properly notice something, your brain has
+                    very little information to store and retrieve later.
+                </p>
+
+            </div>
+
+            <p>
+                This is one reason why trying to study while constantly
+                switching between different distractions can make learning
+                more difficult.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 3 -->
+
+        <section class="section">
+
+            <h2>🔄 Why does information fade?</h2>
+
+            <p>
+                Memories can become harder to retrieve when they are not
+                used for a long time. The connections involved in recalling
+                information can become less accessible.
+            </p>
+
+            <p style="margin-top: 15px;">
+                This is why reviewing information at different times can
+                help strengthen your ability to remember it.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 4 -->
+
+        <section class="section">
+
+            <h2>🔀 Can memories interfere with each other?</h2>
+
+            <p>
+                Yes. Sometimes similar memories compete with one another.
+                This is called <strong>interference</strong>.
+            </p>
+
+            <p style="margin-top: 15px;">
+                For example, if you learn several similar concepts one
+                after another, details from one memory can sometimes make
+                another memory harder to recall.
+            </p>
+
+            <div class="highlight">
+
+                <p>
+                    Your brain isn't necessarily saying
+                    <strong>“I deleted it.”</strong>
+                    Sometimes it is simply having trouble finding the
+                    information at that moment.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 5 -->
+
+        <section class="section">
+
+            <h2>😴 What does sleep have to do with memory?</h2>
+
+            <p>
+                Sleep plays an important role in learning and memory.
+                During sleep, the brain processes and reorganises
+                information from our experiences.
+            </p>
+
+            <p style="margin-top: 15px;">
+                Getting enough sleep can therefore support the brain's
+                ability to learn and remember information.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 6 -->
+
+        <section class="section">
+
+            <h2>💡 Why do we suddenly remember something later?</h2>
+
+            <p>
+                Sometimes a memory that seemed impossible to recall suddenly
+                comes back. This can happen when a useful clue or reminder
+                helps the brain access the memory.
+            </p>
+
+            <p style="margin-top: 15px;">
+                A familiar smell, place, sound or even a particular word can
+                sometimes act as a cue that brings an old memory to mind.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 7 -->
+
+        <section class="section">
+
+            <h2>🧠 How can we remember things better?</h2>
+
+            <p>
+                There are several simple ways to make learning and recall
+                easier. Paying attention when learning, connecting new ideas
+                to things you already know, practising retrieval and
+                reviewing information over time can all help.
+            </p>
+
+            <div class="highlight">
+
+                <p>
+                    <strong>One useful trick:</strong>
+                    Instead of only reading something repeatedly, close the
+                    book and try to recall what you learned. This gives your
+                    memory practice at retrieving the information.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUICK FACTS -->
+
+        <section class="section">
+
+            <h2>✨ Quick Facts</h2>
+
+            <div class="facts">
+
+                <div class="fact">
+                    <strong>Attention</strong>
+                    <span>Information is harder to remember when we never fully notice it.</span>
+                </div>
+
+                <div class="fact">
+                    <strong>Interference</strong>
+                    <span>Similar memories can sometimes compete with each other.</span>
+                </div>
+
+                <div class="fact">
+                    <strong>Sleep</strong>
+                    <span>Sleep supports learning and memory processes.</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL THOUGHT -->
+
+        <section class="section">
+
+            <h2>🌌 The Big Idea</h2>
+
+            <p>
+                Forgetting does not always mean that your brain has failed.
+                Memory is a complicated system, and information can become
+                difficult to store or retrieve for many different reasons.
+            </p>
+
+            <div class="highlight">
+
+                <p>
+                    <strong>So forgetting isn't always the enemy of memory.</strong>
+                    Sometimes it is simply part of how the brain manages
+                    everything we experience.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <a href="psychology.html" class="back">
+            ← Back to Psychology
+        </a>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Curiosity Hub • Stay curious. Keep asking why.
+    </footer>
+
+</body>
+</html>
