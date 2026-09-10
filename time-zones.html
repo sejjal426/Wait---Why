@@ -1,0 +1,477 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Why Are There Different Time Zones? | Curiosity Hub</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+
+            background:
+                radial-gradient(circle at 15% 20%, rgba(0, 210, 255, 0.30), transparent 32%),
+                radial-gradient(circle at 85% 75%, rgba(120, 70, 255, 0.30), transparent 32%),
+                linear-gradient(135deg, #07111f, #10172d, #090d1c);
+
+            background-attachment: fixed;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 18px 8%;
+
+            background: rgba(10, 18, 35, 0.72);
+            backdrop-filter: blur(15px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        nav a {
+            color: #bdefff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .article {
+            max-width: 850px;
+            margin: 70px auto;
+            padding: 0 25px;
+        }
+
+        .badge {
+            display: inline-block;
+
+            padding: 8px 15px;
+            margin-bottom: 20px;
+
+            border-radius: 30px;
+
+            background: rgba(0, 210, 255, 0.12);
+            border: 1px solid rgba(0, 210, 255, 0.30);
+
+            color: #75e8ff;
+            font-size: 13px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 70px);
+            line-height: 1.05;
+            margin-bottom: 25px;
+
+            background: linear-gradient(90deg, #ffffff, #71e5ff, #a98cff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .intro {
+            font-size: 20px;
+            line-height: 1.7;
+            color: #c9d7e8;
+            margin-bottom: 45px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            padding: 30px;
+
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.10);
+
+            border-radius: 22px;
+
+            backdrop-filter: blur(14px);
+
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.20);
+        }
+
+        .section h2 {
+            color: #70e6ff;
+            margin-bottom: 15px;
+            font-size: 25px;
+        }
+
+        .section p {
+            color: #d5deeb;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .highlight {
+            margin: 25px 0;
+            padding: 22px;
+
+            border-left: 4px solid #70e6ff;
+
+            background: rgba(0, 210, 255, 0.08);
+            border-radius: 12px;
+
+            color: #e7faff;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .fact {
+            padding: 22px;
+
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+
+            border-radius: 18px;
+        }
+
+        .fact strong {
+            display: block;
+            color: #75e8ff;
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        .fact span {
+            color: #c9d7e8;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 20px;
+
+            color: #75e8ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back:hover {
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #8291a8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                padding: 16px 5%;
+            }
+
+            .article {
+                margin: 45px auto;
+                padding: 0 18px;
+            }
+
+            .section {
+                padding: 22px;
+            }
+
+            .section p {
+                font-size: 16px;
+            }
+
+            .facts {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">✨ Curiosity Hub</div>
+        <a href="index.html">← Home</a>
+    </nav>
+
+    <main class="article">
+
+        <div class="badge">🌍 WORLD • 01</div>
+
+        <h1>Why Are There Different Time Zones?</h1>
+
+        <p class="intro">
+            Ever wondered why it can be afternoon in India while people
+            somewhere else are just starting their morning? The answer
+            is hidden in Earth's rotation — and the way humans divided
+            our planet's time.
+        </p>
+
+        <section class="section">
+
+            <h2>🌍 Earth Is Always Turning</h2>
+
+            <p>
+                Earth rotates around its axis once approximately every
+                24 hours. As it rotates, different parts of Earth face
+                the Sun.
+            </p>
+
+            <p>
+                The side facing the Sun experiences daytime, while the
+                side turned away from the Sun experiences nighttime.
+            </p>
+
+            <div class="highlight">
+                So when the Sun is high in the sky for you, another part
+                of the world may already be experiencing evening or night.
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>☀️ Why Can't Everyone Use the Same Time?</h2>
+
+            <p>
+                Imagine if the entire world used exactly the same clock.
+                When it was 12:00 noon according to that clock, some
+                countries would have the Sun overhead while others might
+                be in darkness.
+            </p>
+
+            <p>
+                Instead, humans created different time zones so that
+                clocks could roughly match the position of the Sun in
+                the sky.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🕐 The 24-Hour Idea</h2>
+
+            <p>
+                Earth makes one complete rotation in about 24 hours.
+                Because a circle has 360 degrees, Earth rotates about
+                15 degrees every hour.
+            </p>
+
+            <p>
+                This led to the idea of dividing Earth into roughly
+                24 major time zones.
+            </p>
+
+            <div class="highlight">
+                360° ÷ 24 hours = 15° per hour
+            </div>
+
+            <p>
+                Moving east generally means moving toward a later local
+                time, while moving west generally means moving toward
+                an earlier local time.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🗺️ But Why Don't Time Zones Look Like Perfect Stripes?</h2>
+
+            <p>
+                If time zones were based only on mathematics, they would
+                look like straight vertical strips around Earth.
+            </p>
+
+            <p>
+                But countries have borders, cities, economies and
+                political decisions. So governments often adjust their
+                official time zones to make life and administration
+                easier.
+            </p>
+
+            <p>
+                That is why real-world time-zone boundaries can look
+                surprisingly irregular.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🇮🇳 India's One Time Zone</h2>
+
+            <p>
+                India is a very wide country from east to west, but the
+                entire country officially uses one standard time:
+                Indian Standard Time, or IST.
+            </p>
+
+            <p>
+                IST is based on a longitude of 82.5° east and is
+                5 hours 30 minutes ahead of Coordinated Universal Time,
+                written as UTC+5:30.
+            </p>
+
+            <div class="highlight">
+                This means sunrise and sunset happen at noticeably
+                different local times in different parts of India,
+                even though the clocks show the same official time.
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>✈️ What Happens When You Travel?</h2>
+
+            <p>
+                When you travel across several time zones, your watch
+                may need to be changed to match the local time.
+            </p>
+
+            <p>
+                Your body, however, still follows its own internal
+                biological clock. This is one reason long-distance
+                travellers can sometimes feel tired or confused after
+                crossing many time zones. This temporary mismatch is
+                commonly called jet lag.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🌐 What Is the International Date Line?</h2>
+
+            <p>
+                Time zones eventually create another interesting
+                problem: the date itself has to change somewhere.
+            </p>
+
+            <p>
+                The International Date Line lies roughly along the
+                opposite side of Earth from the Prime Meridian. Crossing
+                it can change the calendar date by one day.
+            </p>
+
+            <p>
+                It is not a perfectly straight line because it bends
+                around islands and political boundaries.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🧭 The Prime Meridian</h2>
+
+            <p>
+                To organize global time, the world uses a reference
+                line called the Prime Meridian, located at 0° longitude
+                and passing through Greenwich in England.
+            </p>
+
+            <p>
+                Time zones are described using their difference from
+                Coordinated Universal Time, or UTC.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>✨ Quick Facts</h2>
+
+            <div class="facts">
+
+                <div class="fact">
+                    <strong>24</strong>
+                    <span>
+                        Earth's rotation is divided into roughly
+                        24 hours.
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <strong>15°</strong>
+                    <span>
+                        Earth rotates about 15 degrees of longitude
+                        every hour.
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <strong>UTC</strong>
+                    <span>
+                        Coordinated Universal Time is the main
+                        reference for global timekeeping.
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>💡 The Big Idea</h2>
+
+            <p>
+                Time zones exist because Earth rotates. Different parts
+                of our planet face the Sun at different moments, creating
+                different local times.
+            </p>
+
+            <p>
+                Humans created time zones to turn this natural difference
+                into an organized system that helps the entire world
+                coordinate clocks, travel, communication and daily life.
+            </p>
+
+        </section>
+
+        <a class="back" href="world.html">
+            ← Back to World
+        </a>
+
+    </main>
+
+    <footer>
+        © 2026 Curiosity Hub • Stay curious. Keep asking why.
+    </footer>
+
+</body>
+</html>
+```
