@@ -1,0 +1,477 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>How Do Deserts Form? | Curiosity Hub</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+
+            background:
+                radial-gradient(circle at 15% 20%, rgba(0, 210, 255, 0.30), transparent 32%),
+                radial-gradient(circle at 85% 75%, rgba(120, 70, 255, 0.30), transparent 32%),
+                linear-gradient(135deg, #07111f, #10172d, #090d1c);
+
+            background-attachment: fixed;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 18px 8%;
+
+            background: rgba(10, 18, 35, 0.72);
+            backdrop-filter: blur(15px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #bdefff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .article {
+            max-width: 850px;
+            margin: 70px auto;
+            padding: 0 25px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 15px;
+            margin-bottom: 20px;
+
+            border-radius: 30px;
+
+            background: rgba(0, 210, 255, 0.12);
+            border: 1px solid rgba(0, 210, 255, 0.30);
+
+            color: #75e8ff;
+            font-size: 13px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 70px);
+            line-height: 1.05;
+            margin-bottom: 25px;
+
+            background: linear-gradient(90deg, #ffffff, #71e5ff, #a98cff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .intro {
+            font-size: 20px;
+            line-height: 1.7;
+            color: #c9d7e8;
+            margin-bottom: 45px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            padding: 30px;
+
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.10);
+
+            border-radius: 22px;
+            backdrop-filter: blur(14px);
+
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.20);
+        }
+
+        .section h2 {
+            color: #70e6ff;
+            margin-bottom: 15px;
+            font-size: 25px;
+        }
+
+        .section p {
+            color: #d5deeb;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .highlight {
+            margin: 25px 0;
+            padding: 22px;
+
+            border-left: 4px solid #70e6ff;
+
+            background: rgba(0, 210, 255, 0.08);
+            border-radius: 12px;
+
+            color: #e7faff;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .fact {
+            padding: 22px;
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+
+            border-radius: 18px;
+        }
+
+        .fact strong {
+            display: block;
+            color: #75e8ff;
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        .fact span {
+            color: #c9d7e8;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 20px;
+
+            color: #75e8ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back:hover {
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #8291a8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 16px 5%;
+            }
+
+            .article {
+                margin: 45px auto;
+                padding: 0 18px;
+            }
+
+            .section {
+                padding: 22px;
+            }
+
+            .section p {
+                font-size: 16px;
+            }
+
+            .facts {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">✨ Curiosity Hub</div>
+        <a href="index.html">← Home</a>
+    </nav>
+
+    <main class="article">
+
+        <div class="badge">🌍 WORLD • 06</div>
+
+        <h1>How Do Deserts Form?</h1>
+
+        <p class="intro">
+            When you hear the word "desert," you might imagine endless
+            sand dunes under a blazing Sun. But deserts are much more
+            interesting than that — and they don't all look the same.
+            So how does a place become a desert in the first place?
+        </p>
+
+        <section class="section">
+
+            <h2>🏜️ A Desert Is About Rainfall</h2>
+
+            <p>
+                The most important feature of a desert is not its sand.
+                It is the lack of precipitation.
+            </p>
+
+            <p>
+                Deserts receive very little precipitation compared with
+                most other environments. Some deserts are sandy, but others
+                are covered by rocks, gravel, salt flats or even ice.
+            </p>
+
+            <div class="highlight">
+                A desert does not have to be hot or covered in sand.
+                The key feature is extreme dryness.
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>☀️ How Does the Atmosphere Create Dry Areas?</h2>
+
+            <p>
+                One major way deserts form is through global atmospheric
+                circulation.
+            </p>
+
+            <p>
+                Near the equator, strong heating causes warm, moist air
+                to rise. As this air moves higher, it cools and can release
+                much of its moisture as rain.
+            </p>
+
+            <p>
+                The now-drier air eventually moves downward in some
+                subtropical regions. Descending air tends to make cloud
+                formation and rainfall more difficult.
+            </p>
+
+            <div class="highlight">
+                Less rising moist air + less rainfall = conditions that
+                can support desert formation.
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🏔️ Mountains Can Create Deserts</h2>
+
+            <p>
+                Mountains can force moist air to rise. As the air rises,
+                it cools and may release precipitation on one side of the
+                mountain range.
+            </p>
+
+            <p>
+                By the time the air reaches the other side, it may contain
+                much less moisture.
+            </p>
+
+            <p>
+                This dry region is called a rain shadow and can become a
+                desert over time.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🌊 Cold Ocean Currents</h2>
+
+            <p>
+                Some deserts form near coastlines where cold ocean currents
+                flow.
+            </p>
+
+            <p>
+                Cold water cools the air above it. This can reduce
+                evaporation and make it harder for the atmosphere to
+                produce significant rainfall over nearby land.
+            </p>
+
+            <p>
+                As a result, extremely dry coastal environments can exist
+                even beside an ocean.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🌍 Some Deserts Are Far From the Ocean</h2>
+
+            <p>
+                Distance from the ocean can also contribute to dryness.
+                Air travelling far over land may lose much of its moisture
+                before reaching inland regions.
+            </p>
+
+            <p>
+                This is one reason some large continental interiors can
+                have very dry climates.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>❄️ Not All Deserts Are Hot</h2>
+
+            <p>
+                A desert is defined mainly by its dryness, not by its
+                temperature.
+            </p>
+
+            <p>
+                Antarctica is actually the world's largest desert because
+                it receives extremely little precipitation.
+            </p>
+
+            <p>
+                It is a cold desert, covered mainly by ice rather than
+                sand.
+            </p>
+
+            <div class="highlight">
+                Hot desert ≠ all deserts.<br>
+                Dryness is what matters most.
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🌵 How Do Plants Survive There?</h2>
+
+            <p>
+                Even extremely dry deserts can support life. Plants and
+                animals that live there have adaptations that help them
+                conserve and find water.
+            </p>
+
+            <p>
+                Some plants store water, have reduced leaves, or have
+                specialized root systems. Many desert animals are adapted
+                to avoid the hottest parts of the day.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>⏳ Deserts Can Change Over Time</h2>
+
+            <p>
+                Deserts are not completely unchanging landscapes.
+                Climate patterns can shift over thousands or millions
+                of years.
+            </p>
+
+            <p>
+                Changes in rainfall, temperature, atmospheric circulation
+                and geography can make regions become wetter or drier.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>✨ Quick Facts</h2>
+
+            <div class="facts">
+
+                <div class="fact">
+                    <strong>🏜️</strong>
+                    <span>
+                        Deserts are defined mainly by very low
+                        precipitation.
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <strong>🏔️</strong>
+                    <span>
+                        Mountains can create dry rain-shadow regions
+                        behind them.
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <strong>❄️</strong>
+                    <span>
+                        Antarctica is a desert even though it is
+                        covered in ice.
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>💡 The Big Idea</h2>
+
+            <p>
+                Deserts form when an area receives so little precipitation
+                that the environment becomes extremely dry.
+            </p>
+
+            <p>
+                Global air circulation, mountains, cold ocean currents
+                and distance from moisture sources can all contribute to
+                desert formation.
+            </p>
+
+            <p>
+                So a desert isn't necessarily a giant pile of sand.
+                <strong>It is a place where water is scarce.</strong>
+            </p>
+
+        </section>
+
+        <a class="back" href="world.html">
+            ← Back to World
+        </a>
+
+    </main>
+
+    <footer>
+        © 2026 Curiosity Hub • Stay curious. Keep asking why.
+    </footer>
+
+</body>
+</html>
+```
