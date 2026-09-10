@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Why Do We Feel Sleepy? | Curiosity Hub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            color: #f4f1ff;
+
+            background:
+                radial-gradient(circle at 15% 20%, rgba(130, 90, 220, 0.35), transparent 32%),
+                radial-gradient(circle at 85% 75%, rgba(70, 120, 220, 0.30), transparent 32%),
+                linear-gradient(135deg, #0d0b1f, #17112d, #0b1228);
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 7%;
+
+            background: rgba(20, 17, 45, 0.65);
+            backdrop-filter: blur(14px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #d7c7ff;
+            text-decoration: none;
+        }
+
+        .home {
+            text-decoration: none;
+            color: #c9b7ff;
+            font-weight: bold;
+        }
+
+        .home:hover {
+            text-decoration: underline;
+        }
+
+        /* ARTICLE */
+
+        .article {
+            max-width: 850px;
+            margin: 70px auto;
+            padding: 0 25px;
+        }
+
+        .category {
+            display: inline-block;
+
+            padding: 7px 14px;
+            margin-bottom: 20px;
+
+            border-radius: 20px;
+
+            background: rgba(170, 130, 255, 0.15);
+            border: 1px solid rgba(190, 160, 255, 0.25);
+
+            color: #cdbaff;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 52px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+
+            background: linear-gradient(90deg, #ffffff, #cdbaff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .intro {
+            font-size: 20px;
+            line-height: 1.7;
+            color: #c7c2d8;
+            margin-bottom: 45px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(12px);
+
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 22px;
+
+            padding: 30px;
+            margin-bottom: 25px;
+
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+            color: #e0d5ff;
+        }
+
+        .section p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #c8c4d5;
+        }
+
+        /* HIGHLIGHT */
+
+        .highlight {
+            padding: 25px;
+            margin: 30px 0;
+
+            border-left: 4px solid #a98cff;
+
+            background: rgba(150, 110, 255, 0.1);
+            border-radius: 12px;
+        }
+
+        .highlight p {
+            color: #ddd5f2;
+            line-height: 1.7;
+        }
+
+        /* FACTS */
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .fact {
+            padding: 20px;
+
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .fact strong {
+            display: block;
+            font-size: 22px;
+            color: #d5c4ff;
+            margin-bottom: 8px;
+        }
+
+        .fact span {
+            font-size: 14px;
+            color: #aaa5ba;
+        }
+
+        /* BACK BUTTON */
+
+        .back {
+            display: inline-block;
+
+            margin-top: 20px;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            color: #cbb8ff;
+
+            transition: 0.2s;
+        }
+
+        .back:hover {
+            transform: translateX(-4px);
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+
+            color: #8f899f;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            .article {
+                margin: 50px auto;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .intro {
+                font-size: 17px;
+            }
+
+            .section {
+                padding: 25px;
+            }
+
+            .facts {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="index.html" class="logo">
+            ✨ Curiosity Hub
+        </a>
+
+        <a href="index.html" class="home">
+            ← Home
+        </a>
+
+    </nav>
+
+
+    <!-- ARTICLE -->
+
+    <main class="article">
+
+        <span class="category">
+            🧠 PSYCHOLOGY • 05
+        </span>
+
+        <h1>
+            😴 Why Do We Feel Sleepy?
+        </h1>
+
+        <p class="intro">
+            Sometimes your eyes become heavy, your concentration disappears,
+            and all you want to do is close your eyes. But what actually
+            makes the brain tell us that it is time to sleep?
+        </p>
+
+
+        <!-- SECTION 1 -->
+
+        <section class="section">
+
+            <h2>🧠 Sleepiness Is a Signal</h2>
+
+            <p>
+                Feeling sleepy is part of the body's natural sleep-wake
+                system. Your brain constantly keeps track of how long you
+                have been awake and when your body is ready to rest.
+            </p>
+
+            <p style="margin-top: 15px;">
+                Two important systems work together to influence when we
+                feel sleepy: <strong>sleep pressure</strong> and our
+                <strong>body clock</strong>.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 2 -->
+
+        <section class="section">
+
+            <h2>⏳ What Is Sleep Pressure?</h2>
+
+            <p>
+                The longer you stay awake, the stronger your body's need
+                for sleep generally becomes. This is sometimes called
+                <strong>sleep pressure</strong>.
+            </p>
+
+            <p style="margin-top: 15px;">
+                One chemical involved in this process is
+                <strong>adenosine</strong>. As you remain awake, adenosine
+                builds up in the brain and contributes to the feeling of
+                tiredness.
+            </p>
+
+            <div class="highlight">
+
+                <p>
+                    <strong>Think of sleep pressure like a battery:</strong>
+                    the longer you stay awake, the more your need for rest
+                    builds. Sleep helps reduce that pressure.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 3 -->
+
+        <section class="section">
+
+            <h2>🌙 What Is the Body Clock?</h2>
+
+            <p>
+                Your body has an internal timing system called the
+                <strong>circadian rhythm</strong>. It follows roughly a
+                24-hour cycle and helps regulate sleep, wakefulness and
+                many other body processes.
+            </p>
+
+            <p style="margin-top: 15px;">
+                Light is one of the most important signals that helps keep
+                this internal clock aligned with the day-night cycle.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 4 -->
+
+        <section class="section">
+
+            <h2>💡 Why Does Darkness Make Us Sleepy?</h2>
+
+            <p>
+                When it becomes dark, the brain receives signals that it is
+                approaching nighttime. The body can then increase production
+                of <strong>melatonin</strong>, a hormone involved in
+                regulating the timing of sleep.
+            </p>
+
+            <p style="margin-top: 15px;">
+                Melatonin does not simply “knock us out.” Instead, it helps
+                signal to the body that it is time to prepare for sleep.
+            </p>
+
+            <div class="highlight">
+
+                <p>
+                    <strong>That's why light matters:</strong>
+                    bright light, especially at the wrong time of day, can
+                    affect the signals that help control our sleep timing.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 5 -->
+
+        <section class="section">
+
+            <h2>📱 Why Can We Feel Sleepy but Still Stay Awake?</h2>
+
+            <p>
+                Feeling sleepy does not always mean that you immediately
+                fall asleep. Your environment, activities, emotions and
+                habits can influence how easily you fall asleep.
+            </p>
+
+            <p style="margin-top: 15px;">
+                Your internal clock and sleep pressure can also sometimes
+                be out of sync with what you want to do.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 6 -->
+
+        <section class="section">
+
+            <h2>☀️ Why Do We Feel More Awake in the Morning?</h2>
+
+            <p>
+                As morning arrives, increasing light exposure helps signal
+                the brain that it is time to become more alert.
+            </p>
+
+            <p style="margin-top: 15px;">
+                As the day continues, the balance between the circadian
+                rhythm and accumulated sleep pressure changes, eventually
+                making sleepiness stronger again.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 7 -->
+
+        <section class="section">
+
+            <h2>🛌 What Happens When We Finally Sleep?</h2>
+
+            <p>
+                Sleep gives the brain and body an opportunity to rest,
+                recover and carry out important processes. During sleep,
+                the brain remains active and goes through different stages
+                with different patterns of activity.
+            </p>
+
+            <p style="margin-top: 15px;">
+                As you sleep, the pressure to sleep gradually decreases,
+                which helps prepare your body for another period of
+                wakefulness.
+            </p>
+
+        </section>
+
+
+        <!-- QUICK FACTS -->
+
+        <section class="section">
+
+            <h2>✨ Quick Facts</h2>
+
+            <div class="facts">
+
+                <div class="fact">
+
+                    <strong>Adenosine</strong>
+
+                    <span>
+                        Its buildup contributes to sleep pressure.
+                    </span>
+
+                </div>
+
+
+                <div class="fact">
+
+                    <strong>Body Clock</strong>
+
+                    <span>
+                        The circadian rhythm helps control sleep timing.
+                    </span>
+
+                </div>
+
+
+                <div class="fact">
+
+                    <strong>Melatonin</strong>
+
+                    <span>
+                        It helps signal that it is time to prepare for sleep.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL THOUGHT -->
+
+        <section class="section">
+
+            <h2>🌌 The Big Idea</h2>
+
+            <p>
+                Sleepiness is not random. It is the result of several
+                systems working together, including sleep pressure,
+                the circadian rhythm, light signals and hormones such
+                as melatonin.
+            </p>
+
+            <div class="highlight">
+
+                <p>
+                    <strong>So when your brain says “I'm sleepy,”</strong>
+                    it is not simply being lazy — it is responding to
+                    carefully controlled biological signals that help
+                    regulate when your body rests.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- BACK TO PSYCHOLOGY -->
+
+        <a href="psychology.html" class="back">
+            ← Back to Psychology
+        </a>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Curiosity Hub • Stay curious. Keep asking why.
+    </footer>
+
+</body>
+</html>
