@@ -1,0 +1,469 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Why Don't Oceans Mix Completely? | Curiosity Hub</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+
+            background:
+                radial-gradient(circle at 15% 20%, rgba(0, 210, 255, 0.30), transparent 32%),
+                radial-gradient(circle at 85% 75%, rgba(120, 70, 255, 0.30), transparent 32%),
+                linear-gradient(135deg, #07111f, #10172d, #090d1c);
+
+            background-attachment: fixed;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 18px 8%;
+
+            background: rgba(10, 18, 35, 0.72);
+            backdrop-filter: blur(15px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #bdefff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .article {
+            max-width: 850px;
+            margin: 70px auto;
+            padding: 0 25px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 15px;
+            margin-bottom: 20px;
+
+            border-radius: 30px;
+
+            background: rgba(0, 210, 255, 0.12);
+            border: 1px solid rgba(0, 210, 255, 0.30);
+
+            color: #75e8ff;
+            font-size: 13px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 70px);
+            line-height: 1.05;
+            margin-bottom: 25px;
+
+            background: linear-gradient(90deg, #ffffff, #71e5ff, #a98cff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .intro {
+            font-size: 20px;
+            line-height: 1.7;
+            color: #c9d7e8;
+            margin-bottom: 45px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            padding: 30px;
+
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.10);
+
+            border-radius: 22px;
+            backdrop-filter: blur(14px);
+
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.20);
+        }
+
+        .section h2 {
+            color: #70e6ff;
+            margin-bottom: 15px;
+            font-size: 25px;
+        }
+
+        .section p {
+            color: #d5deeb;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .highlight {
+            margin: 25px 0;
+            padding: 22px;
+
+            border-left: 4px solid #70e6ff;
+
+            background: rgba(0, 210, 255, 0.08);
+            border-radius: 12px;
+
+            color: #e7faff;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .fact {
+            padding: 22px;
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+
+            border-radius: 18px;
+        }
+
+        .fact strong {
+            display: block;
+            color: #75e8ff;
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        .fact span {
+            color: #c9d7e8;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 20px;
+
+            color: #75e8ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back:hover {
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #8291a8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 16px 5%;
+            }
+
+            .article {
+                margin: 45px auto;
+                padding: 0 18px;
+            }
+
+            .section {
+                padding: 22px;
+            }
+
+            .section p {
+                font-size: 16px;
+            }
+
+            .facts {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">✨ Curiosity Hub</div>
+        <a href="index.html">← Home</a>
+    </nav>
+
+    <main class="article">
+
+        <div class="badge">🌍 WORLD • 03</div>
+
+        <h1>Why Don't Oceans Mix Completely?</h1>
+
+        <p class="intro">
+            You've probably seen pictures where two bodies of water appear
+            to meet but still look like they have a sharp line between them.
+            Do oceans really refuse to mix? Not quite. The real explanation
+            is much more fascinating.
+        </p>
+
+        <section class="section">
+
+            <h2>🌊 The Oceans Actually Do Mix</h2>
+
+            <p>
+                First, let's clear up a common misconception:
+                oceans are not separated by invisible walls.
+            </p>
+
+            <p>
+                Ocean water is constantly moving and mixing. Waves, tides,
+                winds, currents and underwater circulation all help move
+                water from one place to another.
+            </p>
+
+            <div class="highlight">
+                Oceans don't stay completely separate. They mix continuously,
+                but the process can be slow and complicated.
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🧂 Salt Changes the Water</h2>
+
+            <p>
+                Seawater contains dissolved salts. But the amount of salt
+                is not exactly the same everywhere.
+            </p>
+
+            <p>
+                Water with more dissolved salt is generally denser than
+                water with less salt, assuming other conditions are similar.
+            </p>
+
+            <p>
+                These differences can influence how water layers and currents
+                move through the ocean.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🌡️ Temperature Matters Too</h2>
+
+            <p>
+                Temperature also affects the density of seawater.
+                Cold seawater is generally denser than warm seawater.
+            </p>
+
+            <p>
+                When water masses have different temperatures and salinities,
+                they can behave differently and may remain distinct for
+                some time instead of instantly becoming uniform.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>⚖️ Density Creates Layers</h2>
+
+            <p>
+                Differences in temperature and salinity can create differences
+                in density. Denser water tends to sink, while less dense
+                water tends to remain closer to the surface.
+            </p>
+
+            <p>
+                This creates large-scale patterns of movement inside the
+                oceans.
+            </p>
+
+            <div class="highlight">
+                Temperature + salinity → density → movement of ocean water
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🌬️ Currents Keep Water Moving</h2>
+
+            <p>
+                Ocean currents transport enormous amounts of water around
+                the planet.
+            </p>
+
+            <p>
+                Surface currents are strongly influenced by winds, while
+                deeper circulation is also affected by differences in
+                temperature and salinity.
+            </p>
+
+            <p>
+                These movements mean that water from different regions
+                can eventually travel thousands of kilometres.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🌀 Why Can We Sometimes See a Boundary?</h2>
+
+            <p>
+                When two water masses with different temperatures,
+                salinities, sediments or other properties meet, the
+                difference can sometimes be visible.
+            </p>
+
+            <p>
+                Rivers entering the sea can also create noticeable
+                differences because river water may contain less salt
+                and more sediment than seawater.
+            </p>
+
+            <p>
+                But the visible boundary does not mean the waters will
+                never mix. Turbulence and currents gradually blend them.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🌎 The Ocean Is One Huge System</h2>
+
+            <p>
+                Although we give different parts of the global ocean names
+                such as the Atlantic, Pacific and Indian Oceans, they are
+                connected.
+            </p>
+
+            <p>
+                Water can move between these major ocean basins through
+                currents and circulation.
+            </p>
+
+            <div class="highlight">
+                The world's oceans are connected parts of one enormous
+                global ocean system.
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>🐋 Why Does This Matter?</h2>
+
+            <p>
+                Ocean circulation plays an important role in Earth's
+                climate. Moving water transports heat around the planet.
+            </p>
+
+            <p>
+                Ocean currents also affect marine ecosystems, nutrients
+                and the conditions experienced by many sea creatures.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>✨ Quick Facts</h2>
+
+            <div class="facts">
+
+                <div class="fact">
+                    <strong>🌊</strong>
+                    <span>
+                        Ocean water is constantly moving and mixing.
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <strong>🧂</strong>
+                    <span>
+                        Differences in salinity can affect seawater
+                        density and circulation.
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <strong>🌡️</strong>
+                    <span>
+                        Temperature differences also influence the
+                        density and movement of seawater.
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>💡 The Big Idea</h2>
+
+            <p>
+                Oceans do not have permanent invisible barriers between
+                them. They are constantly mixing and exchanging water.
+            </p>
+
+            <p>
+                However, differences in temperature, salinity and density,
+                together with powerful currents, can keep different water
+                masses distinct for a while.
+            </p>
+
+            <p>
+                So when two waters appear not to mix, the better question
+                is not <strong>"Why don't they mix?"</strong> but
+                <strong>"What is controlling how quickly they mix?"</strong>
+            </p>
+
+        </section>
+
+        <a class="back" href="world.html">
+            ← Back to World
+        </a>
+
+    </main>
+
+    <footer>
+        © 2026 Curiosity Hub • Stay curious. Keep asking why.
+    </footer>
+
+</body>
+</html>
+```
