@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Why Do We Dream? | Curiosity Hub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            color: #f4f1ff;
+
+            background:
+                radial-gradient(circle at 15% 20%, rgba(130, 90, 220, 0.35), transparent 32%),
+                radial-gradient(circle at 85% 75%, rgba(70, 120, 220, 0.30), transparent 32%),
+                linear-gradient(135deg, #0d0b1f, #17112d, #0b1228);
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 7%;
+
+            background: rgba(20, 17, 45, 0.65);
+            backdrop-filter: blur(14px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #d7c7ff;
+            text-decoration: none;
+        }
+
+        .home {
+            text-decoration: none;
+            color: #c9b7ff;
+            font-weight: bold;
+        }
+
+        .home:hover {
+            text-decoration: underline;
+        }
+
+        /* ARTICLE */
+
+        .article {
+            max-width: 850px;
+            margin: 70px auto;
+            padding: 0 25px;
+        }
+
+        .category {
+            display: inline-block;
+
+            padding: 7px 14px;
+            margin-bottom: 20px;
+
+            border-radius: 20px;
+
+            background: rgba(170, 130, 255, 0.15);
+            border: 1px solid rgba(190, 160, 255, 0.25);
+
+            color: #cdbaff;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 52px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+
+            background: linear-gradient(90deg, #ffffff, #cdbaff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .intro {
+            font-size: 20px;
+            line-height: 1.7;
+            color: #c7c2d8;
+            margin-bottom: 45px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(12px);
+
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 22px;
+
+            padding: 30px;
+            margin-bottom: 25px;
+
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+            color: #e0d5ff;
+        }
+
+        .section p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #c8c4d5;
+        }
+
+        /* HIGHLIGHT */
+
+        .highlight {
+            padding: 25px;
+            margin: 30px 0;
+
+            border-left: 4px solid #a98cff;
+
+            background: rgba(150, 110, 255, 0.1);
+            border-radius: 12px;
+        }
+
+        .highlight p {
+            color: #ddd5f2;
+            line-height: 1.7;
+        }
+
+        /* FACTS */
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .fact {
+            padding: 20px;
+
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .fact strong {
+            display: block;
+            font-size: 22px;
+            color: #d5c4ff;
+            margin-bottom: 8px;
+        }
+
+        .fact span {
+            font-size: 14px;
+            color: #aaa5ba;
+        }
+
+        /* BACK BUTTON */
+
+        .back {
+            display: inline-block;
+
+            margin-top: 20px;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            color: #cbb8ff;
+
+            transition: 0.2s;
+        }
+
+        .back:hover {
+            transform: translateX(-4px);
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+
+            color: #8f899f;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            .article {
+                margin: 50px auto;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .intro {
+                font-size: 17px;
+            }
+
+            .section {
+                padding: 25px;
+            }
+
+            .facts {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <a href="index.html" class="logo">✨ Curiosity Hub</a>
+
+        <a href="index.html" class="home">← Home</a>
+    </nav>
+
+
+    <!-- ARTICLE -->
+
+    <main class="article">
+
+        <span class="category">🧠 PSYCHOLOGY • 01</span>
+
+        <h1>🌙 Why Do We Dream?</h1>
+
+        <p class="intro">
+            Every night, our minds create strange stories, familiar faces,
+            impossible places and sometimes completely random events.
+            But why does the brain dream at all?
+        </p>
+
+
+        <!-- SECTION 1 -->
+
+        <section class="section">
+
+            <h2>🧠 What exactly is a dream?</h2>
+
+            <p>
+                A dream is a series of thoughts, images, emotions and
+                sensations that can happen while we sleep. Some dreams
+                feel realistic, while others can be completely bizarre.
+            </p>
+
+            <p style="margin-top: 15px;">
+                Dreams are especially common during a stage of sleep called
+                <strong>REM sleep</strong>, when brain activity becomes
+                relatively high and many vivid dreams occur.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 2 -->
+
+        <section class="section">
+
+            <h2>🔬 So why does the brain dream?</h2>
+
+            <p>
+                Scientists do not have one final answer. Dreaming appears
+                to be connected to several important processes happening
+                in the brain while we sleep.
+            </p>
+
+            <div class="highlight">
+
+                <p>
+                    <strong>One important idea:</strong>
+                    dreaming may help the brain process memories, emotions
+                    and information gathered during the day.
+                </p>
+
+            </div>
+
+            <p>
+                During sleep, the brain is not simply switched off.
+                Different brain regions remain active and continue
+                organising and processing information.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 3 -->
+
+        <section class="section">
+
+            <h2>💭 Do dreams help us process emotions?</h2>
+
+            <p>
+                Possibly. Dreams often contain emotions such as happiness,
+                fear, excitement or confusion. Researchers think that
+                dreaming may be related to the way the brain processes
+                emotional experiences and memories.
+            </p>
+
+            <p style="margin-top: 15px;">
+                This does not mean that every dream has a hidden meaning.
+                Sometimes a dream may simply be the brain combining
+                different memories, thoughts and sensations.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 4 -->
+
+        <section class="section">
+
+            <h2>🧩 Why are dreams sometimes so weird?</h2>
+
+            <p>
+                During dreaming, some parts of the brain involved in
+                emotions and imagination can be highly active, while
+                areas involved in careful logical thinking may work
+                differently.
+            </p>
+
+            <p style="margin-top: 15px;">
+                This could help explain why a dream can seem perfectly
+                normal while it is happening, even when the events would
+                make no sense in real life.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 5 -->
+
+        <section class="section">
+
+            <h2>😴 Why do we forget most dreams?</h2>
+
+            <p>
+                Many dreams disappear from memory very quickly after we
+                wake up. One reason may be that the brain does not always
+                store dream experiences in the same way it stores waking
+                memories.
+            </p>
+
+            <p style="margin-top: 15px;">
+                If you wake up during or immediately after a dream, you
+                are often more likely to remember it.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 6 -->
+
+        <section class="section">
+
+            <h2>🧠 Do dreams have meanings?</h2>
+
+            <p>
+                People have been trying to interpret dreams for thousands
+                of years. However, there is no scientific dictionary that
+                says a particular dream always has one specific meaning.
+            </p>
+
+            <p style="margin-top: 15px;">
+                A dream about flying, for example, does not automatically
+                mean the same thing for everyone. Dreams can be influenced
+                by personal experiences, memories, emotions and things we
+                encounter in everyday life.
+            </p>
+
+        </section>
+
+
+        <!-- QUICK FACTS -->
+
+        <section class="section">
+
+            <h2>✨ Quick Facts</h2>
+
+            <div class="facts">
+
+                <div class="fact">
+                    <strong>REM</strong>
+                    <span>Many vivid dreams happen during REM sleep.</span>
+                </div>
+
+                <div class="fact">
+                    <strong>Memory</strong>
+                    <span>Most dreams are difficult to remember for long.</span>
+                </div>
+
+                <div class="fact">
+                    <strong>Still a mystery</strong>
+                    <span>Scientists are still studying exactly why we dream.</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL THOUGHT -->
+
+        <section class="section">
+
+            <h2>🌌 The Big Idea</h2>
+
+            <p>
+                Dreams may look like random stories, but they happen while
+                the brain is actively working during sleep. They may be
+                connected to memory, emotions and the way our brains process
+                information.
+            </p>
+
+            <div class="highlight">
+
+                <p>
+                    <strong>So the next time you wake up from a strange dream,
+                    remember:</strong> your brain may have been busy even
+                    while the rest of you was resting.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <a href="psychology.html" class="back">
+            ← Back to Psychology
+        </a>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Curiosity Hub • Stay curious. Keep asking why.
+    </footer>
+
+</body>
+</html>
