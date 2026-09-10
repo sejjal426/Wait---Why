@@ -1,0 +1,573 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How Do Robots Know What to Do? | Curiosity Hub</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    color: #f4f1ff;
+
+    background:
+        radial-gradient(circle at 15% 20%, rgba(0, 210, 255, 0.30), transparent 32%),
+        radial-gradient(circle at 85% 75%, rgba(120, 70, 255, 0.30), transparent 32%),
+        linear-gradient(135deg, #07111f, #10172d, #090d1c);
+}
+
+/* NAVIGATION */
+
+nav {
+    width: 100%;
+    padding: 18px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255,255,255,0.07);
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.home {
+    text-decoration: none;
+    color: #dff8ff;
+    font-size: 0.95rem;
+}
+
+/* ARTICLE */
+
+.article {
+    max-width: 850px;
+    margin: 70px auto;
+    padding: 0 25px;
+}
+
+.category {
+    display: inline-block;
+
+    padding: 8px 15px;
+    border-radius: 20px;
+
+    background: rgba(0,210,255,0.12);
+    border: 1px solid rgba(0,210,255,0.25);
+
+    color: #79eaff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-size: clamp(2.4rem, 6vw, 4.2rem);
+    line-height: 1.05;
+    margin-bottom: 25px;
+
+    background: linear-gradient(90deg, #ffffff, #75eaff, #9b7cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #d4d8e8;
+    margin-bottom: 40px;
+}
+
+/* SECTIONS */
+
+.section {
+    margin: 25px 0;
+    padding: 30px;
+
+    border-radius: 22px;
+
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(14px);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #82eaff;
+}
+
+.section p {
+    color: #d7dbea;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.highlight {
+    margin-top: 20px;
+    padding: 18px;
+
+    border-left: 4px solid #73e7ff;
+
+    background: rgba(0,210,255,0.08);
+
+    border-radius: 10px;
+
+    color: #e8faff;
+    line-height: 1.7;
+}
+
+/* FACTS */
+
+.facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.fact {
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+
+    text-align: center;
+}
+
+.fact strong {
+    display: block;
+    font-size: 1.5rem;
+    color: #78e9ff;
+    margin-bottom: 8px;
+}
+
+.fact span {
+    color: #cfd4e5;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* BACK BUTTON */
+
+.back {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    text-decoration: none;
+    color: #82eaff;
+
+    padding: 12px 18px;
+
+    border: 1px solid rgba(130,234,255,0.25);
+    border-radius: 12px;
+
+    background: rgba(130,234,255,0.07);
+
+    transition: 0.3s;
+}
+
+.back:hover {
+    background: rgba(130,234,255,0.15);
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 30px 20px;
+
+    color: #8e96ae;
+    font-size: 0.85rem;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .article {
+        margin: 45px auto;
+    }
+
+    .section {
+        padding: 22px;
+    }
+
+    .facts {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        ✨ Curiosity Hub
+    </div>
+
+    <a href="index.html" class="home">
+        ← Home
+    </a>
+
+</nav>
+
+
+<main class="article">
+
+    <span class="category">
+        🤖 TECHNOLOGY • 03
+    </span>
+
+
+    <h1>
+        🤖 How Do Robots Know What to Do?
+    </h1>
+
+
+    <p class="intro">
+        A robot can move its arm, avoid an obstacle, pick something up,
+        clean a floor, or even navigate through a room. But robots don't
+        magically know what to do. So how do they turn information about
+        the world into actions?
+    </p>
+
+
+    <section class="section">
+
+        <h2>🧠 Robots Have a "Brain"</h2>
+
+        <p>
+            Robots usually contain a computer or controller that acts as
+            their decision-making system.
+        </p>
+
+        <p>
+            This controller receives information, processes it according
+            to its programming or learned models, and sends instructions
+            to the robot's motors and other components.
+        </p>
+
+        <div class="highlight">
+            💡 A simple way to think about it is:
+            <strong>Sense → Think → Act.</strong>
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>👀 Step 1: Robots Sense the World</h2>
+
+        <p>
+            Robots need information about their surroundings before they
+            can react to them.
+        </p>
+
+        <p>
+            They can use sensors such as cameras, microphones, distance
+            sensors, touch sensors, temperature sensors and many others.
+        </p>
+
+        <p>
+            These sensors convert things happening in the physical world
+            into information that the robot's computer can process.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🧩 Step 2: The Robot Processes the Information</h2>
+
+        <p>
+            The robot's computer receives the sensor information and
+            processes it.
+        </p>
+
+        <p>
+            What happens next depends on what the robot was designed to do.
+        </p>
+
+        <p>
+            A simple robot might follow a few fixed rules, while a more
+            advanced robot may use complex software or artificial
+            intelligence to interpret what it senses.
+        </p>
+
+        <div class="highlight">
+            🔍 For example: if a robot detects an object directly in its
+            path, its software may decide that it needs to stop or change
+            direction.
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>⚙️ Step 3: The Robot Acts</h2>
+
+        <p>
+            Once the controller decides what should happen, it sends
+            instructions to the robot's actuators.
+        </p>
+
+        <p>
+            Actuators are components that create movement or physical
+            action. They can include motors and other mechanisms.
+        </p>
+
+        <p>
+            This is how a robot can turn wheels, move an arm, rotate a
+            camera or perform another physical action.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>📜 Do Robots Always Follow Instructions?</h2>
+
+        <p>
+            Some robots follow very specific instructions written by
+            humans.
+        </p>
+
+        <p>
+            For example, a factory robot may be programmed to repeatedly
+            perform the same sequence of movements.
+        </p>
+
+        <p>
+            Other robots can make choices based on sensor information
+            and software rules rather than following exactly the same
+            movement every time.
+        </p>
+
+        <p>
+            The more complicated the environment, the more complicated
+            the robot's decision-making system may need to be.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🤖 What Does AI Add?</h2>
+
+        <p>
+            Artificial intelligence can allow some robots to perform
+            tasks that require interpreting complex information.
+        </p>
+
+        <p>
+            For example, computer vision can help a robot identify
+            objects in camera images.
+        </p>
+
+        <p>
+            Machine-learning systems can also help robots learn patterns
+            from data and improve how they perform certain tasks.
+        </p>
+
+        <div class="highlight">
+            🧠 AI doesn't give a robot a human mind. It gives the robot
+            software that can perform particular kinds of intelligent
+            information processing.
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🗺️ How Does a Robot Know Where to Go?</h2>
+
+        <p>
+            Some robots need to understand where they are and where they
+            need to go.
+        </p>
+
+        <p>
+            They can use cameras, distance sensors, GPS in suitable
+            environments, maps and other technologies to estimate their
+            position and surroundings.
+        </p>
+
+        <p>
+            A navigation system can then help the robot choose a path
+            toward its destination while responding to obstacles.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🔄 Robots Can Continuously Check Their Environment</h2>
+
+        <p>
+            A robot doesn't always make one decision and then stop thinking.
+        </p>
+
+        <p>
+            Many robots repeatedly collect new sensor information and
+            adjust their actions.
+        </p>
+
+        <p>
+            Imagine a robot moving toward a destination. If something
+            suddenly appears in front of it, new sensor information can
+            cause the robot to change its movement.
+        </p>
+
+        <div class="highlight">
+            🔄 Sense → Process → Act → Sense again.
+            This loop can happen many times every second.
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🧑‍💻 Who Tells the Robot What to Do?</h2>
+
+        <p>
+            Ultimately, humans design the robot's hardware and software,
+            define its goals and decide what kinds of tasks it should
+            be capable of performing.
+        </p>
+
+        <p>
+            Engineers and programmers create the systems that allow the
+            robot to respond to different situations.
+        </p>
+
+        <p>
+            In robots that use machine learning, humans also choose
+            training methods and data and evaluate how well the system
+            performs.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>✨ Quick Facts</h2>
+
+        <div class="facts">
+
+            <div class="fact">
+                <strong>👀</strong>
+                <span>
+                    Sensors give robots information about their surroundings.
+                </span>
+            </div>
+
+            <div class="fact">
+                <strong>🧠</strong>
+                <span>
+                    Controllers and computers process information and make
+                    decisions according to their software.
+                </span>
+            </div>
+
+            <div class="fact">
+                <strong>⚙️</strong>
+                <span>
+                    Motors and other actuators allow robots to physically act.
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>🌌 The Big Idea</h2>
+
+        <p>
+            Robots don't simply "know" what to do.
+        </p>
+
+        <p>
+            They receive information from sensors, process that information
+            using software, and turn the result into physical actions.
+        </p>
+
+        <p>
+            Some robots use simple programmed rules, while more advanced
+            systems can use AI and machine learning for tasks that require
+            more complicated decision-making.
+        </p>
+
+        <p>
+            So when you see a robot move intelligently, there is usually
+            an entire chain of sensors, software, computers and motors
+            working together behind the scenes. 🤖
+        </p>
+
+    </section>
+
+
+    <a href="technology.html" class="back">
+        ← Back to Technology
+    </a>
+
+</main>
+
+
+<footer>
+    © 2026 Curiosity Hub • Stay curious. Keep asking why.
+</footer>
+
+
+</body>
+</html>
+```
