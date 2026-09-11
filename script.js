@@ -734,7 +734,12 @@ function askChatbot() {
     }
 
 
-    alert("🤖 Wait, Why? says:\n\n" + answer);
+    const chatAnswer = document.getElementById("chatAnswer");
 
-    input.value = "";
-}
+chatAnswer.innerHTML =
+    "<strong>🤖 Wait, Why?</strong><br><br>" +
+    answer;
+
+chatAnswer.style.display = "block";
+
+input.value = "";
