@@ -1,25 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- HOME -->
   <url>
     <loc>https://sejjal426.github.io/Wait---Why/</loc>
   </url>
+
+  <!-- SCIENCE -->
   <url>
     <loc>https://sejjal426.github.io/Wait---Why/science.html</loc>
   </url>
   <url>
+    <loc>https://sejjal426.github.io/Wait---Why/aticle-sky-blue.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/ice-float.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/raibow.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/static.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/plants.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/fire-oxygen.html</loc>
+  </url>
+
+  <!-- SPACE -->
+  <url>
     <loc>https://sejjal426.github.io/Wait---Why/space.html</loc>
   </url>
   <url>
-    <loc>https://sejjal426.github.io/Wait---Why/psychology.html</loc>
+    <loc>https://sejjal426.github.io/Wait---Why/stars-twinkle.html</loc>
   </url>
   <url>
-    <loc>https://sejjal426.github.io/Wait---Why/technology.html</loc>
+    <loc>https://sejjal426.github.io/Wait---Why/black-hole.html</loc>
   </url>
   <url>
-    <loc>https://sejjal426.github.io/Wait---Why/world.html</loc>
+    <loc>https://sejjal426.github.io/Wait---Why/sun-hot.html</loc>
   </url>
   <url>
-    <loc>https://sejjal426.github.io/Wait---Why/history.html</loc>
+    <loc>https://sejjal426.github.io/Wait---Why/earth-moving.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/without-moon.html</loc>
   </url>
   <url>
     <loc>https://sejjal426.github.io/Wait---Why/moon-fall.html</loc>
@@ -27,7 +55,94 @@
   <url>
     <loc>https://sejjal426.github.io/Wait---Why/songs.html</loc>
   </url>
+
+  <!-- PSYCHOLOGY -->
   <url>
-    <loc>https://sejjal426.github.io/Wait---Why/article-sky-blue.html</loc>
+    <loc>https://sejjal426.github.io/Wait---Why/psychology.html</loc>
   </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/why-dream.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/why-forget.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/deja-vu.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/why-sleepy.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/why-nervous.html</loc>
+  </url>
+
+  <!-- TECHNOLOGY -->
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/technology.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/phone-location.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/how-internet-works.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/how-robots-think.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/how-ai-learns.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/how-passwords-work.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/what-is-the-cloud.html</loc>
+  </url>
+
+  <!-- WORLD -->
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/world.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/time-zones.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/countries-shapes.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/oceans-mix.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/places-cold.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/volcanoes-places.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/deserts-form.html</loc>
+  </url>
+
+  <!-- HISTORY -->
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/history.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/pyramids.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/before-phones.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/near-rivers.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/printing-press.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/moats.html</loc>
+  </url>
+  <url>
+    <loc>https://sejjal426.github.io/Wait---Why/historians.html</loc>
+  </url>
+
 </urlset>
