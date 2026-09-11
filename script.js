@@ -268,7 +268,18 @@ function searchArticles() {
 function askChatbot() {
 
     const input = document.getElementById("chatInput");
+
+    if (!input) {
+        alert("Chat input not found!");
+        return;
+    }
+
     const question = input.value.trim().toLowerCase();
+
+    if (question === "") {
+        alert("Ask me something you're curious about!");
+        return;
+    }
 
     if (question === "") {
         alert("Ask me something you're curious about!");
