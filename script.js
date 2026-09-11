@@ -743,3 +743,5 @@ chatAnswer.innerHTML =
 chatAnswer.style.display = "block";
 
 input.value = "";
+    
+}
