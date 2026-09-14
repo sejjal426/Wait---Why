@@ -827,3 +827,328 @@ footer p {
     text-decoration: none;
     font-weight: 600;
 }
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Questions | Wait, Why?</title>
+
+    <meta name="description"
+        content="Explore curious questions about science, space, psychology, technology, history and the world.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            WAIT, WHY?
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#explore">Explore</a>
+            <a href="questions.html">Questions</a>
+            <a href="index.html#about">About</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Page Header -->
+
+    <section class="questions-header">
+
+        <p class="section-label">EXPLORE</p>
+
+        <h1>Questions worth asking.</h1>
+
+        <p>
+            Browse through our collection of curious questions
+            and discover something new.
+        </p>
+
+    </section>
+
+
+    <!-- Questions -->
+
+    <section class="all-questions">
+
+        <!-- SCIENCE -->
+
+        <div class="question-category">
+
+            <h2>🔬 Science</h2>
+
+            <div class="question-grid">
+
+                <a href="article-sky-blue.html" class="question-card">
+                    <h3>Why is the sky blue?</h3>
+                    <p>Discover how sunlight and our atmosphere create the blue sky.</p>
+                </a>
+
+                <a href="ice-float.html" class="question-card">
+                    <h3>Why does ice float on water?</h3>
+                    <p>Find out why solid ice is less dense than liquid water.</p>
+                </a>
+
+                <a href="rainbow.html" class="question-card">
+                    <h3>How does a rainbow form?</h3>
+                    <p>Learn how sunlight and water droplets create rainbows.</p>
+                </a>
+
+                <a href="static-shocks.html" class="question-card">
+                    <h3>Why do we get static shocks?</h3>
+                    <p>Discover what happens when electric charge suddenly moves.</p>
+                </a>
+
+                <a href="plants.html" class="question-card">
+                    <h3>How do plants know which way is up?</h3>
+                    <p>Explore how plants respond to gravity and light.</p>
+                </a>
+
+                <a href="fire-oxygen.html" class="question-card">
+                    <h3>Why does fire need oxygen?</h3>
+                    <p>Understand the science behind combustion.</p>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- SPACE -->
+
+        <div class="question-category">
+
+            <h2>🌌 Space</h2>
+
+            <div class="question-grid">
+
+                <a href="moon-fall.html" class="question-card">
+                    <h3>Why doesn't the Moon fall?</h3>
+                    <p>Understand how gravity and orbit work together.</p>
+                </a>
+
+                <a href="stars-twinkle.html" class="question-card">
+                    <h3>Why do stars twinkle?</h3>
+                    <p>Find out how Earth's atmosphere affects starlight.</p>
+                </a>
+
+                <a href="black-hole.html" class="question-card">
+                    <h3>What is a black hole?</h3>
+                    <p>Explore one of the most mysterious objects in space.</p>
+                </a>
+
+                <a href="sun-hot.html" class="question-card">
+                    <h3>Why is the Sun hot?</h3>
+                    <p>Discover how nuclear fusion powers the Sun.</p>
+                </a>
+
+                <a href="earth-moving.html" class="question-card">
+                    <h3>Why don't we feel Earth moving?</h3>
+                    <p>Learn why Earth's motion usually doesn't feel noticeable.</p>
+                </a>
+
+                <a href="without-moon.html" class="question-card">
+                    <h3>What would happen without the Moon?</h3>
+                    <p>Explore how the Moon affects Earth.</p>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PSYCHOLOGY -->
+
+        <div class="question-category">
+
+            <h2>🧠 Psychology</h2>
+
+            <div class="question-grid">
+
+                <a href="dreams.html" class="question-card">
+                    <h3>Why do we dream?</h3>
+                    <p>Explore what happens in our brains while we sleep.</p>
+                </a>
+
+                <a href="forget-things.html" class="question-card">
+                    <h3>Why do we forget things?</h3>
+                    <p>Discover how memory works and why memories fade.</p>
+                </a>
+
+                <a href="deja-vu.html" class="question-card">
+                    <h3>What is déjà vu?</h3>
+                    <p>Understand the strange feeling of having experienced something before.</p>
+                </a>
+
+                <a href="sleepy.html" class="question-card">
+                    <h3>Why do we feel sleepy?</h3>
+                    <p>Learn how your body regulates sleep.</p>
+                </a>
+
+                <a href="nervous.html" class="question-card">
+                    <h3>Why do we get nervous?</h3>
+                    <p>Discover what happens when your brain senses a challenge.</p>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- TECHNOLOGY -->
+
+        <div class="question-category">
+
+            <h2>💻 Technology</h2>
+
+            <div class="question-grid">
+
+                <a href="phone-location.html" class="question-card">
+                    <h3>How does your phone know your location?</h3>
+                    <p>Learn how GPS, Wi-Fi and mobile networks help locate your phone.</p>
+                </a>
+
+                <a href="internet.html" class="question-card">
+                    <h3>How does the internet work?</h3>
+                    <p>Discover how devices communicate across the internet.</p>
+                </a>
+
+                <a href="robots.html" class="question-card">
+                    <h3>How do robots know what to do?</h3>
+                    <p>Explore how software and sensors control robots.</p>
+                </a>
+
+                <a href="artificial-intelligence.html" class="question-card">
+                    <h3>How does artificial intelligence learn?</h3>
+                    <p>Understand how AI systems learn patterns from data.</p>
+                </a>
+
+                <a href="password-security.html" class="question-card">
+                    <h3>How do passwords keep information safe?</h3>
+                    <p>Learn how passwords help protect accounts.</p>
+                </a>
+
+                <a href="cloud.html" class="question-card">
+                    <h3>What is the cloud?</h3>
+                    <p>Discover what people really mean by "the cloud."</p>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORLD -->
+
+        <div class="question-category">
+
+            <h2>🌍 World</h2>
+
+            <div class="question-grid">
+
+                <a href="time-zones.html" class="question-card">
+                    <h3>Why are there different time zones?</h3>
+                    <p>Learn how Earth's rotation affects time around the world.</p>
+                </a>
+
+                <a href="country-shapes.html" class="question-card">
+                    <h3>Why are countries different shapes?</h3>
+                    <p>Discover how geography and history shaped borders.</p>
+                </a>
+
+                <a href="oceans-mix.html" class="question-card">
+                    <h3>Why don't oceans simply mix together?</h3>
+                    <p>Explore temperature, salinity and ocean currents.</p>
+                </a>
+
+                <a href="cold-places.html" class="question-card">
+                    <h3>Why are some places so cold?</h3>
+                    <p>Learn what makes some parts of Earth colder than others.</p>
+                </a>
+
+                <a href="volcanoes.html" class="question-card">
+                    <h3>Where are volcanoes found?</h3>
+                    <p>Discover the connection between volcanoes and tectonic plates.</p>
+                </a>
+
+                <a href="deserts.html" class="question-card">
+                    <h3>How do deserts form?</h3>
+                    <p>Explore why some places receive very little rain.</p>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- HISTORY -->
+
+        <div class="question-category">
+
+            <h2>🏛️ History</h2>
+
+            <div class="question-grid">
+
+                <a href="pyramids.html" class="question-card">
+                    <h3>Why were pyramids built?</h3>
+                    <p>Discover the purposes and engineering behind pyramids.</p>
+                </a>
+
+                <a href="communication-before-phones.html" class="question-card">
+                    <h3>How did people communicate before phones?</h3>
+                    <p>Explore communication methods from the past.</p>
+                </a>
+
+                <a href="ancient-cities-rivers.html" class="question-card">
+                    <h3>Why did ancient cities grow near rivers?</h3>
+                    <p>Learn why rivers were important to early civilizations.</p>
+                </a>
+
+                <a href="printing-press.html" class="question-card">
+                    <h3>How did the printing press change the world?</h3>
+                    <p>Discover how printed information transformed society.</p>
+                </a>
+
+                <a href="castles-moats.html" class="question-card">
+                    <h3>Why did castles have moats?</h3>
+                    <p>Learn how moats helped protect castles.</p>
+                </a>
+
+                <a href="historians-past.html" class="question-card">
+                    <h3>How do historians know what happened in the past?</h3>
+                    <p>Discover how historians use evidence to understand history.</p>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>WAIT, WHY?</h3>
+
+        <p>Curiosity starts with a question.</p>
+
+        <p>© 2026 Wait, Why?</p>
+
+    </footer>
+
+</body>
+
+</html>
