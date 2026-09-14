@@ -744,7 +744,6 @@ function askChatbot() {
 
     }
 
-
     const chatAnswer = document.getElementById("chatAnswer");
 
 chatAnswer.innerHTML =
