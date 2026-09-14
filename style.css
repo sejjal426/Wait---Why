@@ -670,31 +670,33 @@ footer p {
     text-align: left;
 }
 /* ==========================================
-   🎲 RANDOM QUESTION
+   RANDOM QUESTION
    ========================================== */
 
 .random-section {
-    text-align: center;
+    text-align: center !important;
     padding: 90px 20px;
 }
 
 .random-section .section-label {
-    text-align: center;
+    text-align: center !important;
 }
 
 .random-section h2 {
-    text-align: center;
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .random-section .section-intro {
-    text-align: center;
+    text-align: center !important;
     margin-left: auto;
     margin-right: auto;
 }
 
 .random-button {
-    display: inline-block;
-    margin-top: 25px;
+    display: inline-block !important;
+    margin: 25px auto 0 !important;
     padding: 14px 28px;
     border: none;
     border-radius: 30px;
@@ -703,25 +705,22 @@ footer p {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.random-button:hover {
-    transform: translateY(-2px);
 }
 
 .random-question {
-    margin: 30px auto 0;
+    display: none;
     max-width: 650px;
+    margin: 30px auto 0;
     padding: 28px;
     border-radius: 20px;
     background: white;
+    text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    display: none;
 }
 
 .random-question h3 {
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .random-question a {
