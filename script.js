@@ -743,15 +743,20 @@ function askChatbot() {
             "World or History!";
 
     }
+        const chatAnswer = document.getElementById("chatAnswer");
 
-    const chatAnswer = document.getElementById("chatAnswer");
+    chatAnswer.innerHTML =
+        "<div class='user-question'>" +
+        "<strong>👤 You</strong><br><br>" +
+        question +
+        "</div>" +
 
-chatAnswer.innerHTML =
-    "<strong>🤖 Wait, Why?</strong><br><br>" +
-    answer;
+        "<div class='bot-answer'>" +
+        "<strong>🤖 Wait, Why?</strong><br><br>" +
+        answer +
+        "</div>";
 
-chatAnswer.style.display = "block";
+    chatAnswer.style.display = "block";
 
-input.value = "";
-    
+    input.value = "";
 }
