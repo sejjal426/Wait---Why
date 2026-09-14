@@ -760,3 +760,88 @@ function askChatbot() {
 
     input.value = "";
 }
+// ==========================================
+// 🎲 RANDOM QUESTION
+// ==========================================
+
+function randomQuestion() {
+
+    const questions = [
+
+        {
+            question: "Why is the sky blue? 🌤️",
+            url: "article-sky-blue.html"
+        },
+
+        {
+            question: "Why doesn't the Moon fall? 🌙",
+            url: "moon-fall.html"
+        },
+
+        {
+            question: "Why do songs get stuck in our heads? 🎵",
+            url: "songs.html"
+        },
+
+        {
+            question: "Why does ice float on water? 🧊",
+            url: "ice-float.html"
+        },
+
+        {
+            question: "How does a rainbow form? 🌈",
+            url: "rainbow.html"
+        },
+
+        {
+            question: "Why do stars twinkle? ✨",
+            url: "stars-twinkle.html"
+        },
+
+        {
+            question: "Why do we dream? 🌙",
+            url: "dreams.html"
+        },
+
+        {
+            question: "Why do we get nervous? 🧠",
+            url: "nervous.html"
+        },
+
+        {
+            question: "How does the internet work? 💻",
+            url: "internet.html"
+        },
+
+        {
+            question: "Why do volcanoes form? 🌋",
+            url: "volcanoes.html"
+        },
+
+        {
+            question: "Why are some places so cold? ❄️",
+            url: "cold-places.html"
+        },
+
+        {
+            question: "How did people communicate before phones? 📜",
+            url: "communication-before-phones.html"
+        }
+
+    ];
+
+    const randomIndex =
+        Math.floor(Math.random() * questions.length);
+
+    const selectedQuestion = questions[randomIndex];
+
+    const box = document.getElementById("randomQuestion");
+
+    box.innerHTML =
+        "<h3>" + selectedQuestion.question + "</h3>" +
+        "<a href='" + selectedQuestion.url + "'>" +
+        "Discover the answer →" +
+        "</a>";
+
+    box.style.display = "block";
+}
