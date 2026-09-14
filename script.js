@@ -845,3 +845,91 @@ function randomQuestion() {
 
     box.style.display = "block";
 }
+// ==========================================
+// 🌟 QUESTION OF THE DAY
+// ==========================================
+
+function showQuestionOfTheDay() {
+
+    const dailyQuestions = [
+
+        {
+            title: "Why does ice float on water? 🧊",
+            description: "It seems strange that solid ice can float on liquid water. Here's why.",
+            url: "ice-float.html"
+        },
+
+        {
+            title: "Why do stars twinkle? ✨",
+            description: "Stars don't actually flicker. Earth's atmosphere makes them appear to.",
+            url: "stars-twinkle.html"
+        },
+
+        {
+            title: "Why is the sky blue? 🌤️",
+            description: "Sunlight contains many colours, but our atmosphere changes what we see.",
+            url: "article-sky-blue.html"
+        },
+
+        {
+            title: "Why do we dream? 🌙",
+            description: "Our brains stay surprisingly active while we sleep.",
+            url: "dreams.html"
+        },
+
+        {
+            title: "Why do volcanoes form? 🌋",
+            description: "Volcanoes are not randomly scattered around Earth. Their locations have a reason.",
+            url: "volcanoes.html"
+        },
+
+        {
+            title: "How did people communicate before phones? 📜",
+            description: "Long before smartphones, people had clever ways to send messages.",
+            url: "communication-before-phones.html"
+        },
+
+        {
+            title: "Why don't oceans simply mix together? 🌊",
+            description: "The oceans are connected, but several factors affect how their waters mix.",
+            url: "oceans-mix.html"
+        },
+
+        {
+            title: "Why are some places so cold? ❄️",
+            description: "Latitude, altitude and other factors can make some parts of Earth much colder.",
+            url: "cold-places.html"
+        }
+
+    ];
+
+    // Use today's date to choose the same question throughout the day
+    const today = new Date();
+
+    const dayNumber =
+        Math.floor(
+            Date.UTC(
+                today.getFullYear(),
+                today.getMonth(),
+                today.getDate()
+            ) / 86400000
+        );
+
+    const index = dayNumber % dailyQuestions.length;
+
+    const question = dailyQuestions[index];
+
+    document.getElementById("dailyTitle").textContent =
+        question.title;
+
+    document.getElementById("dailyDescription").textContent =
+        question.description;
+
+    document.getElementById("dailyLink").href =
+        question.url;
+}
+
+
+// Run when the page loads
+showQuestionOfTheDay();
+}
