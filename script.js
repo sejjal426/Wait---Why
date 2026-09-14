@@ -932,4 +932,3 @@ function showQuestionOfTheDay() {
 
 // Run when the page loads
 showQuestionOfTheDay();
-}
