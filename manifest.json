@@ -1,0 +1,10 @@
+{
+  "name": "Wait, Why?",
+  "short_name": "Wait, Why?",
+  "description": "Curious questions, simple answers.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f7f8fc",
+  "theme_color": "#171927",
+  "orientation": "portrait"
+}
