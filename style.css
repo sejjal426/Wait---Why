@@ -651,3 +651,21 @@ footer p {
     display: inline-block;
     margin-bottom: 4px;
 }
+/* Chat conversation */
+
+.user-question {
+    background: rgba(240, 240, 245, 0.9);
+    padding: 16px 20px;
+    border-radius: 16px 16px 5px 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: right;
+}
+
+.bot-answer {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 16px 20px;
+    border-radius: 16px 16px 16px 5px;
+    line-height: 1.7;
+    text-align: left;
+}
