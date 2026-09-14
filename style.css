@@ -768,3 +768,62 @@ footer p {
     text-decoration: none;
     font-weight: 600;
 }
+/* ==========================================
+   🌟 QUESTION OF THE DAY - FINAL ALIGNMENT
+   ========================================== */
+
+.daily-section {
+    width: 100%;
+    padding: 90px 20px;
+    text-align: center !important;
+}
+
+.daily-section .section-label {
+    display: block;
+    width: 100%;
+    text-align: center !important;
+}
+
+.daily-section h2 {
+    display: block;
+    width: 100%;
+    text-align: center !important;
+    margin: 0 auto 35px auto;
+}
+
+.daily-section > p:not(.section-label) {
+    width: 100%;
+    text-align: center !important;
+    margin: 0 auto 30px auto;
+}
+
+.daily-question {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto !important;
+    padding: 40px 30px;
+    text-align: center !important;
+    border-radius: 24px;
+    background: white;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.daily-question h3,
+.daily-question p {
+    text-align: center !important;
+}
+
+.daily-question h3 {
+    margin-bottom: 15px;
+}
+
+.daily-question p {
+    margin-bottom: 25px;
+}
+
+.daily-question a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+}
