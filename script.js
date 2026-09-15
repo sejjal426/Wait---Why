@@ -770,7 +770,7 @@ function randomQuestion() {
 
         {
             question: "Why is the sky blue? 🌤️",
-            url: "article-sky-blue.html"
+            url: "aticle-sky-blue.html"
         },
 
         {
@@ -790,7 +790,7 @@ function randomQuestion() {
 
         {
             question: "How does a rainbow form? 🌈",
-            url: "rainbow.html"
+            url: "raibow.html"
         },
 
         {
@@ -800,17 +800,17 @@ function randomQuestion() {
 
         {
             question: "Why do we dream? 🌙",
-            url: "dreams.html"
+            url: "why-dream.html"
         },
 
         {
             question: "Why do we get nervous? 🧠",
-            url: "nervous.html"
+            url: "why-nervous.html"
         },
 
         {
             question: "How does the internet work? 💻",
-            url: "internet.html"
+            url: "how-internet-works.html"
         },
 
         {
@@ -820,12 +820,12 @@ function randomQuestion() {
 
         {
             question: "Why are some places so cold? ❄️",
-            url: "cold-places.html"
+            url: "places-cold.html"
         },
 
         {
             question: "How did people communicate before phones? 📜",
-            url: "communication-before-phones.html"
+            url: "before-phones.html"
         }
 
     ];
@@ -868,13 +868,13 @@ function showQuestionOfTheDay() {
         {
             title: "Why is the sky blue? 🌤️",
             description: "Sunlight contains many colours, but our atmosphere changes what we see.",
-            url: "article-sky-blue.html"
+            url: "aticle-sky-blue.html"
         },
 
         {
             title: "Why do we dream? 🌙",
             description: "Our brains stay surprisingly active while we sleep.",
-            url: "dreams.html"
+            url: "why-dream.html"
         },
 
         {
@@ -886,7 +886,7 @@ function showQuestionOfTheDay() {
         {
             title: "How did people communicate before phones? 📜",
             description: "Long before smartphones, people had clever ways to send messages.",
-            url: "communication-before-phones.html"
+            url: "before-phones.html"
         },
 
         {
@@ -898,7 +898,7 @@ function showQuestionOfTheDay() {
         {
             title: "Why are some places so cold? ❄️",
             description: "Latitude, altitude and other factors can make some parts of Earth much colder.",
-            url: "cold-places.html"
+            url: "places-cold.html"
         }
 
     ];
