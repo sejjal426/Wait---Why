@@ -424,13 +424,91 @@ function askChatbot() {
         answer = "Songs can get stuck in our heads because the brain sometimes repeats familiar musical patterns. This is often called an 'earworm'.";
     }
 
-    // ❓ UNKNOWN
+    // ❓ UNKNOWN //
+else {
+
+    // Try to understand more natural questions
+
+    if (
+        question.includes("hiccup") ||
+        question.includes("hiccups") ||
+        question.includes("diaphragm")
+    ) {
+        answer =
+            "Hiccups happen when your diaphragm suddenly contracts. " +
+            "This causes a quick intake of air and produces the familiar hiccup sound.";
+    }
+
+    else if (
+        question.includes("why am i sleepy") ||
+        question.includes("why do i feel sleepy") ||
+        question.includes("why am i tired") ||
+        question.includes("feel tired")
+    ) {
+        answer =
+            "Feeling sleepy or tired can happen when your body needs rest. " +
+            "Your internal body clock and the amount of time you've been awake " +
+            "both influence how sleepy you feel.";
+    }
+
+    else if (
+        question.includes("how are rainbows made") ||
+        question.includes("how is a rainbow made") ||
+        question.includes("how are rainbows created") ||
+        question.includes("how does a rainbow happen")
+    ) {
+        answer =
+            "Rainbows form when sunlight interacts with water droplets. " +
+            "The light bends, reflects inside the droplets and separates into different colours.";
+    }
+
+    else if (
+        question.includes("why is earth moving") ||
+        question.includes("why does earth move") ||
+        question.includes("why is our planet moving") ||
+        question.includes("does earth move")
+    ) {
+        answer =
+            "Yes, Earth is always moving. It rotates on its axis and travels around the Sun. " +
+            "We don't normally feel this movement because everything around us is moving with Earth.";
+    }
+
+    else if (
+        question.includes("why do we get goosebumps") ||
+        question.includes("why goosebumps") ||
+        question.includes("goose bumps")
+    ) {
+        answer =
+            "Goosebumps happen when tiny muscles around your hair follicles contract. " +
+            "They can be caused by cold temperatures or strong emotions.";
+    }
+
+    else if (
+        question.includes("why does rain smell") ||
+        question.includes("smell of rain") ||
+        question.includes("rain smell good")
+    ) {
+        answer =
+            "The pleasant smell after rain is partly caused by compounds released from " +
+            "soil and plants. One important compound is called geosmin.";
+    }
+
+    else if (
+        question.includes("why do cats purr") ||
+        question.includes("cat purr") ||
+        question.includes("cats purr")
+    ) {
+        answer =
+            "Cats often purr when they are comfortable or relaxed, but they can also " +
+            "purr in other situations. Purring may be connected with communication and comfort.";
+    }
+
     else {
         answer =
             "Hmm... 🤔 I don't know the answer to that one yet!\n\n" +
             "Try asking me about Science, Space, Psychology, Technology, World, History or Music.";
     }
-
+}
     const chatAnswer = document.getElementById("chatAnswer");
 
     chatAnswer.innerHTML =
