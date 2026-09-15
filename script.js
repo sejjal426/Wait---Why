@@ -437,89 +437,124 @@ function askChatbot() {
     }
 
     // ❓ UNKNOWN //
+// ❓ MORE QUESTIONS
+else if (
+    question.includes("rain smell") ||
+    question.includes("smell of rain") ||
+    question.includes("why does rain smell")
+) {
+    answer =
+        "The smell after rain is partly caused by compounds released from " +
+        "soil and plants. One important compound is called geosmin.";
+}
+
+else if (
+    question.includes("cat purr") ||
+    question.includes("cats purr") ||
+    question.includes("why do cats purr")
+) {
+    answer =
+        "Cats often purr when they are comfortable or relaxed. " +
+        "They can also purr in other situations, and scientists think " +
+        "purring can be a form of communication and comfort.";
+}
+
+else if (
+    question.includes("why do we blink") ||
+    question.includes("why do humans blink") ||
+    question.includes("blinking")
+) {
+    answer =
+        "We blink to keep our eyes moist and clean. " +
+        "Blinking spreads tears across the surface of the eye and helps protect it.";
+}
+
+else if (
+    question.includes("why do we yawn") ||
+    question.includes("why do humans yawn") ||
+    question.includes("yawning")
+) {
+    answer =
+        "Yawning is a natural reflex. It is often associated with tiredness and " +
+        "changes in alertness, although scientists are still studying exactly why we yawn.";
+}
+
+else if (
+    question.includes("why does ice melt") ||
+    question.includes("how does ice melt") ||
+    question.includes("ice melting")
+) {
+    answer =
+        "Ice melts when it gains enough thermal energy for its solid structure " +
+        "to change into liquid water.";
+}
+
+else if (
+    question.includes("why can we see the moon") ||
+    question.includes("why do we see the moon") ||
+    question.includes("moon at night")
+) {
+    answer =
+        "We can see the Moon because sunlight reflects from its surface into our eyes. " +
+        "The Moon does not produce its own visible light.";
+}
+
+else if (
+    question.includes("why are waves formed") ||
+    question.includes("how are waves formed") ||
+    question.includes("ocean waves")
+) {
+    answer =
+        "Many ocean waves are created when wind transfers energy to the surface of the water. " +
+        "The stronger and longer the wind blows, the larger the waves can become.";
+}
+
+else if (
+    question.includes("why are leaves green") ||
+    question.includes("why is grass green") ||
+    question.includes("leaves green")
+) {
+    answer =
+        "Leaves look green because they contain chlorophyll. " +
+        "Chlorophyll absorbs much of the red and blue light used in photosynthesis " +
+        "and reflects more green light back to our eyes.";
+}
+
+else if (
+    question.includes("why are clouds white") ||
+    question.includes("why do clouds look white") ||
+    question.includes("clouds white")
+) {
+    answer =
+        "Clouds look white because tiny water droplets and ice crystals scatter " +
+        "sunlight in many directions. When the colours mix together, we see white.";
+}
+
+else if (
+    question.includes("why does lightning happen") ||
+    question.includes("how does lightning happen") ||
+    question.includes("lightning")
+) {
+    answer =
+        "Lightning happens when electrical charges build up in a storm cloud. " +
+        "A powerful electrical discharge then occurs between regions of different charge.";
+}
+
+else if (
+    question.includes("why do planets orbit") ||
+    question.includes("how do planets orbit") ||
+    question.includes("planets orbit the sun")
+) {
+    answer =
+        "Planets orbit the Sun because the Sun's gravity pulls them inward " +
+        "while their motion carries them forward. Together, these create an orbit.";
+}
+
 else {
-
-    // Try to understand more natural questions
-
-    if (
-        question.includes("hiccup") ||
-        question.includes("hiccups") ||
-        question.includes("diaphragm")
-    ) {
-        answer =
-            "Hiccups happen when your diaphragm suddenly contracts. " +
-            "This causes a quick intake of air and produces the familiar hiccup sound.";
-    }
-
-    else if (
-        question.includes("why am i sleepy") ||
-        question.includes("why do i feel sleepy") ||
-        question.includes("why am i tired") ||
-        question.includes("feel tired")
-    ) {
-        answer =
-            "Feeling sleepy or tired can happen when your body needs rest. " +
-            "Your internal body clock and the amount of time you've been awake " +
-            "both influence how sleepy you feel.";
-    }
-
-    else if (
-        question.includes("how are rainbows made") ||
-        question.includes("how is a rainbow made") ||
-        question.includes("how are rainbows created") ||
-        question.includes("how does a rainbow happen")
-    ) {
-        answer =
-            "Rainbows form when sunlight interacts with water droplets. " +
-            "The light bends, reflects inside the droplets and separates into different colours.";
-    }
-
-    else if (
-        question.includes("why is earth moving") ||
-        question.includes("why does earth move") ||
-        question.includes("why is our planet moving") ||
-        question.includes("does earth move")
-    ) {
-        answer =
-            "Yes, Earth is always moving. It rotates on its axis and travels around the Sun. " +
-            "We don't normally feel this movement because everything around us is moving with Earth.";
-    }
-
-    else if (
-        question.includes("why do we get goosebumps") ||
-        question.includes("why goosebumps") ||
-        question.includes("goose bumps")
-    ) {
-        answer =
-            "Goosebumps happen when tiny muscles around your hair follicles contract. " +
-            "They can be caused by cold temperatures or strong emotions.";
-    }
-
-    else if (
-        question.includes("why does rain smell") ||
-        question.includes("smell of rain") ||
-        question.includes("rain smell good")
-    ) {
-        answer =
-            "The pleasant smell after rain is partly caused by compounds released from " +
-            "soil and plants. One important compound is called geosmin.";
-    }
-
-    else if (
-        question.includes("why do cats purr") ||
-        question.includes("cat purr") ||
-        question.includes("cats purr")
-    ) {
-        answer =
-            "Cats often purr when they are comfortable or relaxed, but they can also " +
-            "purr in other situations. Purring may be connected with communication and comfort.";
-    }
-
-    else {
-        answer =
-            "Hmm... 🤔 I don't know the answer to that one yet!\n\n" +
-            "Try asking me about Science, Space, Psychology, Technology, World, History or Music.";
-    }
+    answer =
+        "Hmm... 🤔 I don't know the answer to that one yet!\n\n" +
+        "Try asking me about Science, Space, Psychology, Technology, " +
+        "World, History or Music.";
 }
     const chatAnswer = document.getElementById("chatAnswer");
 
