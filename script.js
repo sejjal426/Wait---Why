@@ -369,10 +369,22 @@ function askChatbot() {
         answer = "Robots use software, instructions and sensors to respond to their surroundings and perform tasks.";
     }
 
-    else if (question.includes("artificial intelligence") || question.includes("ai")) {
-        answer = "Many AI systems learn patterns from data during training. They adjust internal parameters so their predictions become better at a particular task.";
-    }
-
+   else if (
+    question.includes("artificial intelligence") ||
+    question.includes("what is ai") ||
+    question.includes("what is artificial intelligence") ||
+    question.includes("how does ai work") ||
+    question.includes("how does artificial intelligence work") ||
+    question.includes("how does ai learn") ||
+    question.includes("how does artificial intelligence learn") ||
+    question === "ai"
+) {
+    answer =
+        "Artificial Intelligence, or AI, is technology that allows computers " +
+        "to perform tasks that normally require human-like thinking. " +
+        "AI can learn patterns from data and use them to make predictions, " +
+        "recognise information and solve problems.";
+}
     else if (question.includes("password")) {
         answer = "Passwords help protect accounts by verifying that someone is allowed to access them. Strong security can also use password managers and multi-factor authentication.";
     }
